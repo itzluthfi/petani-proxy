@@ -1,7 +1,7 @@
 <div align="center">
 
 # 🌾 PetaniProxy v1.1.0
-### *Local Rotating Proxy Gateway, Cloudflare WARP & Residential Hunter*
+### *Free Local Rotating Proxy Gateway, Cloudflare WARP & Residential Hunter*
 > Panen proxy publik, amunisi WireGuard Cloudflare WARP, dan IP Residential gratis, disatukan ke dalam gateway lokal `127.0.0.1:8888` yang otomatis muter tiap request. 🚜
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
@@ -9,6 +9,7 @@
 [![Maintainer](https://img.shields.io/badge/maintainer-itzluthfi-blueviolet.svg)](https://github.com/itzluthfi)
 [![Protocols](https://img.shields.io/badge/protocols-HTTP%20%7C%20HTTPS%20%7C%20SOCKS4%20%7C%20SOCKS5%20%7C%20WireGuard-green.svg)](#-protokol--fitur-filter)
 [![Rotating Gateway](https://img.shields.io/badge/gateway-127.0.0.1%3A8888-brightgreen.svg)](#2-jalankan-local-forward-gateway-port-8888)
+[![Captcha Bypass](https://img.shields.io/badge/captcha-auto--bypass%20ai-orange.svg)](#-mvp-amunisi-sultan-residential-vs-cloudflare-warp)
 
 <br>
 
