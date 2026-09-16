@@ -42,6 +42,7 @@ Akan muncul menu TUI bergaya kotak dengan watermark **`@itzluthfi`**. Anda cukup
 - `[W]` : 🏢 **Webshare Hunter Gacor (MVP)**: Panen 10-30 IP residential privat tembus Cloudflare Turnstile
 - `[C]` : 🚀 **Cloudflare WARP Local**: Bikin profil WireGuard resmi via REST API (Zero Captcha, Unlimited)
 - `[F]` : ⚡ **aiohttp Fast Harvester**: Saring ratusan proxy super cepat (<350ms dalam 1 detik)
+- `[D]` : 🌐 **Buka Web Dashboard**: Luncurkan Local Gateway & langsung buka Web UI Desktop di Browser (`http://127.0.0.1:8888/dashboard`)
 - `[G]` : 🚜 **Mode Petani AFK 24/7 [AUTO-HEALER]**: Daemon produksi non-stop di port 8888 (Auto-prune & refill)
 - `[1]` : 🐔 **Racikan Ternak Akun**: Filter ketat Elite L1 buat Grok/Qoder, auto-sync 9Router
 - `[2]` : 🕷️ **Racikan Scraper Barbar**: Pool 30+ IP, ganti IP tiap request, anti-block e-commerce

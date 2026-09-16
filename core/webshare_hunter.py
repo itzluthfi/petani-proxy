@@ -17,6 +17,11 @@ import re
 import sqlite3
 import string
 import sys
+if sys.platform == "win32" and hasattr(sys.stdout, "reconfigure"):
+    try:
+        sys.stdout.reconfigure(encoding="utf-8")
+    except Exception:
+        pass
 import tempfile
 import time
 import urllib.request
@@ -414,15 +419,19 @@ def try_solve_audio(page):
         print(f'[Debug Audio] {e}')
     return False
 
-def get_webshare_email_domain() -> str:
+def get_webshare_email_domain(custom_domain: str = None) -> str:
     """
-    Mengambil domain email untuk registrasi Webshare.
+    Mengambil domain email valid untuk registrasi Webshare.
     Prioritas:
-    1. config/settings.json -> custom_email_domain
+    1. custom_domain argumen (dari UI / modal)
     2. Environment variable WEBSHARE_EMAIL_DOMAIN / WEBSHARE_DOMAIN
-    3. config.json / local_config.json
-    4. Fallback default pool terverifikasi (Zero-Config untuk pemula)
+    3. config/settings.json -> custom_email_domain
+    4. Live API Mail.tm (mengambil domain aktif dengan DNS MX valid)
+    5. Fallback pool domain publik terverifikasi
     """
+    if custom_domain and custom_domain.strip():
+        return custom_domain.strip().lstrip("@")
+
     # 1. Environment variable
     env_dom = os.environ.get("WEBSHARE_EMAIL_DOMAIN") or os.environ.get("WEBSHARE_DOMAIN")
     if env_dom and env_dom.strip():
@@ -446,17 +455,47 @@ def get_webshare_email_domain() -> str:
             except Exception:
                 pass
 
-    # 3. Fallback default pool (Domain bersih yang diterima Webshare)
+    # 3. Dynamic Live DuckMail Domain Fetcher (api.duckmail.sbs)
+    try:
+        r = requests.get("https://api.duckmail.sbs/domains", timeout=3.5)
+        if r.status_code == 200:
+            members = r.json().get("hydra:member", [])
+            live_domains = [m.get("domain") for m in members if m.get("domain") and m.get("isVerified", True)]
+            if live_domains:
+                return random.choice(live_domains)
+    except Exception:
+        pass
+
+    # 4. Dynamic Live Mail.tm Domain Fetcher (api.mail.tm)
+    try:
+        r = requests.get("https://api.mail.tm/domains", timeout=3.5)
+        if r.status_code == 200:
+            members = r.json().get("hydra:member", [])
+            live_domains = [m.get("domain") for m in members if m.get("domain") and m.get("isActive", True)]
+            if live_domains:
+                return random.choice(live_domains)
+    except Exception:
+        pass
+
+    # 5. Fallback verified DuckMail domain pool (Terbukti aktif dengan MX DNS valid)
     fallback_pool = [
         "niceground.shop",
-        "petaniproxy.net",
-        "proxypool.space"
+        "stoneground.shop",
+        "lakeground.shop",
+        "canvaspace.shop",
+        "vercelspace.shop",
+        "bananaspace.shop",
+        "sunstarmoon.shop",
+        "makesomestone.shop",
+        "hubaiclass.org",
+        "markaihub.shop",
+        "uberip.com"
     ]
     return random.choice(fallback_pool)
 
-def hunt_single_auto(index, total, headless=False):
+def hunt_single_auto(index, total, headless=False, custom_domain=None):
     random_str = ''.join(random.choices(string.ascii_lowercase + string.digits, k=10))
-    domain = get_webshare_email_domain()
+    domain = get_webshare_email_domain(custom_domain=custom_domain)
     email = f'ws{random_str}@{domain}'
     special = random.choice('!@#$%')
     rand_mid = ''.join(random.choices(string.ascii_letters + string.digits, k=6))
@@ -670,7 +709,7 @@ def hunt_single_auto(index, total, headless=False):
         except:
             pass
 
-def run_webshare_hunter(total: int = 1, headless: bool = False, sync_9router_db: str = None, output_dir: str = None):
+def run_webshare_hunter(total: int = 1, headless: bool = False, sync_9router_db: str = None, output_dir: str = None, custom_domain: str = None):
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     out_dir = output_dir or os.path.join(base_dir, "output")
     os.makedirs(out_dir, exist_ok=True)
@@ -685,13 +724,15 @@ def run_webshare_hunter(total: int = 1, headless: bool = False, sync_9router_db:
     print(f"{Fore.GREEN}{Style.BRIGHT}🌾 PETANIPROXY x WEBSHARE RESIDENTIAL HUNTER (AUTO-SOLVER){Style.RESET_ALL}")
     print(f"  • Target Akun       : {Fore.YELLOW}{total}{Style.RESET_ALL} Akun (Potensi {total * 10} Residential IP)")
     print(f"  • Mode Tampilan     : {mode_str}")
+    if custom_domain:
+        print(f"  • Custom Domain     : {Fore.MAGENTA}@{custom_domain}{Style.RESET_ALL}")
     print(f"  • BansosRouter SQLite: {Fore.WHITE}{db_path or 'Tidak Terdeteksi (Skip)'}{Style.RESET_ALL}")
     print(f"  • Grok Farm Proxies : {Fore.WHITE}{grok_txt or 'Tidak Terdeteksi (Skip)'}{Style.RESET_ALL}")
     print(f"{Fore.CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{Style.RESET_ALL}")
 
     all_gathered = []
     for i in range(1, total + 1):
-        proxies = hunt_single_auto(i, total, headless=headless)
+        proxies = hunt_single_auto(i, total, headless=headless, custom_domain=custom_domain)
         if proxies:
             print(f"  {Fore.GREEN}✓ Akun [{i}/{total}] menghasilkan {len(proxies)} residential proxy baru.{Style.RESET_ALL}")
             # 1. Simpan ke output PetaniProxy

@@ -1,18 +1,30 @@
 {
+<<<<<<< Updated upstream
   "generated_at": "2026-09-16T03:19:14.723683+00:00",
   "total_alive": 34,
   "protocols": {
     "http": 34,
+=======
+  "generated_at": "2026-09-16T02:55:21.294632+00:00",
+  "total_alive": 30,
+  "protocols": {
+    "http": 30,
+>>>>>>> Stashed changes
     "socks4": 0,
     "socks5": 0
   },
   "anonymity": {
+<<<<<<< Updated upstream
     "Elite": 34,
+=======
+    "Elite": 30,
+>>>>>>> Stashed changes
     "Anonymous": 0,
     "Transparent": 0
   },
   "proxies": [
     {
+<<<<<<< Updated upstream
       "ip": "184.75.221.82",
       "port": 3118,
       "proxy": "184.75.221.82:3118",
@@ -62,11 +74,34 @@
       "latency_sec": 0.155,
       "latency_ms": 155,
       "egress_ip": "8.231.16.63",
+=======
+      "ip": "103.94.238.94",
+      "port": 30001,
+      "proxy": "103.94.238.94:30001",
+      "protocol": "http",
+      "latency_sec": 0.342,
+      "latency_ms": 342,
+      "egress_ip": "103.94.238.94",
+>>>>>>> Stashed changes
       "anonymity": "Elite",
-      "country": "Unknown",
-      "country_code": "??",
-      "city": "-",
-      "isp": "-"
+      "country": "Indonesia",
+      "country_code": "ID",
+      "city": "Bogor",
+      "isp": "PT Biznet Gio Nusantara"
+    },
+    {
+      "ip": "101.32.65.42",
+      "port": 8888,
+      "proxy": "101.32.65.42:8888",
+      "protocol": "http",
+      "latency_sec": 0.472,
+      "latency_ms": 472,
+      "egress_ip": "101.32.76.202",
+      "anonymity": "Elite",
+      "country": "Hong Kong",
+      "country_code": "HK",
+      "city": "Hong Kong",
+      "isp": "Aceville Pte.ltd"
     },
     {
       "ip": "129.153.71.186",
@@ -129,6 +164,7 @@
       "port": 8888,
       "proxy": "89.110.124.45:8888",
       "protocol": "http",
+<<<<<<< Updated upstream
       "latency_sec": 0.579,
       "latency_ms": 579,
       "egress_ip": "89.110.124.45",
@@ -165,14 +201,71 @@
       "country_code": "VE",
       "city": "San Carlos del Zulia",
       "isp": "Viginet C.A"
+=======
+      "latency_sec": 0.75,
+      "latency_ms": 750,
+      "egress_ip": "47.81.56.193",
+      "anonymity": "Elite",
+      "country": "Thailand",
+      "country_code": "TH",
+      "city": "Bangkok",
+      "isp": "Alibaba.com LLC"
+    },
+    {
+      "ip": "8.219.97.248",
+      "port": 80,
+      "proxy": "8.219.97.248:80",
+      "protocol": "http",
+      "latency_sec": 0.796,
+      "latency_ms": 796,
+      "egress_ip": "8.219.64.236",
+      "anonymity": "Elite",
+      "country": "Singapore",
+      "country_code": "SG",
+      "city": "Singapore",
+      "isp": "Alibaba Cloud (Singapore) Private Limited"
+    },
+    {
+      "ip": "163.181.207.169",
+      "port": 9999,
+      "proxy": "163.181.207.169:9999",
+      "protocol": "http",
+      "latency_sec": 0.815,
+      "latency_ms": 815,
+      "egress_ip": "163.181.207.169",
+      "anonymity": "Elite",
+      "country": "Vietnam",
+      "country_code": "VN",
+      "city": "Hanoi",
+      "isp": "Zhejiang Taobao Network Co., Ltd"
+    },
+    {
+      "ip": "34.43.46.91",
+      "port": 80,
+      "proxy": "34.43.46.91:80",
+      "protocol": "http",
+      "latency_sec": 0.837,
+      "latency_ms": 837,
+      "egress_ip": "8.231.16.63",
+      "anonymity": "Elite",
+      "country": "Unknown",
+      "country_code": "??",
+      "city": "-",
+      "isp": "-"
+>>>>>>> Stashed changes
     },
     {
       "ip": "103.237.102.191",
       "port": 11111,
       "proxy": "103.237.102.191:11111",
       "protocol": "http",
+<<<<<<< Updated upstream
       "latency_sec": 0.593,
       "latency_ms": 593,
+=======
+      "latency_sec": 0.858,
+      "latency_ms": 858,
+>>>>>>> Stashed changes
       "egress_ip": "103.237.102.191",
       "anonymity": "Elite",
       "country": "Germany",
@@ -181,6 +274,7 @@
       "isp": "Zenlayer Inc"
     },
     {
+<<<<<<< Updated upstream
       "ip": "84.8.216.230",
       "port": 2001,
       "proxy": "84.8.216.230:2001",
@@ -333,14 +427,285 @@
       "country_code": "VN",
       "city": "Hanoi",
       "isp": "VNPT"
+=======
+      "ip": "43.156.199.63",
+      "port": 8081,
+      "proxy": "43.156.199.63:8081",
+      "protocol": "http",
+      "latency_sec": 0.861,
+      "latency_ms": 861,
+      "egress_ip": "43.156.199.63",
+      "anonymity": "Elite",
+      "country": "Singapore",
+      "country_code": "SG",
+      "city": "Singapore",
+      "isp": "Shenzhen Tencent Computer Systems Company Limited"
+    },
+    {
+      "ip": "167.86.104.220",
+      "port": 80,
+      "proxy": "167.86.104.220:80",
+      "protocol": "http",
+      "latency_sec": 0.869,
+      "latency_ms": 869,
+      "egress_ip": "167.86.104.220",
+      "anonymity": "Elite",
+      "country": "France",
+      "country_code": "FR",
+      "city": "Lauterbourg",
+      "isp": "Contabo GmbH"
+    },
+    {
+      "ip": "198.46.200.118",
+      "port": 12888,
+      "proxy": "198.46.200.118:12888",
+      "protocol": "http",
+      "latency_sec": 0.928,
+      "latency_ms": 928,
+      "egress_ip": "198.46.200.118",
+      "anonymity": "Elite",
+      "country": "United States",
+      "country_code": "US",
+      "city": "Los Angeles",
+      "isp": "HostPapa"
+    },
+    {
+      "ip": "3.231.102.147",
+      "port": 80,
+      "proxy": "3.231.102.147:80",
+      "protocol": "http",
+      "latency_sec": 1.035,
+      "latency_ms": 1035,
+      "egress_ip": "3.231.102.147",
+      "anonymity": "Elite",
+      "country": "United States",
+      "country_code": "US",
+      "city": "Ashburn",
+      "isp": "Amazon Technologies Inc."
+    },
+    {
+      "ip": "34.43.46.91",
+      "port": 443,
+      "proxy": "34.43.46.91:443",
+      "protocol": "http",
+      "latency_sec": 1.075,
+      "latency_ms": 1075,
+      "egress_ip": "35.235.153.76",
+      "anonymity": "Elite",
+      "country": "United States",
+      "country_code": "US",
+      "city": "Mountain View",
+      "isp": "Google LLC"
+    },
+    {
+      "ip": "184.75.221.82",
+      "port": 3118,
+      "proxy": "184.75.221.82:3118",
+      "protocol": "http",
+      "latency_sec": 1.207,
+      "latency_ms": 1207,
+      "egress_ip": "184.75.221.82",
+      "anonymity": "Elite",
+      "country": "Canada",
+      "country_code": "CA",
+      "city": "Toronto",
+      "isp": "Amanah Tech Inc."
+    },
+    {
+      "ip": "111.119.162.248",
+      "port": 10933,
+      "proxy": "111.119.162.248:10933",
+      "protocol": "http",
+      "latency_sec": 1.217,
+      "latency_ms": 1217,
+      "egress_ip": "8.209.74.72",
+      "anonymity": "Elite",
+      "country": "Unknown",
+      "country_code": "??",
+      "city": "-",
+      "isp": "-"
+    },
+    {
+      "ip": "111.119.162.248",
+      "port": 10917,
+      "proxy": "111.119.162.248:10917",
+      "protocol": "http",
+      "latency_sec": 1.271,
+      "latency_ms": 1271,
+      "egress_ip": "47.254.157.156",
+      "anonymity": "Elite",
+      "country": "Unknown",
+      "country_code": "??",
+      "city": "-",
+      "isp": "-"
+>>>>>>> Stashed changes
+    },
+    {
+      "ip": "210.211.113.33",
+      "port": 80,
+      "proxy": "210.211.113.33:80",
+      "protocol": "http",
+      "latency_sec": 1.434,
+      "latency_ms": 1434,
+      "egress_ip": "210.211.113.33",
+      "anonymity": "Elite",
+      "country": "Vietnam",
+      "country_code": "VN",
+      "city": "Ho Chi Minh City",
+      "isp": "VTDC"
+    },
+    {
+      "ip": "111.119.162.248",
+      "port": 10919,
+      "proxy": "111.119.162.248:10919",
+      "protocol": "http",
+      "latency_sec": 1.635,
+      "latency_ms": 1635,
+      "egress_ip": "8.220.151.118",
+      "anonymity": "Elite",
+      "country": "Unknown",
+      "country_code": "??",
+      "city": "-",
+      "isp": "-"
+    },
+    {
+      "ip": "153.51.201.35",
+      "port": 999,
+      "proxy": "153.51.201.35:999",
+      "protocol": "http",
+      "latency_sec": 1.767,
+      "latency_ms": 1767,
+      "egress_ip": "153.51.201.35",
+      "anonymity": "Elite",
+      "country": "Venezuela",
+      "country_code": "VE",
+      "city": "Ciudad Bolivia",
+      "isp": "Valor Information Technologies"
+    },
+    {
+      "ip": "190.97.236.129",
+      "port": 999,
+      "proxy": "190.97.236.129:999",
+      "protocol": "http",
+      "latency_sec": 1.783,
+      "latency_ms": 1783,
+      "egress_ip": "153.51.201.35",
+      "anonymity": "Elite",
+      "country": "Venezuela",
+      "country_code": "VE",
+      "city": "San Carlos del Zulia",
+      "isp": "Viginet C.A"
+    },
+    {
+      "ip": "190.97.236.128",
+      "port": 999,
+      "proxy": "190.97.236.128:999",
+      "protocol": "http",
+      "latency_sec": 1.788,
+      "latency_ms": 1788,
+      "egress_ip": "153.51.201.35",
+      "anonymity": "Elite",
+      "country": "Venezuela",
+      "country_code": "VE",
+      "city": "Maporal",
+      "isp": "Viginet C.A"
+    },
+    {
+      "ip": "152.53.183.107",
+      "port": 8081,
+      "proxy": "152.53.183.107:8081",
+      "protocol": "http",
+      "latency_sec": 1.852,
+      "latency_ms": 1852,
+      "egress_ip": "152.53.183.107",
+      "anonymity": "Elite",
+      "country": "Germany",
+      "country_code": "DE",
+      "city": "Nuremberg",
+      "isp": "netcup GmbH"
+    },
+    {
+      "ip": "111.119.162.248",
+      "port": 10916,
+      "proxy": "111.119.162.248:10916",
+      "protocol": "http",
+      "latency_sec": 2.012,
+      "latency_ms": 2012,
+      "egress_ip": "47.237.48.66",
+      "anonymity": "Elite",
+      "country": "Unknown",
+      "country_code": "??",
+      "city": "-",
+      "isp": "-"
+    },
+    {
+      "ip": "210.211.113.37",
+      "port": 80,
+      "proxy": "210.211.113.37:80",
+      "protocol": "http",
+      "latency_sec": 2.125,
+      "latency_ms": 2125,
+      "egress_ip": "210.211.113.37",
+      "anonymity": "Elite",
+      "country": "Vietnam",
+      "country_code": "VN",
+      "city": "Ho Chi Minh City",
+      "isp": "VTDC"
+    },
+    {
+      "ip": "111.119.162.248",
+      "port": 10910,
+      "proxy": "111.119.162.248:10910",
+      "protocol": "http",
+      "latency_sec": 2.136,
+      "latency_ms": 2136,
+      "egress_ip": "47.88.81.2",
+      "anonymity": "Elite",
+      "country": "Unknown",
+      "country_code": "??",
+      "city": "-",
+      "isp": "-"
+    },
+    {
+      "ip": "111.119.162.248",
+      "port": 10973,
+      "proxy": "111.119.162.248:10973",
+      "protocol": "http",
+      "latency_sec": 2.301,
+      "latency_ms": 2301,
+      "egress_ip": "193.29.139.152",
+      "anonymity": "Elite",
+      "country": "Unknown",
+      "country_code": "??",
+      "city": "-",
+      "isp": "-"
+    },
+    {
+      "ip": "111.119.162.248",
+      "port": 10908,
+      "proxy": "111.119.162.248:10908",
+      "protocol": "http",
+      "latency_sec": 2.601,
+      "latency_ms": 2601,
+      "egress_ip": "47.90.218.52",
+      "anonymity": "Elite",
+      "country": "Pakistan",
+      "country_code": "PK",
+      "city": "Tando Adam",
+      "isp": "Connect Communication"
     },
     {
       "ip": "37.59.125.131",
       "port": 8888,
       "proxy": "37.59.125.131:8888",
       "protocol": "http",
+<<<<<<< Updated upstream
       "latency_sec": 1.334,
       "latency_ms": 1334,
+=======
+      "latency_sec": 2.704,
+      "latency_ms": 2704,
+>>>>>>> Stashed changes
       "egress_ip": "82.66.253.58",
       "anonymity": "Elite",
       "country": "France",
@@ -349,6 +714,7 @@
       "isp": "OVH SAS"
     },
     {
+<<<<<<< Updated upstream
       "ip": "43.153.123.79",
       "port": 80,
       "proxy": "43.153.123.79:80",
@@ -356,6 +722,15 @@
       "latency_sec": 1.338,
       "latency_ms": 1338,
       "egress_ip": "43.153.123.79",
+=======
+      "ip": "111.119.162.248",
+      "port": 10949,
+      "proxy": "111.119.162.248:10949",
+      "protocol": "http",
+      "latency_sec": 2.98,
+      "latency_ms": 2980,
+      "egress_ip": "47.90.176.29",
+>>>>>>> Stashed changes
       "anonymity": "Elite",
       "country": "United States",
       "country_code": "US",
@@ -363,6 +738,7 @@
       "isp": "Shenzhen Tencent Computer Systems Company Limited"
     },
     {
+<<<<<<< Updated upstream
       "ip": "24.55.20.6",
       "port": 3030,
       "proxy": "24.55.20.6:3030",
@@ -370,6 +746,15 @@
       "latency_sec": 1.386,
       "latency_ms": 1386,
       "egress_ip": "24.55.20.6",
+=======
+      "ip": "111.119.162.248",
+      "port": 10969,
+      "proxy": "111.119.162.248:10969",
+      "protocol": "http",
+      "latency_sec": 3.0,
+      "latency_ms": 3000,
+      "egress_ip": "8.216.119.64",
+>>>>>>> Stashed changes
       "anonymity": "Elite",
       "country": "United States",
       "country_code": "US",
@@ -377,6 +762,7 @@
       "isp": "Charter Communications Inc"
     },
     {
+<<<<<<< Updated upstream
       "ip": "31.77.131.173",
       "port": 8080,
       "proxy": "31.77.131.173:8080",
@@ -468,6 +854,15 @@
       "latency_sec": 2.118,
       "latency_ms": 2118,
       "egress_ip": "43.156.199.63",
+=======
+      "ip": "111.119.162.248",
+      "port": 10950,
+      "proxy": "111.119.162.248:10950",
+      "protocol": "http",
+      "latency_sec": 3.363,
+      "latency_ms": 3363,
+      "egress_ip": "8.216.119.64",
+>>>>>>> Stashed changes
       "anonymity": "Elite",
       "country": "Singapore",
       "country_code": "SG",

@@ -188,6 +188,117 @@ def build_metrics_card(title: str, metrics: List[Tuple[str, str, str, str]], wid
     lines.append(border_bot)
     return "\n".join(lines)
 
+def build_info_card(title: str, rows: List[Tuple[str, str]], width: Optional[int] = None, border_color = Fore.CYAN) -> str:
+    """
+    Builds a clean key-value summary card with rounded borders.
+    """
+    w = width or get_terminal_width(78)
+    inner_w = w - 2
+    
+    top_line = f"╭─ {Fore.WHITE}{Style.BRIGHT}{title}{Style.RESET_ALL}{border_color} "
+    top_rem = inner_w - visible_len(top_line) - 1
+    border_top = f"{border_color}{top_line}{'─' * max(2, top_rem)}╮{Style.RESET_ALL}"
+    
+    lines = [border_top]
+    for key, val in rows:
+        content = f"  {Fore.LIGHTBLACK_EX}{key:<22}{Style.RESET_ALL}{val}"
+        line_str = f"{border_color}│{Style.RESET_ALL}{pad_to(content, inner_w)}{border_color}│{Style.RESET_ALL}"
+        lines.append(line_str)
+        
+    border_bot = f"{border_color}╰{'─' * inner_w}╯{Style.RESET_ALL}"
+    lines.append(border_bot)
+    return "\n".join(lines)
+
+def build_table(
+    headers: List[str],
+    rows: List[List[str]],
+    aligns: Optional[List[str]] = None,
+    width: Optional[int] = None,
+    title: Optional[str] = None
+) -> str:
+    """
+    Build a modern, perfectly aligned Unicode table with rounded corners.
+    Handles ANSI escape codes for accurate visual length calculations.
+    """
+    w = width or get_terminal_width(78)
+    num_cols = len(headers)
+    if num_cols == 0:
+        return ""
+    
+    if aligns is None:
+        aligns = ["left"] * num_cols
+    
+    # Calculate column widths
+    col_widths = [visible_len(h) for h in headers]
+    for row in rows:
+        for i, cell in enumerate(row):
+            if i < num_cols:
+                col_widths[i] = max(col_widths[i], visible_len(cell))
+    
+    # Add 2 padding spaces per column (1 left, 1 right)
+    inner_widths = [cw + 2 for cw in col_widths]
+    total_w = sum(inner_widths) + (num_cols + 1)
+    
+    # If table exceeds max width, proportionally shrink largest columns
+    if total_w > w:
+        scale = (w - (num_cols + 1)) / max(1, sum(inner_widths))
+        inner_widths = [max(4, int(iw * scale)) for iw in inner_widths]
+        col_widths = [iw - 2 for iw in inner_widths]
+    
+    # Borders
+    top_border = f"{Fore.LIGHTBLACK_EX}╭" + "┬".join(["─" * iw for iw in inner_widths]) + f"╮{Style.RESET_ALL}"
+    mid_border = f"{Fore.LIGHTBLACK_EX}├" + "┼".join(["─" * iw for iw in inner_widths]) + f"┤{Style.RESET_ALL}"
+    bot_border = f"{Fore.LIGHTBLACK_EX}╰" + "┴".join(["─" * iw for iw in inner_widths]) + f"╯{Style.RESET_ALL}"
+    
+    lines = []
+    
+    # Optional Table Title Box
+    if title:
+        title_top = f"{Fore.LIGHTBLACK_EX}╭─ {Fore.WHITE}{Style.BRIGHT}{title}{Style.RESET_ALL}{Fore.LIGHTBLACK_EX} "
+        rem = (sum(inner_widths) + num_cols - 1) - visible_len(title_top)
+        lines.append(f"{title_top}{'─' * max(2, rem)}╮{Style.RESET_ALL}")
+        mid_bridge = f"{Fore.LIGHTBLACK_EX}├" + "┬".join(["─" * iw for iw in inner_widths]) + f"┤{Style.RESET_ALL}"
+        lines.append(mid_bridge)
+    else:
+        lines.append(top_border)
+        
+    # Header Row
+    header_cells = []
+    for i, h in enumerate(headers):
+        cw = col_widths[i]
+        hl = f"{Fore.CYAN}{Style.BRIGHT}{pad_to(h, cw)}{Style.RESET_ALL}"
+        header_cells.append(f" {hl} ")
+    lines.append(f"{Fore.LIGHTBLACK_EX}│{Style.RESET_ALL}" + f"{Fore.LIGHTBLACK_EX}│{Style.RESET_ALL}".join(header_cells) + f"{Fore.LIGHTBLACK_EX}│{Style.RESET_ALL}")
+    lines.append(mid_border)
+    
+    # Data Rows
+    for row in rows:
+        row_cells = []
+        for i in range(num_cols):
+            val = row[i] if i < len(row) else ""
+            cw = col_widths[i]
+            vlen = visible_len(val)
+            align = aligns[i] if i < len(aligns) else "left"
+            
+            if vlen > cw:
+                val = val[:max(1, cw-1)] + "…"
+                vlen = visible_len(val)
+                
+            if align == "right":
+                padded = (" " * (cw - vlen)) + val
+            elif align == "center":
+                left_pad = (cw - vlen) // 2
+                right_pad = cw - vlen - left_pad
+                padded = (" " * left_pad) + val + (" " * right_pad)
+            else:
+                padded = val + (" " * (cw - vlen))
+                
+            row_cells.append(f" {padded} ")
+        lines.append(f"{Fore.LIGHTBLACK_EX}│{Style.RESET_ALL}" + f"{Fore.LIGHTBLACK_EX}│{Style.RESET_ALL}".join(row_cells) + f"{Fore.LIGHTBLACK_EX}│{Style.RESET_ALL}")
+        
+    lines.append(bot_border)
+    return "\n".join(lines)
+
 class MenuItem:
     def __init__(self, key: str, label: str, desc: str = "", badge: str = "", is_header: bool = False):
         self.key = key.lower()

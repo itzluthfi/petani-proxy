@@ -43,6 +43,8 @@ from core.tui import (
     InteractiveMenu,
     build_header,
     build_metrics_card,
+    build_info_card,
+    build_table,
     render_badge,
     quick_confirm,
     quick_pause,
@@ -342,30 +344,45 @@ def run_harvester(
     if "9router_db" in files:
         print(f"  {Fore.GREEN}✓{Style.RESET_ALL} BansosRouter DB: {Fore.WHITE}Synced to {files['9router_db']}{Style.RESET_ALL}")
 
-    # Display Top 3 Fastest
-    print(f"\n{Fore.CYAN}🏆 TOP FASTEST PROXIES:{Style.RESET_ALL}")
-    for idx, p in enumerate(live_proxies[:3], 1):
+    # Display Top 5 Fastest in clean Unicode Table
+    table_headers = ["#", "PROTO", "IP : PORT", "ANON", "PING", "CC", "ISP / REGION"]
+    table_rows = []
+    for idx, p in enumerate(live_proxies[:5], 1):
         proto = p.get('protocol', 'http').upper()
-        anon = p.get('anonymity', 'Elite')
-        print(f"  {idx}. {Fore.GREEN}{proto}://{p['proxy']}{Style.RESET_ALL} [{anon}] ({p['latency_ms']}ms) - [{p['country_code']}] {p['country']}")
-    print(f"{Fore.CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{Style.RESET_ALL}\n")
+        anon = f"{Fore.CYAN}[ELITE]{Style.RESET_ALL}" if p.get('anonymity') == 'Elite' else f"{Fore.LIGHTBLACK_EX}[ANON]{Style.RESET_ALL}"
+        lat = p.get('latency_ms', 0)
+        lat_str = f"{Fore.GREEN}{lat}ms{Style.RESET_ALL}" if lat < 500 else (f"{Fore.YELLOW}{lat}ms{Style.RESET_ALL}" if lat < 1500 else f"{Fore.RED}{lat}ms{Style.RESET_ALL}")
+        table_rows.append([
+            str(idx),
+            proto,
+            p.get('proxy', ''),
+            anon,
+            lat_str,
+            p.get('country_code', '??'),
+            (p.get('isp') or p.get('country') or '-')[:22]
+        ])
+    
+    print(f"\n{build_table(table_headers, table_rows, title='AMUNISI PROXY TERCEPAT SIAP TEMBAK')}\n")
 
     if serve_port:
-        print(f"{Fore.GREEN}{Style.BRIGHT}🌐 STARTING LOCAL ROTATING GATEWAY & REST API...{Style.RESET_ALL}")
-        print(f"  • Forward Proxy Endpoint: {Fore.CYAN}http://127.0.0.1:{serve_port}{Style.RESET_ALL}")
-        print(f"  • Random Proxy REST API:  {Fore.CYAN}http://127.0.0.1:{serve_port}/api/random{Style.RESET_ALL}")
-        print(f"  • All Proxies REST API:   {Fore.CYAN}http://127.0.0.1:{serve_port}/api/all{Style.RESET_ALL}")
-        print(f"  • Health & Status API:    {Fore.CYAN}http://127.0.0.1:{serve_port}/api/status{Style.RESET_ALL}")
-        print(f"\n{Fore.WHITE}📋 SNIPPET SIAP PAKAI (COPY-PASTE):{Style.RESET_ALL}")
-        print(f"  • {Fore.YELLOW}Python Requests:{Style.RESET_ALL} proxies={{'http': 'http://127.0.0.1:{serve_port}', 'https': 'http://127.0.0.1:{serve_port}'}}")
-        print(f"  • {Fore.YELLOW}cURL Command:{Style.RESET_ALL}    curl -x http://127.0.0.1:{serve_port} https://api.ipify.org")
-        print(f"  • {Fore.YELLOW}Browser Proxy:{Style.RESET_ALL}   Set Manual Proxy Host -> 127.0.0.1 | Port -> {serve_port}")
-        print(f"\n{Fore.LIGHTBLACK_EX}Server running at 127.0.0.1:{serve_port}. Press Ctrl+C to stop.{Style.RESET_ALL}\n")
+        card_items = [
+            ("Forward Gateway", f"{Fore.CYAN}http://127.0.0.1:{serve_port}{Style.RESET_ALL} (Rotasi Otomatis)"),
+            ("Web Dashboard", f"{Fore.GREEN}http://127.0.0.1:{serve_port}/dashboard{Style.RESET_ALL} (UI Mantau Live)"),
+            ("PAC URL (HP)", f"{Fore.YELLOW}http://127.0.0.1:{serve_port}/proxy.pac{Style.RESET_ALL} (Auto-Config Wi-Fi)"),
+            ("Sticky Session", f"{Fore.WHITE}Kirim header {Fore.YELLOW}X-Session-ID: <id>{Style.RESET_ALL} (Nahan IP 10m)"),
+            ("Topeng Ninja", f"{Fore.GREEN}Aktif ●{Style.RESET_ALL} (Auto User-Agent Spoofing)")
+        ]
+        print(build_info_card(f"GATEWAY PRODUCTION AKTIF (PORT {serve_port})", card_items, border_color=Fore.GREEN))
+        print(f"\n{Fore.LIGHTBLACK_EX}  Tekan Ctrl+C untuk menghentikan server gateway.{Style.RESET_ALL}\n")
         start_proxy_server(live_proxies, host="127.0.0.1", port=serve_port, background=False)
 
     return live_proxies
 
 def view_saved_results(output_dir: str = None):
+    """
+    Fitur [S] Gudang & Daftar Hasil Panen Terminal:
+    Menampilkan tabel proxy terverifikasi yang tersimpan di disk langsung di terminal.
+    """
     if not output_dir:
         base_dir = os.path.dirname(os.path.abspath(__file__))
         output_dir = os.path.join(base_dir, "output")
@@ -378,40 +395,154 @@ def view_saved_results(output_dir: str = None):
     with open(json_file, "r", encoding="utf-8") as f:
         data = json.load(f)
 
-    print(f"\n{Fore.CYAN}📁 HASIL PROXY TERAKHIR DARI {json_file}:{Style.RESET_ALL}")
-    print(f"  • Terakhir diperbarui: {Fore.WHITE}{data.get('generated_at', '-')}{Style.RESET_ALL}")
-    print(f"  • Total proxy aktif  : {Fore.GREEN}{data.get('total_alive', 0)}{Style.RESET_ALL}")
-    print(f"  • Protokol           : {Fore.WHITE}{data.get('protocols', {})}{Style.RESET_ALL}\n")
-
     proxies = data.get("proxies", [])
-    print(f"{Fore.CYAN}DAFTAR 10 PROXY TERCEPAT:{Style.RESET_ALL}")
-    for idx, p in enumerate(proxies[:10], 1):
-        proto = p.get('protocol', 'http').upper()
-        print(f"  {idx:>2}. {Fore.GREEN}{proto:<6}{Style.RESET_ALL} {Fore.WHITE}{p['proxy']:<21}{Style.RESET_ALL} | {Fore.YELLOW}{p['latency_ms']:>4}ms{Style.RESET_ALL} | [{p['country_code']}] {p['country']} ({p.get('isp', '-')[:22]})")
+    if not proxies:
+        print(f"\n{Fore.YELLOW}Gudang proxy lokal kosong. Silakan jalankan panen terlebih dahulu!{Style.RESET_ALL}")
+        return
 
+    limit = 15
+    filter_cc = None
+
+    while True:
+        display_list = proxies
+        if filter_cc:
+            display_list = [p for p in proxies if (p.get("country_code") or "").upper() == filter_cc.upper()]
+
+        t_headers = ["#", "PROTO", "IP : PORT", "ANON", "PING", "CC", "ISP / HOST REGION"]
+        t_rows = []
+        for idx, p in enumerate(display_list[:limit], 1):
+            proto = p.get('protocol', 'http').upper()
+            anon = f"{Fore.CYAN}[ELITE]{Style.RESET_ALL}" if (p.get('anonymity') or '').lower() == 'elite' else f"{Fore.LIGHTBLACK_EX}[ANON]{Style.RESET_ALL}"
+            lat = p.get('latency_ms', 0)
+            lat_str = f"{Fore.GREEN}{lat}ms{Style.RESET_ALL}" if lat < 500 else (f"{Fore.YELLOW}{lat}ms{Style.RESET_ALL}" if lat < 1500 else f"{Fore.RED}{lat}ms{Style.RESET_ALL}")
+            t_rows.append([
+                str(idx),
+                proto,
+                p.get('proxy', ''),
+                anon,
+                lat_str,
+                p.get('country_code', '??'),
+                (p.get('isp') or p.get('country') or '-')[:24]
+            ])
+
+        title_suffix = f" (Filter: {filter_cc})" if filter_cc else f" (Menampilkan {min(limit, len(display_list))} dari {len(proxies)} Total)"
+        print(f"\n{build_table(t_headers, t_rows, title='DAFTAR HASIL PANEN PROXY TERVERIFIKASI' + title_suffix)}\n")
+
+        print(f"{Fore.CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{Style.RESET_ALL}")
+        print(f"{Fore.WHITE}{Style.BRIGHT}PILIH AKSI GUDANG HASIL PANEN:{Style.RESET_ALL}")
+        if limit < len(display_list):
+            print(f"  {Fore.CYAN}[A]{Fore.WHITE} 📜 Tampilkan Semua ({len(display_list)} Proxy)")
+        print(f"  {Fore.GREEN}[1]{Fore.WHITE} 🚀 Nyalakan Gateway 8888 Menggunakan Stok Ini")
+        print(f"  {Fore.YELLOW}[2]{Fore.WHITE} 🔍 Filter Berdasarkan Kode Negara (e.g. US, SG, ID)")
+        print(f"  {Fore.GREEN}[3]{Fore.WHITE} 📝 Buka File Daftar di Notepad (live_all.txt)")
+        print(f"  {Fore.GREEN}[4]{Fore.WHITE} 📂 Buka Folder Output di File Explorer")
+        print(f"  {Fore.CYAN}[6]{Fore.WHITE} 🌐 Buka Web Dashboard di Browser (Port 8888)")
+        print(f"  {Fore.RED}[5]{Fore.WHITE} 🧹 Bersihkan / Hapus Stok Lama")
+        print(f"  {Fore.RED}[0 / Enter]{Fore.WHITE} 🔙 Kembali ke Menu Utama")
+        print(f"{Fore.CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{Style.RESET_ALL}")
+        sub = input(f"{Fore.YELLOW}Pilih aksi: {Style.RESET_ALL}").strip().lower()
+
+        if sub == "a":
+            limit = len(display_list)
+        elif sub == "1":
+            print(f"\n{Fore.GREEN}✓ Menyalakan Gateway 8888 dengan {len(proxies)} proxy... Tekan Ctrl+C untuk stop.{Style.RESET_ALL}\n")
+            start_proxy_server(proxies, port=8888, background=False, enable_health_check=True)
+            break
+        elif sub == "2":
+            cc_in = input(f"{Fore.CYAN}Masukkan kode 2 huruf negara (misal US, SG, ID, atau kosongkan untuk reset): {Style.RESET_ALL}").strip().upper()
+            filter_cc = cc_in if cc_in else None
+            limit = 15
+        elif sub == "3":
+            open_in_text_editor(os.path.join(output_dir, "live_all.txt"))
+        elif sub == "4":
+            open_in_explorer(output_dir)
+        elif sub == "6":
+            launch_web_dashboard(port=8888)
+            break
+        elif sub == "5":
+            c_del = input(f"{Fore.RED}Yakin ingin menghapus seluruh file cache proxy di {output_dir}? [y/N]: {Style.RESET_ALL}").strip().lower()
+            if c_del in ("y", "yes"):
+                for fname in os.listdir(output_dir):
+                    if fname.endswith((".txt", ".json", ".csv")):
+                        try:
+                            os.remove(os.path.join(output_dir, fname))
+                        except Exception:
+                            pass
+                print(f"\n{Fore.GREEN}✓ Stok gudang amunisi berhasil dibersihkan!{Style.RESET_ALL}")
+                break
+        else:
+            break
+
+def launch_web_dashboard(port: int = 8888):
+    """
+    Fitur [D] Buka Web Dashboard:
+    Menjalankan local gateway server dan langsung otomatis membuka browser ke Web UI Dashboard.
+    """
+    import webbrowser
+    import json
+    import threading
+
+    dash_url = f"http://127.0.0.1:{port}/dashboard"
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    json_file = os.path.join(base_dir, "output", "proxies.json")
+
+    # 1. Cek apakah gateway port 8888 sudah berjalan di background
+    server_alive = False
+    try:
+        import urllib.request
+        req = urllib.request.Request(f"http://127.0.0.1:{port}/api/status", headers={"User-Agent": "PetaniTester/1.0"})
+        with urllib.request.urlopen(req, timeout=1.2) as resp:
+            if resp.status == 200:
+                server_alive = True
+    except Exception:
+        server_alive = False
+
+    if server_alive:
+        print(f"\n{Fore.GREEN}✓ Gateway port {port} sudah berjalan aktif!{Style.RESET_ALL}")
+        print(f"  {Fore.CYAN}👉 Membuka Web Dashboard di browser: {Fore.WHITE}{dash_url}{Style.RESET_ALL}\n")
+        webbrowser.open(dash_url)
+        try:
+            input(f"{Fore.LIGHTBLACK_EX}[Tekan Enter untuk kembali ke menu...]{Style.RESET_ALL}")
+        except (KeyboardInterrupt, EOFError):
+            pass
+        return
+
+    # 2. Ambil proxy dari cache atau quick harvest
+    proxies = []
+    if os.path.exists(json_file):
+        try:
+            with open(json_file, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                proxies = data.get("proxies", [])
+        except Exception:
+            proxies = []
+
+    if not proxies:
+        print(f"\n{Fore.YELLOW}ℹ️ Gudang cache proxy belum ada. Melakukan quick-harvest 10 proxy kilat untuk Web Dashboard...{Style.RESET_ALL}")
+        proxies = run_harvester(protocols=["http", "socks5"], max_check=180, target_alive=10, timeout=2.5, serve_port=None)
+        if not proxies:
+            print(f"{Fore.RED}❌ Gagal mendapatkan proxy untuk dashboard. Silakan periksa koneksi internet.{Style.RESET_ALL}")
+            return
+
+    # 3. Buka browser otomatis setelah delay singkat
+    def _open_delayed():
+        time.sleep(0.8)
+        webbrowser.open(dash_url)
+
+    threading.Thread(target=_open_delayed, daemon=True).start()
+
+    card_items = [
+        ("Web Dashboard", f"{Fore.GREEN}{dash_url}{Style.RESET_ALL} (Membuka di Browser...)"),
+        ("Forward Gateway", f"{Fore.CYAN}http://127.0.0.1:{port}{Style.RESET_ALL} (Rotasi Aktif)"),
+        ("PAC Script URL", f"{Fore.YELLOW}http://127.0.0.1:{port}/proxy.pac{Style.RESET_ALL}"),
+        ("Active Proxies", f"{Fore.WHITE}{len(proxies)} Nodes Tersambung{Style.RESET_ALL}")
+    ]
     print(f"\n{Fore.CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{Style.RESET_ALL}")
-    print(f"{Fore.WHITE}{Style.BRIGHT}PILIH AKSI GUDANG AMUNISI:{Style.RESET_ALL}")
-    print(f"  {Fore.GREEN}[1]{Fore.WHITE} 🚀 Nyalakan Gateway 8888 Memakai Stok Ini")
-    print(f"  {Fore.GREEN}[2]{Fore.WHITE} 📂 Buka Folder Output di File Explorer")
-    print(f"  {Fore.GREEN}[3]{Fore.WHITE} 🧹 Bersihkan / Hapus Stok Lama")
-    print(f"  {Fore.RED}[0 / Enter]{Fore.WHITE} 🔙 Kembali ke Menu Utama")
-    print(f"{Fore.CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{Style.RESET_ALL}")
-    sub = input(f"{Fore.YELLOW}Pilih aksi [1-3, 0=Kembali]: {Style.RESET_ALL}").strip()
-    if sub == "1":
-        print(f"\n{Fore.GREEN}✓ Menyalakan Gateway 8888 dengan {len(proxies)} proxy dari disk... Tekan Ctrl+C untuk stop.{Style.RESET_ALL}\n")
-        start_proxy_server(proxies, port=8888, background=False, enable_health_check=True)
-    elif sub == "2":
-        open_in_explorer(output_dir)
-    elif sub == "3":
-        c_del = input(f"{Fore.RED}Yakin ingin menghapus seluruh file cache proxy di {output_dir}? [y/N]: {Style.RESET_ALL}").strip().lower()
-        if c_del in ("y", "yes"):
-            for fname in os.listdir(output_dir):
-                if fname.endswith((".txt", ".json", ".csv")):
-                    try:
-                        os.remove(os.path.join(output_dir, fname))
-                    except Exception:
-                        pass
-            print(f"\n{Fore.GREEN}✓ Stok gudang amunisi berhasil dibersihkan!{Style.RESET_ALL}")
+    print(build_info_card(f"WEB DASHBOARD DESKTOP APP DILUNCURKAN (PORT {port})", card_items, border_color=Fore.GREEN))
+    print(f"\n{Fore.LIGHTBLACK_EX}  Tekan Ctrl+C untuk menghentikan server dan kembali ke menu terminal.{Style.RESET_ALL}\n")
+
+    start_proxy_server(proxies, host="127.0.0.1", port=port, background=False, enable_health_check=True)
+
 
 CURRENT_LANG = "ID"
 
@@ -461,22 +592,18 @@ def test_live_masking(port: int = 8888):
         except Exception:
             pass
 
-    print(f"\n{Fore.CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{Style.RESET_ALL}")
-    print(f"{Fore.WHITE}{Style.BRIGHT}🛡️  HASIL AUDIT IDENTITAS & PRIVASI KONEKSI:{Style.RESET_ALL}")
-    print(f"  • IP Asli Kamu     : {Fore.YELLOW}{real_ip}{Style.RESET_ALL} ({real_isp})")
-    
     if gateway_ip:
-        print(f"  • IP Masked Gateway: {Fore.GREEN}{Style.BRIGHT}{gateway_ip}{Style.RESET_ALL} ({gateway_info or 'Masked Proxy'})")
-        if gateway_ip != real_ip:
-            print(f"\n  {Fore.GREEN}{Style.BRIGHT}✅ STATUS: 100% AMAN & TERSAMARKAN! (ZERO LEAK){Style.RESET_ALL}")
-            print(f"  {Fore.LIGHTBLACK_EX}Identitas asli kamu tertutup sempurna. Website target melihat kamu dari IP proxy.{Style.RESET_ALL}")
-        else:
-            print(f"\n  {Fore.RED}⚠️ STATUS: IP Gateway sama dengan IP asli. Periksa kembali konfigurasi proxy.{Style.RESET_ALL}")
+        is_safe = (gateway_ip != real_ip)
+        status_badge = f"{Fore.GREEN}● 100% AMAN & TERSAMARKAN (Zero Leak){Style.RESET_ALL}" if is_safe else f"{Fore.RED}○ BOCOR / SAMA DENGAN ASLI{Style.RESET_ALL}"
+        card_data = [
+            ("IP Asli Kamu", f"{Fore.YELLOW}{real_ip}{Style.RESET_ALL} ({real_isp})"),
+            ("IP Masked Gateway", f"{Fore.GREEN}{gateway_ip}{Style.RESET_ALL} ({gateway_info or 'Masked Node'})"),
+            ("Status Privasi", status_badge),
+            ("Topeng Ninja", f"{Fore.CYAN}User-Agent Disanitasi Otomatis ✓{Style.RESET_ALL}")
+        ]
+        print(f"\n{build_info_card('HASIL AUDIT IDENTITAS & PRIVASI KONEKSI', card_data, border_color=Fore.GREEN if is_safe else Fore.RED)}\n")
     else:
-        print(f"  • Gateway {port}     : {Fore.RED}Belum Aktif (Offline){Style.RESET_ALL}")
-        print(f"\n  {Fore.YELLOW}🚨 Woy, Gateway Petani (127.0.0.1:{port}) belum nyala Bos! 🎭{Style.RESET_ALL}")
-        print(f"  {Fore.LIGHTBLACK_EX}Masa mau ngetes topeng tapi belum dipasang topengnya?")
-        print(f"{Fore.CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{Style.RESET_ALL}")
+        print(f"\n{Fore.YELLOW}▲ Gateway Petani (127.0.0.1:{port}) belum aktif di background.{Style.RESET_ALL}")
         ask = input(f"{Fore.CYAN}👉 Mau langsung nyalakan Gateway 8888 sekarang (1-Klik)? [Y/n]: {Style.RESET_ALL}").strip().lower()
         if ask in ("", "y", "yes"):
             print(f"\n{Fore.GREEN}🚀 Menyiapkan amunisi awal dan menyalakan Gateway {port}...{Style.RESET_ALL}")
@@ -490,6 +617,7 @@ def test_live_masking(port: int = 8888):
                 return test_live_masking(port=port)
             else:
                 print(f"{Fore.RED}❌ Gagal mendapatkan proxy hidup untuk mengisi gateway.{Style.RESET_ALL}")
+
     print(f"{Fore.CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{Style.RESET_ALL}\n")
 
 
@@ -866,6 +994,7 @@ def show_interactive_menu():
             menu.add_item("f", "Fast Async Harvester", "Scrape massal filter latency rendah asinkron", f"{Fore.GREEN}● [FAST]{Style.RESET_ALL}")
 
             menu.add_section("LOCAL GATEWAY DAN PROFILES")
+            menu.add_item("d", "Buka Web Dashboard", "Luncurkan Gateway & otomatis buka UI di browser", f"{Fore.CYAN}● [WEB UI]{Style.RESET_ALL}")
             menu.add_item("g", "Mode Petani 24/7", "Daemon rotasi otomatis port 8888 (auto-heal and refill)", ready_label)
             menu.add_item("1", "Profil Ternak Akun", "Khusus bot AI Grok/Qoder (Sync DB + Port 8888)", st.get('sync', ''))
             menu.add_item("2", "Profil Web Scraper", "Rotasi agresif pool 30+ IP tiap request", ready_label)
@@ -889,6 +1018,7 @@ def show_interactive_menu():
             menu.add_item("f", "Fast Async Harvester", "Mass concurrent scraper (low latency filter)", f"{Fore.GREEN}● [FAST]{Style.RESET_ALL}")
 
             menu.add_section("LOCAL GATEWAY AND PROFILES")
+            menu.add_item("d", "Open Web Dashboard", "Launch Gateway & auto-open Web UI in browser", f"{Fore.CYAN}● [WEB UI]{Style.RESET_ALL}")
             menu.add_item("g", "24/7 Farmer Daemon", "Auto-rotating port 8888 gateway (auto-prune and refill)", ready_label)
             menu.add_item("1", "Bot Breeder Profile", "Tuned for Grok/Qoder bots (DB sync + Port 8888)", st.get('sync', ''))
             menu.add_item("2", "High-Concurrency Scraper", "Aggressive rotation, fresh IP every request", ready_label)
@@ -943,6 +1073,14 @@ def show_interactive_menu():
 
         if choice.lower() == "k":
             show_settings_menu()
+            continue
+
+        if choice.lower() == "d":
+            launch_web_dashboard(port=8888)
+            continue
+
+        if choice.lower() == "s":
+            view_saved_results()
             continue
 
         if choice.lower() == "t":

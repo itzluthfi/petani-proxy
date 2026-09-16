@@ -18,9 +18,9 @@
       "server_port": 2408,
       "local_address": [
         "172.16.0.2",
-        "2606:4700:110:8b54:1755:da02:7455:c44f"
+        "2606:4700:110:8d9a:ea7:4beb:3164:2104"
       ],
-      "private_key": "YGOQMN7+HvwB7swmNaLRFwZiw5tQkPkoGDSsTa5M3XA=",
+      "private_key": "AL29d6IQFRxX2oKswnj3BIh/9LeF/K+OTJUtL00W7GA=",
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
       "reserved": [
         0,

@@ -241,6 +241,7 @@ Pilihan menu yang tersedia:
 - `[W]` **Webshare Hunter (MVP)**: Panen 10-30 IP residential privat tembus Cloudflare Turnstile & filter bot AI ketat.
 - `[C]` **Cloudflare WARP Local**: Generator WireGuard resmi (Anti-blokir ISP, Speed Monster, Zero Captcha).
 - `[F]` **aiohttp Fast Harvester**: Sedot & saring ratusan proxy super cepat (<350ms dalam 1 detik).
+- `[D]` **Buka Web Dashboard**: Luncurkan Local Gateway & langsung otomatis buka Web UI Desktop di browser (`http://127.0.0.1:8888/dashboard`).
 - `[G]` **Mode Petani AFK 24/7 (Auto-Healer)**: Mode server produksi non-stop di `127.0.0.1:8888` (Auto-prune node mati & auto-refill).
 - `[1]` **Racikan Ternak Akun**: Khusus peternak bot AI (Grok, Qoder, dll) — Elite L1, langsung sync 9Router + Port 8888.
 - `[2]` **Racikan Scraper Barbar**: Amunisi pool 30+ IP aktif, rotasi ganti IP tiap request, anti-block e-commerce.

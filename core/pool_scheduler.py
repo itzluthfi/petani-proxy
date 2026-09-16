@@ -109,6 +109,8 @@ class PoolHealthChecker(threading.Thread):
         except Exception as e:
             print(f"[Auto-Refill] Gagal melakukan auto-refill: {e}")
 
+    refill_pool = trigger_refill
+
     def run(self):
         print(f"[HealthCheck] 🛡️ 24/7 Pool Health Checker aktif (Interval: {self.check_interval_sec}s, Min Threshold: {self.min_healthy_count})")
         while self.is_running:
