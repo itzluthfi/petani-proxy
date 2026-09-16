@@ -1,16 +1,35 @@
 protocol,ip,port,proxy,anonymity,latency_ms,country_code,country,city,isp,egress_ip
-http,8.219.97.248,80,8.219.97.248:80,Elite,766,??,Unknown,-,-,8.219.64.236
-http,47.81.56.193,8888,47.81.56.193:8888,Elite,776,??,Unknown,-,-,47.81.56.193
-http,124.156.194.52,8081,124.156.194.52:8081,Elite,827,??,Unknown,-,-,124.156.194.52
-http,165.154.162.73,8888,165.154.162.73:8888,Elite,938,??,Unknown,-,-,165.154.162.73
-http,47.254.36.25,11080,47.254.36.25:11080,Elite,974,??,Unknown,-,-,47.254.36.25
-http,14.251.13.20,8080,14.251.13.20:8080,Elite,1004,??,Unknown,-,-,14.251.13.20
-http,165.154.173.250,8082,165.154.173.250:8082,Elite,1051,??,Unknown,-,-,165.154.173.250
-http,210.211.113.35,80,210.211.113.35:80,Elite,1067,??,Unknown,-,-,210.211.113.35
-http,184.75.221.82,3118,184.75.221.82:3118,Elite,1386,??,Unknown,-,-,184.75.221.82
-http,58.187.104.62,2035,58.187.104.62:2035,Elite,1477,??,Unknown,-,-,116.101.76.67
-http,37.59.125.131,8888,37.59.125.131:8888,Elite,1505,??,Unknown,-,-,82.66.253.58
-http,58.187.104.62,2088,58.187.104.62:2088,Elite,1529,??,Unknown,-,-,118.71.227.185
-http,43.128.76.140,8081,43.128.76.140:8081,Elite,1751,??,Unknown,-,-,43.128.76.140
-http,181.79.80.74,9992,181.79.80.74:9992,Elite,1914,??,Unknown,-,-,181.79.80.74
-http,43.156.199.63,8080,43.156.199.63:8080,Elite,1924,??,Unknown,-,-,43.156.199.63
+http,184.75.221.82,3118,184.75.221.82:3118,Elite,90,CA,Canada,Toronto,Amanah Tech Inc.,184.75.221.82
+http,147.182.156.27,8080,147.182.156.27:8080,Elite,109,CA,Canada,Toronto,"DigitalOcean, LLC",147.182.156.27
+http,34.43.46.91,80,34.43.46.91:80,Elite,150,US,United States,Mountain View,Google LLC,8.231.16.63
+http,34.43.46.91,443,34.43.46.91:443,Elite,155,??,Unknown,-,-,8.231.16.63
+http,129.153.71.186,8443,129.153.71.186:8443,Elite,333,US,United States,Phoenix,Oracle Corporation,129.153.71.186
+http,18.237.9.208,1001,18.237.9.208:1001,Elite,369,US,United States,Boardman,"Amazon.com, Inc.",18.237.9.208
+http,198.46.200.118,12888,198.46.200.118:12888,Elite,433,US,United States,Los Angeles,HostPapa,198.46.200.118
+http,153.51.201.35,999,153.51.201.35:999,Elite,573,VE,Venezuela,Ciudad Bolivia,Valor Information Technologies,153.51.201.35
+http,89.110.124.45,8888,89.110.124.45:8888,Elite,579,NL,The Netherlands,Amsterdam,Servers Tech Fzco,89.110.124.45
+http,190.97.236.128,999,190.97.236.128:999,Elite,580,VE,Venezuela,Maporal,Viginet C.A,153.51.201.35
+http,190.97.236.129,999,190.97.236.129:999,Elite,592,VE,Venezuela,San Carlos del Zulia,Viginet C.A,153.51.201.35
+http,103.237.102.191,11111,103.237.102.191:11111,Elite,593,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
+http,84.8.216.230,2001,84.8.216.230:2001,Elite,666,MA,Morocco,Casablanca,Oracle Corporation,84.8.216.230
+http,185.58.115.185,8080,185.58.115.185:8080,Elite,764,SE,Sweden,Stockholm,Baykov Ilya Sergeevich,146.185.153.150
+http,174.138.162.37,38241,174.138.162.37:38241,Elite,863,US,United States,Phoenix,Secured Servers LLC,198.54.136.145
+http,2.27.63.250,8118,2.27.63.250:8118,Elite,883,DE,Germany,Frankfurt am Main,Kyonix Networks Limited,2.27.63.250
+http,95.3.69.222,8080,95.3.69.222:8080,Elite,888,TR,Türkiye,Istanbul,Turk Telekomunikasyon Anonim Sirketi,95.3.69.222
+http,45.232.0.2,8080,45.232.0.2:8080,Elite,938,AR,Argentina,San Miguel de Tucumán,Sistemas Informaticos S.A.S.,45.232.0.2
+http,103.179.253.43,8181,103.179.253.43:8181,Elite,1169,ID,Indonesia,Cibinong,PT Pusaka Kreasi Mandiri,103.179.253.43
+http,103.31.135.214,8080,103.31.135.214:8080,Elite,1224,ID,Indonesia,Bekasi,PT Arthatama Adhiprima Persada,103.31.135.214
+http,43.156.153.104,8080,43.156.153.104:8080,Elite,1271,SG,Singapore,Singapore,Shenzhen Tencent Computer Systems Company Limited,43.156.153.104
+http,43.156.40.114,8080,43.156.40.114:8080,Elite,1276,SG,Singapore,Singapore,Shenzhen Tencent Computer Systems Company Limited,43.156.40.114
+http,14.251.13.20,8080,14.251.13.20:8080,Elite,1305,VN,Vietnam,Hanoi,VNPT,14.251.13.20
+http,37.59.125.131,8888,37.59.125.131:8888,Elite,1334,FR,France,Roubaix,OVH SAS,82.66.253.58
+http,43.153.123.79,80,43.153.123.79:80,Elite,1338,US,United States,Santa Clara,Shenzhen Tencent Computer Systems Company Limited,43.153.123.79
+http,24.55.20.6,3030,24.55.20.6:3030,Elite,1386,US,United States,Austin,Charter Communications Inc,24.55.20.6
+http,31.77.131.173,8080,31.77.131.173:8080,Elite,1392,NL,The Netherlands,Amsterdam,Play2go International Limited,31.77.131.173
+http,163.181.207.214,9999,163.181.207.214:9999,Elite,1607,VN,Vietnam,Hanoi,"Zhejiang Taobao Network Co., Ltd",163.181.207.214
+http,163.181.207.170,9999,163.181.207.170:9999,Elite,1610,VN,Vietnam,Hanoi,"Zhejiang Taobao Network Co., Ltd",163.181.207.170
+http,165.154.162.73,8888,165.154.162.73:8888,Elite,1717,US,United States,Los Angeles,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,165.154.162.73
+http,47.81.56.193,8888,47.81.56.193:8888,Elite,1743,TH,Thailand,Bangkok,Alibaba.com LLC,47.81.56.193
+http,38.7.195.55,999,38.7.195.55:999,Elite,1911,CL,Chile,Santiago,Grupo ZGH SpA,151.241.85.26
+http,43.156.199.63,8081,43.156.199.63:8081,Elite,2118,SG,Singapore,Singapore,Shenzhen Tencent Computer Systems Company Limited,43.156.199.63
+http,177.234.217.83,999,177.234.217.83:999,Elite,2367,EC,Ecuador,Quito,Ufinet Panama S.A.,177.234.217.82
