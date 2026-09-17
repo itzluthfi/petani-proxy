@@ -1,17 +1,38 @@
 protocol,ip,port,proxy,anonymity,latency_ms,country_code,country,city,isp,egress_ip
-http,159.203.61.169,3128,159.203.61.169:3128,Elite,138,CA,Canada,Toronto,"DigitalOcean, LLC",159.203.61.169
-http,138.68.60.8,3128,138.68.60.8:3128,Elite,331,US,United States,Santa Clara,"DigitalOcean, LLC",138.68.60.8
-http,89.110.124.45,8888,89.110.124.45:8888,Elite,512,NL,The Netherlands,Amsterdam,Servers Tech Fzco,89.110.124.45
-http,5.129.254.60,8888,5.129.254.60:8888,Elite,749,RU,Russia,Moscow,"JSC ""TIMEWEB""",5.129.254.5
-http,95.3.69.222,8080,95.3.69.222:8080,Elite,791,TR,Türkiye,Istanbul,Turk Telekomunikasyon Anonim Sirketi,95.3.69.222
-http,37.59.125.131,8888,37.59.125.131:8888,Elite,875,FR,France,Roubaix,OVH SAS,82.66.253.58
-http,101.32.65.42,8888,101.32.65.42:8888,Elite,1032,HK,Hong Kong,Hong Kong,Aceville Pte.ltd,101.32.72.181
-http,210.211.113.35,80,210.211.113.35:80,Elite,1302,VN,Vietnam,Ho Chi Minh City,VTDC,210.211.113.35
-http,47.81.56.193,8888,47.81.56.193:8888,Elite,1337,TH,Thailand,Bangkok,Alibaba.com LLC,47.81.56.193
-http,14.251.13.20,8080,14.251.13.20:8080,Elite,1391,VN,Vietnam,Hanoi,VNPT,14.251.13.20
-http,154.59.56.78,999,154.59.56.78:999,Elite,1877,VE,Venezuela,Santa Cruz de Mora,Cogent Communications,154.59.56.73
-http,157.173.115.35,1081,157.173.115.35:1081,Elite,2009,FR,France,Lauterbourg,Contabo GmbH,157.173.115.35
-http,152.53.183.107,8081,152.53.183.107:8081,Elite,2061,DE,Germany,Nuremberg,netcup GmbH,152.53.183.107
-http,184.75.221.82,3118,184.75.221.82:3118,Elite,2183,CA,Canada,Toronto,Amanah Tech Inc.,184.75.221.82
-http,103.94.133.20,8080,103.94.133.20:8080,Elite,2248,ID,Indonesia,Teluknaga,PT CITRA AKSES INDONUSA,103.94.133.20
-http,203.205.49.2,10029,203.205.49.2:10029,Elite,2388,VN,Vietnam,Mai Dich,CMC Telecom Infrastructure Company,203.205.49.32
+http,147.182.156.27,8080,147.182.156.27:8080,Elite,324,CA,Canada,Toronto,"DigitalOcean, LLC",147.182.156.27
+http,165.154.162.73,8888,165.154.162.73:8888,Elite,375,US,United States,Los Angeles,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,165.154.162.73
+http,103.237.102.191,11111,103.237.102.191:11111,Elite,656,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
+http,184.75.221.82,3118,184.75.221.82:3118,Elite,676,CA,Canada,Toronto,Amanah Tech Inc.,184.75.221.82
+http,112.216.54.226,12121,112.216.54.226:12121,Elite,830,KR,South Korea,Yongin-si,LG DACOM Corporation,112.216.54.226
+http,128.199.202.122,8080,128.199.202.122:8080,Elite,966,SG,Singapore,Singapore,"DigitalOcean, LLC",128.199.202.122
+http,8.215.25.3,2080,8.215.25.3:2080,Elite,1039,ID,Indonesia,Jakarta,"Alibaba (US) Technology Co., Ltd.",8.215.25.3
+http,8.215.25.3,2081,8.215.25.3:2081,Elite,1046,??,Unknown,-,-,8.215.25.3
+http,95.3.69.222,8080,95.3.69.222:8080,Elite,1049,TR,Türkiye,Istanbul,Turk Telekomunikasyon Anonim Sirketi,95.3.69.222
+http,130.110.103.245,3128,130.110.103.245:3128,Elite,1139,SA,Saudi Arabia,Jeddah,Oracle Corporation,130.110.103.245
+http,87.229.205.227,8080,87.229.205.227:8080,Elite,1150,RU,Russia,Moscow,OJSC Vimpelcom HQ,83.69.213.62
+http,1.53.202.56,8118,1.53.202.56:8118,Elite,1168,VN,Vietnam,Hanoi,FPT Telecom Company,1.53.202.56
+http,37.32.20.216,8080,37.32.20.216:8080,Elite,1257,IR,Iran,Tehran,Noyan Abr Arvan Co. ( Private Joint Stock),37.32.20.216
+http,163.181.207.215,9999,163.181.207.215:9999,Elite,1406,VN,Vietnam,Hanoi,"Zhejiang Taobao Network Co., Ltd",163.181.207.215
+http,163.181.207.169,9999,163.181.207.169:9999,Elite,1441,VN,Vietnam,Hanoi,"Zhejiang Taobao Network Co., Ltd",163.181.207.169
+http,163.181.207.213,9999,163.181.207.213:9999,Elite,1451,VN,Vietnam,Hanoi,"Zhejiang Taobao Network Co., Ltd",163.181.207.213
+http,163.181.207.167,9999,163.181.207.167:9999,Elite,1466,VN,Vietnam,Hanoi,"Zhejiang Taobao Network Co., Ltd",163.181.207.167
+http,43.156.199.63,8081,43.156.199.63:8081,Elite,1470,SG,Singapore,Singapore,Shenzhen Tencent Computer Systems Company Limited,43.156.199.63
+http,147.161.246.246,9443,147.161.246.246:9443,Elite,1493,??,Unknown,-,-,147.161.246.246
+http,147.161.246.246,10878,147.161.246.246:10878,Elite,1567,CH,Switzerland,Zurich,Zscaler Switzerland GmbH,147.161.246.246
+http,147.161.246.246,10088,147.161.246.246:10088,Elite,1639,??,Unknown,-,-,147.161.246.246
+http,147.161.246.246,12070,147.161.246.246:12070,Elite,1652,??,Unknown,-,-,147.161.246.246
+http,147.161.246.246,10284,147.161.246.246:10284,Elite,1652,??,Unknown,-,-,147.161.246.246
+http,147.161.246.246,11143,147.161.246.246:11143,Elite,1653,??,Unknown,-,-,147.161.246.246
+http,147.161.246.246,12573,147.161.246.246:12573,Elite,1655,??,Unknown,-,-,147.161.246.246
+http,147.161.246.246,11914,147.161.246.246:11914,Elite,1656,??,Unknown,-,-,147.161.246.246
+http,147.161.246.246,11921,147.161.246.246:11921,Elite,1668,??,Unknown,-,-,147.161.246.246
+http,24.55.20.6,3030,24.55.20.6:3030,Elite,1698,US,United States,Austin,Charter Communications Inc,24.55.20.6
+http,43.156.40.114,8080,43.156.40.114:8080,Elite,1830,SG,Singapore,Singapore,Shenzhen Tencent Computer Systems Company Limited,43.156.40.114
+http,124.156.194.52,8080,124.156.194.52:8080,Elite,1863,SG,Singapore,Singapore,Tencent Cloud Computing (Beijing) Co,124.156.194.52
+http,175.101.26.97,84,175.101.26.97:84,Elite,2064,IN,India,Hyderabad,ExcellMedia Pvt Ltd,103.48.71.194
+http,172.232.236.77,8888,172.232.236.77:8888,Elite,2072,ID,Indonesia,Jakarta,"Akamai Technologies, Inc.",172.232.236.77
+http,43.163.124.191,8080,43.163.124.191:8080,Elite,2182,SG,Singapore,Singapore,Shenzhen Tencent Computer Systems Company Limited,43.163.124.191
+http,43.156.153.104,8080,43.156.153.104:8080,Elite,2209,SG,Singapore,Singapore,Shenzhen Tencent Computer Systems Company Limited,43.156.153.104
+http,37.59.125.131,8888,37.59.125.131:8888,Elite,2308,FR,France,Roubaix,OVH SAS,82.66.253.58
+http,43.156.166.134,8080,43.156.166.134:8080,Elite,2315,SG,Singapore,Singapore,Shenzhen Tencent Computer Systems Company Limited,43.156.166.134
+http,147.161.246.246,11776,147.161.246.246:11776,Elite,2381,??,Unknown,-,-,147.161.246.246
