@@ -1,29 +1,17 @@
 protocol,ip,port,proxy,anonymity,latency_ms,country_code,country,city,isp,egress_ip
-http,107.167.18.122,443,107.167.18.122:443,Elite,195,US,United States,Los Angeles,Sharktech,107.167.18.99
-http,147.182.156.27,8080,147.182.156.27:8080,Elite,201,CA,Canada,Toronto,"DigitalOcean, LLC",147.182.156.27
-http,209.97.150.167,3128,209.97.150.167:3128,Elite,243,US,United States,Clifton,"DigitalOcean, LLC",209.97.150.167
-http,134.209.29.120,3128,134.209.29.120:3128,Elite,578,GB,United Kingdom,Slough,"DigitalOcean, LLC",134.209.29.120
-http,103.237.102.191,11111,103.237.102.191:11111,Elite,631,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
-http,176.111.37.5,39811,176.111.37.5:39811,Elite,821,HK,Hong Kong,Tsim Sha Tsui,Cogento Backbone Limited,176.111.37.5
-http,135.181.79.187,40001,135.181.79.187:40001,Elite,936,FI,Finland,Helsinki,Hetzner Online GmbH,104.28.254.16
-http,95.3.69.222,8080,95.3.69.222:8080,Elite,997,TR,Türkiye,Istanbul,Turk Telekomunikasyon Anonim Sirketi,95.3.69.222
-http,43.156.166.134,8080,43.156.166.134:8080,Elite,1143,SG,Singapore,Singapore,Shenzhen Tencent Computer Systems Company Limited,43.156.166.134
-http,103.156.14.15,8080,103.156.14.15:8080,Elite,1160,ID,Indonesia,Muaralakitan,PT Lintas Jaringan Nusantara,103.156.14.15
-http,47.81.56.193,8888,47.81.56.193:8888,Elite,1197,TH,Thailand,Bangkok,Alibaba.com LLC,47.81.56.193
-http,184.75.221.82,3118,184.75.221.82:3118,Elite,1233,CA,Canada,Toronto,Amanah Tech Inc.,184.75.221.82
-http,14.251.13.20,8080,14.251.13.20:8080,Elite,1243,VN,Vietnam,Hanoi,VNPT,14.251.13.20
-http,203.76.117.226,8118,203.76.117.226:8118,Elite,1280,BD,Bangladesh,Tangail,Link3 Technologies Limited,203.76.117.226
-http,210.211.113.33,80,210.211.113.33:80,Elite,1358,VN,Vietnam,Ho Chi Minh City,VTDC,210.211.113.33
-http,43.128.76.140,8080,43.128.76.140:8080,Elite,1418,SG,Singapore,Singapore,Shenzhen Tencent Computer Systems Company Limited,43.128.76.140
-http,43.156.199.63,8080,43.156.199.63:8080,Elite,1423,SG,Singapore,Singapore,Shenzhen Tencent Computer Systems Company Limited,43.156.199.63
-http,163.181.207.167,9999,163.181.207.167:9999,Elite,1436,VN,Vietnam,Hanoi,"Zhejiang Taobao Network Co., Ltd",163.181.207.167
-http,43.109.48.179,9999,43.109.48.179:9999,Elite,1442,VN,Vietnam,Hanoi,"Zhejiang Taobao Network Co., Ltd",43.109.48.179
-http,43.156.153.104,8080,43.156.153.104:8080,Elite,1457,SG,Singapore,Singapore,Shenzhen Tencent Computer Systems Company Limited,43.156.153.104
-http,152.53.183.107,8081,152.53.183.107:8081,Elite,1588,DE,Germany,Nuremberg,netcup GmbH,152.53.183.107
-http,190.97.241.106,999,190.97.241.106:999,Elite,1631,VE,Venezuela,Táriba,Viginet C.A,190.97.241.106
-http,43.128.76.140,8081,43.128.76.140:8081,Elite,1693,??,Unknown,-,-,43.128.76.140
-http,24.55.20.6,3030,24.55.20.6:3030,Elite,1710,US,United States,Austin,Charter Communications Inc,24.55.20.6
-http,205.164.192.115,999,205.164.192.115:999,Elite,1899,MX,Mexico,Ayotlán,Cogent Communications,205.164.192.115
-http,186.167.113.97,999,186.167.113.97:999,Elite,2156,VE,Venezuela,Quíbor,Corporacion Digitel C.A,154.3.77.0
-http,186.33.45.220,999,186.33.45.220:999,Elite,2294,EC,Ecuador,Latacunga,Ufinet Panama S.A.,186.33.45.220
-http,185.133.213.86,8074,185.133.213.86:8074,Elite,2338,MM,Myanmar,Yangon,Global Technology Co,185.133.213.86
+http,159.203.61.169,3128,159.203.61.169:3128,Elite,138,CA,Canada,Toronto,"DigitalOcean, LLC",159.203.61.169
+http,138.68.60.8,3128,138.68.60.8:3128,Elite,331,US,United States,Santa Clara,"DigitalOcean, LLC",138.68.60.8
+http,89.110.124.45,8888,89.110.124.45:8888,Elite,512,NL,The Netherlands,Amsterdam,Servers Tech Fzco,89.110.124.45
+http,5.129.254.60,8888,5.129.254.60:8888,Elite,749,RU,Russia,Moscow,"JSC ""TIMEWEB""",5.129.254.5
+http,95.3.69.222,8080,95.3.69.222:8080,Elite,791,TR,Türkiye,Istanbul,Turk Telekomunikasyon Anonim Sirketi,95.3.69.222
+http,37.59.125.131,8888,37.59.125.131:8888,Elite,875,FR,France,Roubaix,OVH SAS,82.66.253.58
+http,101.32.65.42,8888,101.32.65.42:8888,Elite,1032,HK,Hong Kong,Hong Kong,Aceville Pte.ltd,101.32.72.181
+http,210.211.113.35,80,210.211.113.35:80,Elite,1302,VN,Vietnam,Ho Chi Minh City,VTDC,210.211.113.35
+http,47.81.56.193,8888,47.81.56.193:8888,Elite,1337,TH,Thailand,Bangkok,Alibaba.com LLC,47.81.56.193
+http,14.251.13.20,8080,14.251.13.20:8080,Elite,1391,VN,Vietnam,Hanoi,VNPT,14.251.13.20
+http,154.59.56.78,999,154.59.56.78:999,Elite,1877,VE,Venezuela,Santa Cruz de Mora,Cogent Communications,154.59.56.73
+http,157.173.115.35,1081,157.173.115.35:1081,Elite,2009,FR,France,Lauterbourg,Contabo GmbH,157.173.115.35
+http,152.53.183.107,8081,152.53.183.107:8081,Elite,2061,DE,Germany,Nuremberg,netcup GmbH,152.53.183.107
+http,184.75.221.82,3118,184.75.221.82:3118,Elite,2183,CA,Canada,Toronto,Amanah Tech Inc.,184.75.221.82
+http,103.94.133.20,8080,103.94.133.20:8080,Elite,2248,ID,Indonesia,Teluknaga,PT CITRA AKSES INDONUSA,103.94.133.20
+http,203.205.49.2,10029,203.205.49.2:10029,Elite,2388,VN,Vietnam,Mai Dich,CMC Telecom Infrastructure Company,203.205.49.32
