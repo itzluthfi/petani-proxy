@@ -17,9 +17,9 @@ import re
 import sqlite3
 import string
 import sys
-if sys.platform == "win32" and hasattr(sys.stdout, "reconfigure"):
+if hasattr(sys.stdout, "reconfigure"):
     try:
-        sys.stdout.reconfigure(encoding="utf-8")
+        sys.stdout.reconfigure(encoding="utf-8", line_buffering=True)
     except Exception:
         pass
 import tempfile

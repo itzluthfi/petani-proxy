@@ -48,3 +48,7 @@ local_*.bat
 local_config.json
 config/settings.json
 
+# Harvested accounts (private credentials, never push to public GitHub)
+output/grok_accounts.txt
+output/grok_accounts.json
+output/grok_accounts_*.txt

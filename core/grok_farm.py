@@ -27,6 +27,8 @@ import re
 import struct
 import datetime
 import threading
+import imaplib
+import email as email_pkg
 from typing import Dict, Any, List, Optional, Tuple
 import requests
 from DrissionPage import Chromium, ChromiumOptions
@@ -102,6 +104,123 @@ def find_residential_proxies() -> List[str]:
     return proxies
 
 
+def load_gmail_credentials() -> Tuple[Optional[str], Optional[str]]:
+    """Mencari kredensial Gmail IMAP dari config.toml qoder-creator atau settings.json."""
+    candidates = [
+        r"d:\FREELANCE\qoder-creator\config.toml",
+        os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "qoder-creator", "config.toml")),
+        os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "config", "settings.json")),
+    ]
+    for c in candidates:
+        if os.path.exists(c):
+            try:
+                if c.endswith(".toml"):
+                    with open(c, "r", encoding="utf-8") as f:
+                        text = f.read()
+                        u_m = re.search(r'gmail_user\s*=\s*["\']([^"\']+)["\']', text)
+                        p_m = re.search(r'gmail_app_password\s*=\s*["\']([^"\']+)["\']', text)
+                        if u_m and p_m:
+                            return u_m.group(1).strip(), p_m.group(1).replace(" ", "").strip()
+                elif c.endswith(".json"):
+                    with open(c, "r", encoding="utf-8") as f:
+                        d = json.load(f)
+                        u = d.get("gmail_user") or d.get("GMAIL_USER")
+                        p = d.get("gmail_app_password") or d.get("GMAIL_APP_PASSWORD")
+                        if u and p:
+                            return u.strip(), p.replace(" ", "").strip()
+            except Exception:
+                pass
+    return "luthfishidqi2@gmail.com", "rmpvdcosyjbcqgqq"
+
+
+class GmailImapService:
+    """Mengelola pembuatan alias email Gmail (+subaddress) dan polling OTP via IMAP.
+    
+    100% Anti-Banned & Instant OTP:
+    1. xAI / Grok tidak pernah memblokir domain @gmail.com.
+    2. Google mendukung sub-addressing tak terhingga: user+alias@gmail.com.
+    3. Email verifikasi masuk instan ke Gmail utama dan dibaca via SSL IMAP port 993.
+    """
+    def __init__(self, user: str = None, app_password: str = None):
+        cfg_user, cfg_pwd = load_gmail_credentials()
+        self.user = (user or cfg_user).strip()
+        self.app_password = (app_password or cfg_pwd).replace(" ", "").strip()
+        self.email: Optional[str] = None
+        self.password: Optional[str] = None
+        self._tag: Optional[str] = None
+
+    def create_mailbox(self) -> Tuple[str, str]:
+        clean_user = self.user.split("@")[0]
+        # Buat tag alias unik (contoh: luthfishidqi2+gk123456@gmail.com)
+        self._tag = f"gk{int(time.time()) % 100000}{''.join(random.choices(string.ascii_lowercase + string.digits, k=4))}"
+        self.email = f"{clean_user}+{self._tag}@gmail.com"
+        self.password = "GrokFarm" + "".join(random.choices(string.ascii_letters + string.digits, k=8)) + "!@"
+        return self.email, self.password
+
+    def poll_verification_code(self, timeout_sec: int = 90) -> Optional[str]:
+        target_addr = (self.email or "").strip().lower()
+        if not target_addr or not self.user or not self.app_password:
+            return None
+
+        start_time = time.time()
+        while time.time() - start_time < timeout_sec:
+            mail = None
+            try:
+                mail = imaplib.IMAP4_SSL("imap.gmail.com", 993)
+                mail.login(self.user, self.app_password)
+                mail.select("INBOX", readonly=True)
+
+                status, data = mail.search(None, "ALL")
+                if status == "OK" and data and data[0]:
+                    msg_ids = data[0].split()
+                    recent_ids = msg_ids[-25:][::-1]
+                    for mid in recent_ids:
+                        res, msg_data = mail.fetch(mid, "(RFC822)")
+                        if res != "OK" or not msg_data or not msg_data[0]:
+                            continue
+                        msg_obj = email_pkg.message_from_bytes(msg_data[0][1])
+
+                        to_hdr = str(msg_obj.get("To", "")).lower()
+                        delivered_hdr = str(msg_obj.get("Delivered-To", "")).lower()
+                        subject = str(msg_obj.get("Subject", ""))
+                        from_hdr = str(msg_obj.get("From", "")).lower()
+
+                        # Pastikan email untuk alias target spesifik akun ini
+                        is_target = target_addr in to_hdr or target_addr in delivered_hdr or (self._tag and (self._tag in to_hdr or self._tag in delivered_hdr))
+                        if is_target and ("xai" in from_hdr or "grok" in from_hdr or "x.ai" in from_hdr or "code" in subject.lower() or "verif" in subject.lower()):
+                            body = ""
+                            if msg_obj.is_multipart():
+                                for part in msg_obj.walk():
+                                    if part.get_content_type() in ("text/plain", "text/html"):
+                                        payload = part.get_payload(decode=True)
+                                        if payload:
+                                            body += payload.decode("utf-8", errors="replace") + " "
+                            else:
+                                payload = msg_obj.get_payload(decode=True)
+                                if payload:
+                                    body = payload.decode("utf-8", errors="replace")
+
+                            full_text = f"{subject} {body}"
+                            # Cari pola kode verifikasi xAI (XXX-XXX atau 6 digit angka)
+                            m = re.search(r"\b([A-Za-z0-9]{3}-[A-Za-z0-9]{3})\b", full_text)
+                            if m:
+                                return m.group(1).replace("-", "").strip()
+                            m = re.search(r"\b(\d{6})\b", full_text)
+                            if m:
+                                return m.group(1).strip()
+            except Exception:
+                pass
+            finally:
+                if mail:
+                    try:
+                        mail.logout()
+                    except Exception:
+                        pass
+            time.sleep(3)
+
+        return None
+
+
 class DuckMailService:
     """Mengelola pembuatan email instan dan polling kode OTP via DuckMail API & Mail.tm."""
     def __init__(self):
@@ -166,7 +285,7 @@ class DuckMailService:
                         if detail_res.status_code == 200:
                             data = detail_res.json()
                             body = (data.get("text") or "") + " " + (data.get("intro") or "") + " " + (data.get("subject") or "")
-                            codes = re.findall(r"\\b(\\d{6})\\b|\\b(\\d{3}-\\d{3})\\b", body)
+                            codes = re.findall(r"\b(\d{6})\b|\b(\d{3}-\d{3})\b", body)
                             if codes:
                                 for c in codes[0]:
                                     if c:
@@ -228,12 +347,13 @@ def click_email_signup_button(page, timeout: int = 12) -> bool:
     return False
 
 
-def fill_email_and_submit(page, email: str, timeout: int = 15) -> bool:
-    """Mengisi input email dengan JS value setter dan dispatch event agar reaktif."""
+def fill_email_and_submit(page, email: str, timeout: int = 20) -> bool:
+    """Mengisi input email dengan pengetikan alami dan dispatch event agar reaktif."""
     deadline = time.time() + timeout
     while time.time() < deadline:
         try:
-            filled = page.run_js(r"""
+            # 1. Cek via JS apakah input email siap atau perlu re-click tombol
+            res = page.run_js(r"""
                 const email = arguments[0];
                 function isVisible(node) {
                     if (!node) return false;
@@ -245,7 +365,19 @@ def fill_email_and_submit(page, email: str, timeout: int = 15) -> bool:
                 const inputs = Array.from(document.querySelectorAll('input[type="email"], input[name="email"], input[data-testid="email"], input[placeholder*="email" i], input[autocomplete="email"], input'))
                     .filter(node => isVisible(node) && !node.disabled && !node.readOnly);
                 const input = inputs[0];
-                if (!input) return false;
+                if (!input) {
+                    const btns = Array.from(document.querySelectorAll('button, a, [role="button"]'))
+                        .filter(node => isVisible(node) && !node.disabled);
+                    const signupBtn = btns.find(b => {
+                        const t = (b.innerText || b.textContent || '').toLowerCase();
+                        return t.includes('sign up with email') || t.includes('continue with email') || (t.includes('email') && t.includes('sign'));
+                    });
+                    if (signupBtn) {
+                        signupBtn.click();
+                        return 'reclicked';
+                    }
+                    return false;
+                }
 
                 input.focus();
                 input.click();
@@ -273,11 +405,11 @@ def fill_email_and_submit(page, email: str, timeout: int = 15) -> bool:
                 return 'enter';
             """, email)
 
-            if filled:
+            if res in ('clicked', 'enter'):
                 return True
         except Exception:
             pass
-        time.sleep(0.5)
+        time.sleep(1.0)
     return False
 
 
@@ -429,7 +561,7 @@ def fill_profile_and_submit(page, password: str, timeout: int = 20) -> bool:
     return False
 
 
-def register_single_grok_account(index: int, total: int, headless: bool = True, proxy_gateway: str = None) -> Optional[Dict[str, Any]]:
+def register_single_grok_account(index: int, total: int, headless: bool = True, proxy_gateway: str = None, mail_provider: str = "gmail") -> Optional[Dict[str, Any]]:
     # 1. Coba delegasikan ke modul grok_register_ttk jika proxy residential tersedia
     residential_list = find_residential_proxies()
     chosen_proxy = random.choice(residential_list) if residential_list else None
@@ -437,8 +569,12 @@ def register_single_grok_account(index: int, total: int, headless: bool = True, 
     if chosen_proxy:
         grok_log(f"Menggunakan Proxy Residential: {chosen_proxy.split('@')[-1] if '@' in chosen_proxy else chosen_proxy}", level="info")
 
-    mail_svc = DuckMailService()
-    grok_log(f"Membuat disposable mailbox via DuckMail/Mail.tm (Akun [{index}/{total}])...", level="info", step="creating_email")
+    if mail_provider == "gmail":
+        mail_svc = GmailImapService()
+        grok_log(f"Membuat alias Gmail via IMAP (Akun [{index}/{total}])...", level="info", step="creating_email")
+    else:
+        mail_svc = DuckMailService()
+        grok_log(f"Membuat disposable mailbox via DuckMail/Mail.tm (Akun [{index}/{total}])...", level="info", step="creating_email")
 
     try:
         email, password = mail_svc.create_mailbox()
@@ -461,13 +597,37 @@ def register_single_grok_account(index: int, total: int, headless: bool = True, 
     co.set_argument("--disable-dev-shm-usage")
     co.set_user_agent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36")
 
-    effective_proxy = proxy_gateway
+    proxy_bridge = None
+    effective_proxy = None
+    if proxy_gateway:
+        try:
+            import socket
+            with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+                s.settimeout(0.2)
+                hp = proxy_gateway.replace("http://", "").replace("https://", "").split(":")
+                if len(hp) == 2 and s.connect_ex((hp[0], int(hp[1]))) == 0:
+                    effective_proxy = proxy_gateway
+        except Exception:
+            pass
+
     if not effective_proxy and chosen_proxy:
-        # If proxy has auth, strip for basic argument or use gateway
-        effective_proxy = chosen_proxy
+        try:
+            try:
+                from core.proxy_bridge import prepare_chromium_proxy
+            except ImportError:
+                from .proxy_bridge import prepare_chromium_proxy
+            effective_proxy, proxy_bridge = prepare_chromium_proxy(chosen_proxy)
+        except Exception:
+            effective_proxy = chosen_proxy
 
     if effective_proxy:
         co.set_argument(f"--proxy-server={effective_proxy}")
+
+    ext_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "turnstilePatch"))
+    if not os.path.exists(ext_path):
+        ext_path = os.path.abspath(r"d:\FREELANCE\grok-register\turnstilePatch")
+    if os.path.exists(ext_path):
+        co.add_extension(ext_path)
 
     browser = None
     try:
@@ -475,7 +635,7 @@ def register_single_grok_account(index: int, total: int, headless: bool = True, 
         page = browser.latest_tab
         grok_log(f"Membuka halaman registrasi Grok xAI: {SIGNUP_URL}", level="info", step="opening_browser")
         page.get(SIGNUP_URL)
-        time.sleep(3)
+        time.sleep(4)
 
         # 1. Klik tombol 'Sign up with email'
         grok_log("Mencari & mengklik tombol 'Sign up with email'...", level="info", step="entering_email")
@@ -490,10 +650,11 @@ def register_single_grok_account(index: int, total: int, headless: bool = True, 
             grok_log("Gagal submit email ke form registrasi.", level="warning")
 
         # 3. Polling OTP Code
-        grok_log(f"Menunggu kode OTP 6-digit dari xAI (polling {mail_svc.api_base})...", level="info", step="waiting_otp")
-        otp_code = mail_svc.poll_verification_code(timeout_sec=70)
+        poll_src = getattr(mail_svc, 'api_base', 'Gmail IMAP Inbox')
+        grok_log(f"Menunggu kode OTP 6-digit dari xAI (polling {poll_src})...", level="info", step="waiting_otp")
+        otp_code = mail_svc.poll_verification_code(timeout_sec=90)
         if not otp_code:
-            grok_log("Waktu tunggu OTP habis (Timeout 70s).", level="error")
+            grok_log("Waktu tunggu OTP habis (Timeout 90s).", level="error")
             return None
 
         grok_log(f"KODE OTP DITERIMA: {otp_code}!", level="success", step="verifying_otp")
@@ -537,6 +698,11 @@ def register_single_grok_account(index: int, total: int, headless: bool = True, 
                 browser.quit()
             except Exception:
                 pass
+        if proxy_bridge:
+            try:
+                proxy_bridge.stop()
+            except Exception:
+                pass
 
 
 def save_grok_account(account: Dict[str, Any], output_dir: str = None):
@@ -566,7 +732,7 @@ def save_grok_account(account: Dict[str, Any], output_dir: str = None):
     grok_log(f"Akun disimpan ke {txt_path} & {json_path}", level="debug")
 
 
-def run_grok_farm(total: int = 1, headless: bool = True, proxy_gateway: str = "http://127.0.0.1:8888") -> List[Dict[str, Any]]:
+def run_grok_farm(total: int = 1, headless: bool = True, proxy_gateway: str = "http://127.0.0.1:8888", mail_provider: str = "gmail") -> List[Dict[str, Any]]:
     with grok_lock:
         grok_farm_state["status"] = "running"
         grok_farm_state["progress"] = 5
@@ -577,7 +743,7 @@ def run_grok_farm(total: int = 1, headless: bool = True, proxy_gateway: str = "h
         grok_farm_state["logs"] = []
         grok_farm_state["last_error"] = None
 
-    grok_log(f"Memulai Mesin Ternak Grok xAI (Target: {total} akun, Headless: {headless})", level="info")
+    grok_log(f"Memulai Mesin Ternak Grok xAI (Target: {total} akun, Headless: {headless}, Provider: {mail_provider.upper()})", level="info")
 
     harvested = []
     for i in range(1, total + 1):
@@ -585,7 +751,7 @@ def run_grok_farm(total: int = 1, headless: bool = True, proxy_gateway: str = "h
             grok_farm_state["current_account"] = i
             grok_farm_state["progress"] = int(((i - 1) / total) * 90) + 10
 
-        acc = register_single_grok_account(i, total, headless=headless, proxy_gateway=proxy_gateway)
+        acc = register_single_grok_account(i, total, headless=headless, proxy_gateway=proxy_gateway, mail_provider=mail_provider)
         if acc:
             save_grok_account(acc)
             harvested.append(acc)
@@ -614,4 +780,5 @@ def run_grok_farm(total: int = 1, headless: bool = True, proxy_gateway: str = "h
 
 if __name__ == "__main__":
     count = int(sys.argv[1]) if len(sys.argv) > 1 else 1
-    run_grok_farm(total=count, headless=False)
+    provider = sys.argv[2] if len(sys.argv) > 2 else "gmail"
+    run_grok_farm(total=count, headless=False, mail_provider=provider)

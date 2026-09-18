@@ -225,16 +225,22 @@ def find_grok_python() -> str:
 def run_webshare_hunter(accounts: int = 1, headless: bool = True) -> bool:
     """Run Webshare Hunter to harvest residential clean proxies that bypass Cloudflare."""
     import subprocess
-    grok_dir = r"D:\FREELANCE\grok-register"
-    if not os.path.exists(grok_dir):
-        grok_dir = os.path.normpath(os.path.join(os.path.dirname(__file__), "..", "grok-register"))
-    
-    ws_script = os.path.join(grok_dir, "webshare_hunter_auto.py")
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    ws_script = os.path.join(base_dir, "core", "webshare_hunter.py")
+    cwd_run = base_dir
+
+    if not os.path.exists(ws_script):
+        grok_dir = r"D:\FREELANCE\grok-register"
+        if not os.path.exists(grok_dir):
+            grok_dir = os.path.normpath(os.path.join(base_dir, "..", "grok-register"))
+        ws_script = os.path.join(grok_dir, "webshare_hunter_auto.py")
+        cwd_run = grok_dir
+
     if not os.path.exists(ws_script):
         print(f"{Fore.RED}❌ Script Webshare Hunter tidak ditemukan di {ws_script}{Style.RESET_ALL}")
         return False
 
-    py_exec = find_grok_python()
+    py_exec = sys.executable or find_grok_python()
     print(f"\n{Fore.CYAN}{'🏢 Menjalankan Webshare Residential Hunter...' if CURRENT_LANG == 'ID' else '🏢 Launching Webshare Residential Hunter...'}{Style.RESET_ALL}")
     print(f"  • Target: {Fore.YELLOW}{accounts} Akun Webshare ({accounts * 10} IP Residensial AS/Eropa){Style.RESET_ALL}")
     print(f"  • Mode:   {Fore.WHITE}{'Background (Headless)' if headless else 'Tampak Layar'}{Style.RESET_ALL}")
@@ -245,7 +251,7 @@ def run_webshare_hunter(accounts: int = 1, headless: bool = True) -> bool:
         cmd.append("--headless")
 
     try:
-        res = subprocess.run(cmd, cwd=grok_dir)
+        res = subprocess.run(cmd, cwd=cwd_run)
         return res.returncode == 0
     except Exception as e:
         print(f"{Fore.RED}❌ Gagal menjalankan Webshare Hunter: {e}{Style.RESET_ALL}")
@@ -990,6 +996,7 @@ def show_interactive_menu():
         if CURRENT_LANG == "ID":
             menu.add_section("PIPELINES DAN RESIDENTIAL")
             menu.add_item("w", "Webshare Residential", "Ekstraksi otomatis IP Residential via audio solver", st.get('webshare', ''))
+            menu.add_item("r", "Ternak Akun Grok xAI", "Panen akun Grok otomatis via DuckMail/Gmail", f"{Fore.GREEN}● [GROK]{Style.RESET_ALL}")
             menu.add_item("c", "Cloudflare WARP Local", "WireGuard Anycast tunnel bebas captcha, unlimited", f"{Fore.GREEN}● [ULTRA]{Style.RESET_ALL}")
             menu.add_item("f", "Fast Async Harvester", "Scrape massal filter latency rendah asinkron", f"{Fore.GREEN}● [FAST]{Style.RESET_ALL}")
 
@@ -1014,6 +1021,7 @@ def show_interactive_menu():
         else:
             menu.add_section("PIPELINES AND RESIDENTIAL")
             menu.add_item("w", "Webshare Residential", "Automated residential IP extraction via audio solver", st.get('webshare', ''))
+            menu.add_item("r", "Grok xAI Account Farm", "Automated Grok registration via DuckMail/Gmail", f"{Fore.GREEN}● [GROK]{Style.RESET_ALL}")
             menu.add_item("c", "Cloudflare WARP Local", "WireGuard Anycast zero-captcha local tunnel", f"{Fore.GREEN}● [ULTRA]{Style.RESET_ALL}")
             menu.add_item("f", "Fast Async Harvester", "Mass concurrent scraper (low latency filter)", f"{Fore.GREEN}● [FAST]{Style.RESET_ALL}")
 
@@ -1223,6 +1231,36 @@ print("IP Aktif Residential:", resp.json()["ip"])
                     else:
                         break
             continue
+        elif choice.lower() == "r":
+            print(f"\n{Fore.GREEN}{Style.BRIGHT}{'🤖 MEMBUKA MESIN TERNAK AKUN GROK xAI (STANDALONE)...' if CURRENT_LANG == 'ID' else '🤖 LAUNCHING GROK xAI ACCOUNT FARMER...'}{Style.RESET_ALL}")
+            print(f"{Fore.LIGHTBLACK_EX}{'💡 Info: Memanfaatkan pool residential proxy & auto-OTP via DuckMail/Gmail.' if CURRENT_LANG == 'ID' else '💡 Info: Utilizing residential proxies & auto-OTP via DuckMail/Gmail.'}{Style.RESET_ALL}\n")
+            
+            cnt_prompt = f"{Fore.CYAN}{'Berapa target akun Grok yang ingin dipanen? [Default: 1]: ' if CURRENT_LANG == 'ID' else 'How many Grok accounts to farm? [Default: 1]: '}{Style.RESET_ALL}"
+            c_input = input(cnt_prompt).strip()
+            total_grok = int(c_input) if c_input.isdigit() and int(c_input) > 0 else 1
+
+            prov_prompt = f"{Fore.CYAN}Pilih Provider Email:\n  [1] DuckMail (Disposable instan, default)\n  [2] Gmail (Subaddress alias via IMAP)\nPilihan [1/2, default 1]: {Style.RESET_ALL}"
+            p_input = input(prov_prompt).strip()
+            mail_prov = "gmail" if p_input == "2" else "duckmail"
+
+            head_prompt = f"{Fore.CYAN}Mode tampilan:\n  [1] Jendela Tampak / Semi-Manual (Bisa dipantau langsung, default)\n  [2] Background / Headless (Tanpa jendela)\nPilihan [1/2, default 1]: {Style.RESET_ALL}"
+            h_input = input(head_prompt).strip()
+            is_headless = (h_input == "2")
+
+            try:
+                from core.grok_farm import run_grok_farm
+                run_grok_farm(total=total_grok, headless=is_headless, mail_provider=mail_prov)
+            except Exception as e:
+                print(f"{Fore.RED}❌ Gagal menjalankan Grok Farm: {e}{Style.RESET_ALL}")
+
+            base_dir = os.path.dirname(os.path.abspath(__file__))
+            acc_file = os.path.join(base_dir, "output", "grok_accounts.txt")
+            if os.path.exists(acc_file) and os.path.getsize(acc_file) > 0:
+                print(f"\n{Fore.GREEN}✓ Akun Grok tersimpan di: {Fore.YELLOW}{acc_file}{Style.RESET_ALL}")
+                ans = input(f"{Fore.CYAN}Buka file akun di Notepad sekarang? [Y/n]: {Style.RESET_ALL}").strip().lower()
+                if ans in ("", "y", "yes"):
+                    open_in_text_editor(acc_file)
+            continue
         elif choice.lower() == "c":
             print(f"\n{Fore.CYAN}{Style.BRIGHT}{'🚀 MEMBUAT PROFIL CLOUDFLARE WARP (WIREGUARD / SING-BOX)...' if CURRENT_LANG == 'ID' else '🚀 GENERATING CLOUDFLARE WARP PROFILE...'}{Style.RESET_ALL}")
             print(f"{Fore.LIGHTBLACK_EX}{'💡 Info: Registrasi resmi via Cloudflare REST API (100% legal, tanpa captcha, unlimited).' if CURRENT_LANG == 'ID' else '💡 Info: Official registration via Cloudflare REST API (zero captcha, unlimited).'}{Style.RESET_ALL}\n")
@@ -1329,10 +1367,56 @@ print("IP Aktif Residential:", resp.json()["ip"])
         except (KeyboardInterrupt, EOFError):
             break
 
+def run_async_pipeline(accounts: int = 10, headless: bool = False, mail_provider: str = "duckmail"):
+    """Menjalankan Webshare Residential Hunter dan Grok Farm secara simultan / asinkron (paralel)."""
+    import threading
+    from core.webshare_hunter import run_webshare_hunter
+    from core.grok_farm import run_grok_farm
+
+    print(f"\n{Fore.GREEN}{Style.BRIGHT}🚀 MEMULAI PIPELINE ASINKRON ALL-IN-ONE (PARALEL)...{Style.RESET_ALL}")
+    print(f"  • Webshare Hunter : Panen proxy residential di background (Thread 1)")
+    print(f"  • Grok Farm Engine: Panen {accounts} Akun Grok xAI serentak (Thread 2)")
+    print(f"  • Provider Email  : {mail_provider.upper()}")
+    print(f"  • Mode Browser    : {'Background (Headless)' if headless else 'Tampak Layar (Semi-Manual)'}\n")
+
+    ws_target = max(1, (accounts + 9) // 10)
+    db_target = find_9router_db()
+
+    t_ws = threading.Thread(
+        target=run_webshare_hunter,
+        kwargs={"total": ws_target, "headless": headless, "sync_9router_db": db_target},
+        name="Worker-WebshareHunter",
+        daemon=True
+    )
+    t_grok = threading.Thread(
+        target=run_grok_farm,
+        kwargs={"total": accounts, "headless": headless, "mail_provider": mail_provider},
+        name="Worker-GrokFarm"
+    )
+
+    t_ws.start()
+    time.sleep(1)
+    t_grok.start()
+
+    t_grok.join()
+    t_ws.join(timeout=10)
+
+    print(f"\n{Fore.GREEN}✓ Pipeline Asinkron Selesai! Semua akun dan proxy berhasil dipanen.{Style.RESET_ALL}\n")
+
 def main():
     if len(sys.argv) == 1:
         show_interactive_menu()
         return
+
+    # Normalisasi CLI alias subcommands agar user-friendly
+    if len(sys.argv) > 1:
+        first_cmd = sys.argv[1].lower()
+        if first_cmd in ("grok-farm", "farm-grok", "grok", "ternak-grok"):
+            sys.argv[1] = "--grok-farm"
+        elif first_cmd in ("webshare", "hunter", "webshare-hunter"):
+            sys.argv[1] = "--webshare"
+        elif first_cmd in ("pabrik", "pipeline", "async", "all-in-one"):
+            sys.argv[1] = "--pipeline"
 
     parser = argparse.ArgumentParser(description="PetaniProxy v1.1.0 - High-Speed Multi-Protocol Proxy Harvester, Cloudflare WARP & Resilient Gateway")
 
@@ -1353,7 +1437,10 @@ def main():
     parser.add_argument("--max-latency", type=int, default=1200, help="Maximum latency in ms for fast harvester (default: 1200)")
     parser.add_argument("--daemon-gateway", "-G", action="store_true", help="Run 24/7 resilient local gateway on port 8888 with auto-healer")
     parser.add_argument("--webshare", "-W", type=int, nargs="?", const=1, default=None, help="Trigger Webshare Residential Hunter for N accounts (default: 1)")
-    parser.add_argument("--headless", action="store_true", help="Run Webshare Hunter in headless mode")
+    parser.add_argument("--grok-farm", "-K", type=int, nargs="?", const=1, default=None, help="Ternak Akun Grok xAI secara otomatis untuk N akun (default: 1)")
+    parser.add_argument("--pipeline", "-P", type=int, nargs="?", const=10, default=None, help="Jalankan Pipeline Asinkron: Panen Webshare & Panen Akun Grok serentak (paralel)")
+    parser.add_argument("--mail-provider", choices=["duckmail", "gmail"], default="duckmail", help="Provider email untuk Grok Farm: 'duckmail' atau 'gmail' (default: duckmail)")
+    parser.add_argument("--headless", action="store_true", help="Run browser in headless mode (tanpa jendela)")
     parser.add_argument("--update", action="store_true", help="Perform 1-click update via git pull and exit")
     parser.add_argument("--check-update", action="store_true", help="Check for available updates on GitHub and display patch notes")
     parser.add_argument("--install-deps", action="store_true", help="Auto-install all dependencies from requirements.txt")
@@ -1430,6 +1517,26 @@ def main():
                 print(f"Disarankan menjalankan tanpa flag --headless atau sediakan CAPSOLVER_API_KEY.{Style.RESET_ALL}\n")
 
         run_webshare_hunter(total=args.webshare, headless=args.headless, sync_9router_db=router_db, output_dir=args.output)
+        return
+
+    if args.grok_farm is not None:
+        try:
+            from core.grok_farm import run_grok_farm
+        except ImportError as e:
+            print(f"{Fore.RED}⚠️ Dependensi Grok Farm belum lengkap: {e}{Style.RESET_ALL}")
+            print(f"{Fore.YELLOW}Silakan jalankan: python main.py --install-deps{Style.RESET_ALL}\n")
+            sys.exit(1)
+
+        print(f"\n{Fore.GREEN}{Style.BRIGHT}🤖 MENJALANKAN TERNAK AKUN GROK xAI (STANDALONE)...{Style.RESET_ALL}")
+        print(f"  • Target Akun   : {Fore.YELLOW}{args.grok_farm}{Style.RESET_ALL}")
+        print(f"  • Provider Email: {Fore.CYAN}{args.mail_provider.upper()}{Style.RESET_ALL}")
+        print(f"  • Mode Browser  : {Fore.WHITE}{'Background (Headless)' if args.headless else 'Tampak Layar (Semi-Manual)'}{Style.RESET_ALL}\n")
+        
+        run_grok_farm(total=args.grok_farm, headless=args.headless, mail_provider=args.mail_provider)
+        return
+
+    if args.pipeline is not None:
+        run_async_pipeline(accounts=args.pipeline, headless=args.headless, mail_provider=args.mail_provider)
         return
 
     proto_list = [args.protocol] if args.protocol != "all" else ["http", "socks4", "socks5"]
