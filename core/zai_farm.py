@@ -148,10 +148,15 @@ class DuckMailService:
 
 
 def save_to_autoclawpi_db(name: str, access_token: str, refresh_token: str, email: str):
+    env_db = os.environ.get("AUTOCLAWPI_DB")
+    current_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     db_paths = [
         os.path.expanduser("~/.autoclawpi/autoclawpi.db"),
-        r"d:\FREELANCE\autoclawpi\data\autoclawpi.db"
+        os.path.join(current_dir, "output", "autoclawpi.db"),
+        os.path.join(os.path.dirname(current_dir), "autoclawpi", "data", "autoclawpi.db"),
     ]
+    if env_db:
+        db_paths.insert(0, env_db)
     for db_path in db_paths:
         try:
             os.makedirs(os.path.dirname(db_path), exist_ok=True)

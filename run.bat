@@ -8,16 +8,16 @@ echo ========================================================================
 echo   🌾 Starting PetaniProxy: Panen Proxy Bersih, Segar & Residential 🚜
 echo ========================================================================
 
-:: Smart Python Detection (Local project venv -> Developer venv -> System python)
+:: Smart Python Detection (Local project venv -> Parent workspace venv -> System python)
 set "PY_CMD=python"
 if exist "%~dp0venv\Scripts\python.exe" (
     set "PY_CMD=%~dp0venv\Scripts\python.exe"
 ) else if exist "%~dp0.venv\Scripts\python.exe" (
     set "PY_CMD=%~dp0.venv\Scripts\python.exe"
-) else if exist "d:\FREELANCE\grok-register\venv\Scripts\python.exe" (
-    set "PY_CMD=d:\FREELANCE\grok-register\venv\Scripts\python.exe"
-) else if exist "%~dp0..\harbor\.venv\Scripts\python.exe" (
-    set "PY_CMD=%~dp0..\harbor\.venv\Scripts\python.exe"
+) else if exist "%~dp0..\venv\Scripts\python.exe" (
+    set "PY_CMD=%~dp0..\venv\Scripts\python.exe"
+) else if exist "%~dp0..\.venv\Scripts\python.exe" (
+    set "PY_CMD=%~dp0..\.venv\Scripts\python.exe"
 )
 
 :: Check Python availability

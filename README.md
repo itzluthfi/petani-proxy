@@ -1,11 +1,12 @@
 <div align="center">
 
-# 🌾 PetaniProxy v1.1.0
-### *Free Local Rotating Proxy Gateway, Cloudflare WARP & Residential Hunter*
+# 🌾 PetaniProxy v1.2.0
+### *High-Performance Local Rotating Proxy Gateway, Cloudflare WARP & Residential Hunter*
 > Panen proxy publik, amunisi WireGuard Cloudflare WARP, dan IP Residential gratis, disatukan ke dalam gateway lokal `127.0.0.1:8888` yang otomatis muter tiap request.
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
+[![Docker Ready](https://img.shields.io/badge/docker-ready-2496ED?logo=docker&logoColor=white)](docker-compose.yml)
 [![Maintainer](https://img.shields.io/badge/maintainer-itzluthfi-blueviolet.svg)](https://github.com/itzluthfi)
 [![Protocols](https://img.shields.io/badge/protocols-HTTP%20%7C%20HTTPS%20%7C%20SOCKS4%20%7C%20SOCKS5%20%7C%20WireGuard-green.svg)](#protokol--fitur-filter-negara)
 [![Rotating Gateway](https://img.shields.io/badge/gateway-127.0.0.1%3A8888-brightgreen.svg)](#1-jalankan-local-forward-gateway-port-8888)
@@ -267,6 +268,15 @@ Kalau lu butuh file mentahan buat disuntik ke software bot lain (Proxifier, Open
 
 ### Cara Pasang (Instalasi)
 
+#### Opsi 1: Jalankan dengan Docker (1-Command Instant)
+```bash
+# Clone & jalankan gateway port 8888 di background
+git clone https://github.com/itzluthfi/petani-proxy.git
+cd petani-proxy
+docker compose up -d
+```
+
+#### Opsi 2: Jalankan Langsung (Windows / Linux / macOS)
 ```bash
 # 1. Clone repositori ini
 git clone https://github.com/itzluthfi/petani-proxy.git
@@ -276,7 +286,74 @@ cd petani-proxy
 pip install -r requirements.txt
 ```
 
-> **Pengguna Windows**: Cukup double-click file **`run.bat`**. Script akan otomatis memeriksa kelengkapan Python, menginstall paket yang kurang, dan menyajikan menu interaktif.
+> **Pengguna Windows**: Cukup double-click file **`run.bat`**. Script akan otomatis mendeteksi Python, menginstall paket yang kurang, dan menyajikan menu interaktif.
+
+---
+
+### Contoh Integrasi Kode (Developer Code Snippets)
+
+Cukup arahkan proxy bot/scraper Anda ke `http://127.0.0.1:8888`. Setiap request akan otomatis menggunakan IP berputar (rotating) dengan zero-leak!
+
+<details>
+<summary><b>Lihat Contoh Integrasi Python, Node.js, Playwright & cURL</b></summary>
+
+<br>
+
+#### Python (Requests / Httpx)
+```python
+import requests
+
+proxies = {
+    "http": "http://127.0.0.1:8888",
+    "https": "http://127.0.0.1:8888"
+}
+
+# Tiap request otomatis ganti IP!
+res = requests.get("https://api.ipify.org?format=json", proxies=proxies, timeout=10)
+print("IP Aktif:", res.json()["ip"])
+
+# Butuh sticky session (IP tetap sama selama 10 menit)?
+res_sticky = requests.get(
+    "https://api.ipify.org?format=json",
+    proxies=proxies,
+    headers={"X-Session-ID": "bot_session_001"}
+)
+```
+
+#### Playwright / Browser Automation
+```python
+from playwright.sync_api import sync_playwright
+
+with sync_playwright() as p:
+    browser = p.chromium.launch(
+        proxy={"server": "http://127.0.0.1:8888"}
+    )
+    page = browser.new_page()
+    page.goto("https://ipwho.is/")
+    print(page.title())
+    browser.close()
+```
+
+#### Node.js (Axios / Undici)
+```javascript
+const axios = require('axios');
+const { HttpsProxyAgent } = require('https-proxy-agent');
+
+const agent = new HttpsProxyAgent('http://127.0.0.1:8888');
+
+async function testProxy() {
+  const { data } = await axios.get('https://api.ipify.org?format=json', { httpsAgent: agent });
+  console.log('Rotated IP:', data.ip);
+}
+testProxy();
+```
+
+#### cURL Terminal
+```bash
+curl -x http://127.0.0.1:8888 https://api.ipify.org
+```
+
+</details>
 
 ---
 

@@ -13,7 +13,10 @@ import select
 import random
 import threading
 import urllib.parse
-from http.server import HTTPServer, BaseHTTPRequestHandler
+try:
+    from http.server import ThreadingHTTPServer as BaseServerClass, BaseHTTPRequestHandler
+except ImportError:
+    from http.server import HTTPServer as BaseServerClass, BaseHTTPRequestHandler
 from typing import List, Dict, Any, Optional, Tuple
 
 COMMON_USER_AGENTS = [
@@ -2524,7 +2527,7 @@ def start_proxy_server(
     enable_health_check: bool = True,
     health_check_interval: int = 90,
     min_healthy_count: int = 5
-) -> Tuple[HTTPServer, ProxyPoolManager]:
+) -> Tuple[BaseServerClass, ProxyPoolManager]:
     pool_mgr = ProxyPoolManager(initial_proxies)
 
     if enable_health_check:
@@ -2545,7 +2548,7 @@ def start_proxy_server(
         pool_manager = pool_mgr
         server_port = port
 
-    server = HTTPServer((host, port), CustomHandler)
+    server = BaseServerClass((host, port), CustomHandler)
 
     if background:
         t = threading.Thread(target=server.serve_forever, daemon=True)

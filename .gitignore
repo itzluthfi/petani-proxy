@@ -41,6 +41,8 @@ ENV/
 # output/
 
 # Local custom automation scripts & private runners (never commit or push)
+.env
+.env.local
 local_*.py
 local_*.bat
 *.local.bat

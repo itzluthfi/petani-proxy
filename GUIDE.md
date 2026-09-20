@@ -35,7 +35,7 @@ Fungsi mendasar tool ini adalah menyediakan pasokan **IP proxy gratis tanpa bata
 
 Buka terminal di folder proyek:
 ```powershell
-cd D:\FREELANCE\petani-proxy
+cd petani-proxy
 python main.py
 ```
 Akan muncul menu TUI bergaya kotak dengan watermark **`@itzluthfi`**. Anda cukup mengetik opsi yang diinginkan:

@@ -153,8 +153,6 @@ def find_9router_db() -> Optional[str]:
         os.path.normpath(os.path.join(base_dir, "..", "9router-mibp-version", "data", "db", "data.sqlite")),
         os.path.normpath(os.path.join(base_dir, "..", "9router", "data", "db", "data.sqlite")),
         os.path.normpath(os.path.join(base_dir, "..", "bansos-router", "data", "db", "data.sqlite")),
-        "D:/FREELANCE/eLrouter/data/db/data.sqlite",
-        "D:/FREELANCE/9router-mibp-version/data/db/data.sqlite",
     ]
     for path in candidates:
         if os.path.exists(path):
@@ -213,9 +211,12 @@ def check_initial_dependencies() -> bool:
 
 def find_grok_python() -> str:
     """Detect python executable for Grok Farm / Webshare Hunter."""
+    base_dir = os.path.dirname(os.path.abspath(__file__))
     candidates = [
-        r"D:\FREELANCE\grok-register\venv\Scripts\python.exe",
-        os.path.normpath(os.path.join(os.path.dirname(__file__), "..", "grok-register", "venv", "Scripts", "python.exe")),
+        os.path.normpath(os.path.join(base_dir, "venv", "Scripts", "python.exe")),
+        os.path.normpath(os.path.join(base_dir, ".venv", "Scripts", "python.exe")),
+        os.path.normpath(os.path.join(base_dir, "..", "venv", "Scripts", "python.exe")),
+        os.path.normpath(os.path.join(base_dir, "..", "grok-register", "venv", "Scripts", "python.exe")),
     ]
     for c in candidates:
         if os.path.exists(c):
@@ -230,9 +231,7 @@ def run_webshare_hunter(accounts: int = 1, headless: bool = True) -> bool:
     cwd_run = base_dir
 
     if not os.path.exists(ws_script):
-        grok_dir = r"D:\FREELANCE\grok-register"
-        if not os.path.exists(grok_dir):
-            grok_dir = os.path.normpath(os.path.join(base_dir, "..", "grok-register"))
+        grok_dir = os.path.normpath(os.path.join(base_dir, "..", "grok-register"))
         ws_script = os.path.join(grok_dir, "webshare_hunter_auto.py")
         cwd_run = grok_dir
 

@@ -80,13 +80,14 @@ def grok_log(message: str, level: str = "info", step: Optional[str] = None):
 def find_residential_proxies() -> List[str]:
     """Mencari file proxy residential dari Webshare Hunter atau Grok Register."""
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    env_txt = os.environ.get("PROXIES_TXT_PATH")
     candidates = [
         os.path.join(base_dir, "output", "webshare_residential.txt"),
-        os.path.join(base_dir, "..", "grok-register", "proxies.txt"),
         os.path.join(base_dir, "output", "live_elite.txt"),
-        r"d:\FREELANCE\grok-register\proxies.txt",
-        r"d:\FREELANCE\petani-proxy\output\webshare_residential.txt"
+        os.path.join(base_dir, "..", "grok-register", "proxies.txt"),
     ]
+    if env_txt:
+        candidates.insert(0, env_txt)
     proxies = []
     for c in candidates:
         p = os.path.abspath(c)
@@ -107,7 +108,6 @@ def find_residential_proxies() -> List[str]:
 def load_gmail_credentials() -> Tuple[Optional[str], Optional[str]]:
     """Mencari kredensial Gmail IMAP dari config.toml qoder-creator atau settings.json."""
     candidates = [
-        r"d:\FREELANCE\qoder-creator\config.toml",
         os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "qoder-creator", "config.toml")),
         os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "config", "settings.json")),
     ]
@@ -625,7 +625,7 @@ def register_single_grok_account(index: int, total: int, headless: bool = True, 
 
     ext_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "turnstilePatch"))
     if not os.path.exists(ext_path):
-        ext_path = os.path.abspath(r"d:\FREELANCE\grok-register\turnstilePatch")
+        ext_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "grok-register", "turnstilePatch"))
     if os.path.exists(ext_path):
         co.add_extension(ext_path)
 

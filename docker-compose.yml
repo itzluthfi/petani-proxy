@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  petaniproxy:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: petaniproxy-gateway
+    restart: unless-stopped
+    ports:
+      - "${GATEWAY_PORT:-8888}:8888"
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PORT=8888
+    volumes:
+      - ./output:/app/output
+      - ./config:/app/config
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://127.0.0.1:8888/api/status"]
+      interval: 30s
+      timeout: 5s
+      retries: 3

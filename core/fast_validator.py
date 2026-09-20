@@ -193,12 +193,15 @@ async def validate_batch(
                 break
 
 def find_9router_db() -> Optional[str]:
+    env_db = os.environ.get("ROUTER_DB_PATH") or os.environ.get("BANSOS_ROUTER_DB") or os.environ.get("NINEROUTER_DB")
+    if env_db and os.path.exists(env_db):
+        return env_db
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     candidates = [
         os.path.normpath(os.path.join(base_dir, "..", "eLrouter", "data", "db", "data.sqlite")),
         os.path.normpath(os.path.join(base_dir, "..", "9router-mibp-version", "data", "db", "data.sqlite")),
-        "D:/FREELANCE/eLrouter/data/db/data.sqlite",
-        "D:/FREELANCE/9router-mibp-version/data/db/data.sqlite",
+        os.path.normpath(os.path.join(base_dir, "..", "9router", "data", "db", "data.sqlite")),
+        os.path.normpath(os.path.join(base_dir, "..", "bansos-router", "data", "db", "data.sqlite")),
     ]
     for c in candidates:
         if os.path.exists(c):

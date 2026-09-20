@@ -33,14 +33,16 @@ from DrissionPage import Chromium, ChromiumOptions
 from colorama import Fore, Style
 
 def find_default_db():
+    env_db = os.environ.get("ROUTER_DB_PATH") or os.environ.get("BANSOS_ROUTER_DB") or os.environ.get("NINEROUTER_DB")
+    if env_db and os.path.exists(env_db):
+        return env_db
     current_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     candidates = [
         os.path.join(os.path.dirname(current_dir), "eLrouter", "data", "db", "data.sqlite"),
         os.path.join(os.path.dirname(current_dir), "9router-mibp-version", "data", "db", "data.sqlite"),
         os.path.join(current_dir, "..", "eLrouter", "data", "db", "data.sqlite"),
         os.path.join(current_dir, "..", "9router-mibp-version", "data", "db", "data.sqlite"),
-        r"d:\FREELANCE\eLrouter\data\db\data.sqlite",
-        r"d:\FREELANCE\9router-mibp-version\data\db\data.sqlite"
+        os.path.join(current_dir, "..", "9router", "data", "db", "data.sqlite"),
     ]
     for c in candidates:
         norm = os.path.abspath(c)
@@ -49,11 +51,14 @@ def find_default_db():
     return None
 
 def find_grok_proxies_txt():
+    env_txt = os.environ.get("PROXIES_TXT_PATH")
+    if env_txt and os.path.exists(env_txt):
+        return env_txt
     current_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     candidates = [
+        os.path.join(current_dir, "output", "proxies.txt"),
         os.path.join(os.path.dirname(current_dir), "grok-register", "proxies.txt"),
         os.path.join(current_dir, "..", "grok-register", "proxies.txt"),
-        r"d:\FREELANCE\grok-register\proxies.txt"
     ]
     for c in candidates:
         norm = os.path.abspath(c)
