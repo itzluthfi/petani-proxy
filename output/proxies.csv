@@ -1,17 +1,16 @@
 protocol,ip,port,proxy,anonymity,latency_ms,country_code,country,city,isp,egress_ip
-http,159.65.233.169,54321,159.65.233.169:54321,Elite,64,US,United States,North Bergen,"DigitalOcean, LLC",159.65.233.169
-http,34.43.46.91,80,34.43.46.91:80,Elite,355,??,Unknown,-,-,8.231.16.63
-http,34.43.46.91,443,34.43.46.91:443,Elite,371,US,United States,Mountain View,Google LLC,8.231.16.63
-http,89.110.124.45,8888,89.110.124.45:8888,Elite,454,NL,The Netherlands,Amsterdam,Servers Tech Fzco,89.110.124.45
-http,145.220.227.2,3128,145.220.227.2:3128,Elite,454,NL,The Netherlands,Utrecht,SURFnet III d,145.220.227.2
-http,103.237.102.191,11111,103.237.102.191:11111,Elite,465,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
-http,37.59.125.131,8888,37.59.125.131:8888,Elite,780,FR,France,Roubaix,OVH SAS,82.66.253.58
-http,37.32.20.216,8080,37.32.20.216:8080,Elite,990,IR,Iran,Tehran,Noyan Abr Arvan Co. ( Private Joint Stock),37.32.20.216
-http,178.92.72.78,8080,178.92.72.78:8080,Elite,1329,IN,India,Mumbai,IPXO,178.92.72.78
-http,107.167.18.122,443,107.167.18.122:443,Elite,1377,US,United States,Los Angeles,Sharktech,107.167.18.99
-http,154.59.56.76,999,154.59.56.76:999,Elite,1440,VE,Venezuela,Santa Cruz de Mora,Cogent Communications,154.59.56.73
-http,178.92.72.129,8080,178.92.72.129:8080,Elite,1594,IN,India,Mumbai,IPXO,178.92.72.129
-http,47.81.56.193,8888,47.81.56.193:8888,Elite,1668,TH,Thailand,Bangkok,Alibaba.com LLC,47.81.56.193
-http,152.53.183.107,8081,152.53.183.107:8081,Elite,1892,DE,Germany,Nuremberg,netcup GmbH,152.53.183.107
-http,205.164.192.115,999,205.164.192.115:999,Elite,2300,MX,Mexico,Ayotlán,Cogent Communications,205.164.192.115
-http,45.174.242.128,999,45.174.242.128:999,Elite,2340,MX,Mexico,Alfredo V. Bonfil,Sistemas Y Soluciones De Campeche SAS De CV,45.174.242.128
+http,159.65.233.169,54321,159.65.233.169:54321,Elite,325,US,United States,North Bergen,"DigitalOcean, LLC",159.65.233.169
+http,184.75.221.82,3118,184.75.221.82:3118,Elite,470,CA,Canada,Toronto,Amanah Tech Inc.,184.75.221.82
+http,165.154.162.73,8888,165.154.162.73:8888,Elite,997,US,United States,Los Angeles,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,165.154.162.73
+http,103.237.102.191,11111,103.237.102.191:11111,Elite,1080,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
+http,47.81.56.193,8888,47.81.56.193:8888,Elite,1207,TH,Thailand,Bangkok,Alibaba.com LLC,47.81.56.193
+http,103.82.20.76,8080,103.82.20.76:8080,Elite,1352,VN,Vietnam,Dich Vong,INETACADEMY,42.114.69.222
+http,154.201.126.130,8080,154.201.126.130:8080,Elite,1394,IN,India,Noida,CtrlS,154.201.126.130
+http,38.194.246.34,999,38.194.246.34:999,Elite,1430,MX,Mexico,Huauchinango,Cogent Communications,38.194.246.34
+http,163.181.207.213,9999,163.181.207.213:9999,Elite,1436,VN,Vietnam,Hanoi,"Zhejiang Taobao Network Co., Ltd",163.181.207.213
+http,36.137.204.11,8002,36.137.204.11:8002,Elite,1464,CN,China,Guangzhou,China Mobile Communications Corporation,137.220.43.243
+http,190.97.241.106,999,190.97.241.106:999,Elite,1518,VE,Venezuela,Táriba,Viginet C.A,190.97.241.106
+http,124.120.105.41,4080,124.120.105.41:4080,Elite,1590,TH,Thailand,Bangkok,True Internet Corporation CO. Ltd.,124.120.105.41
+http,154.201.127.12,8080,154.201.127.12:8080,Elite,1625,IN,India,Noida,Real Time Data Services Private Limited,154.201.127.12
+http,203.205.49.2,10243,203.205.49.2:10243,Elite,1674,VN,Vietnam,Mai Dich,CMC Telecom Infrastructure Company,203.205.49.246
+http,174.138.165.211,30014,174.138.165.211:30014,Elite,1691,US,United States,Phoenix,Secured Servers LLC,98.162.82.3
