@@ -1,19 +1,35 @@
 protocol,ip,port,proxy,anonymity,latency_ms,country_code,country,city,isp,egress_ip
-http,38.194.253.82,999,38.194.253.82:999,Elite,475,MX,Mexico,Huapango,Cogent Communications,38.194.253.82
-http,148.222.136.64,999,148.222.136.64:999,Elite,534,DO,Dominican Republic,Santo Domingo Este,"BITNET DOMINICANA, S.R.L.",148.222.136.64
-http,170.254.201.46,3180,170.254.201.46:3180,Elite,907,BR,Brazil,São Gonçalo,Fibra Empresas Ltda,143.208.152.158
-http,103.133.24.37,8080,103.133.24.37:8080,Elite,1053,ID,Indonesia,Bekasi,PT PHATRIA INTI PERSADA,103.133.24.37
-http,152.0.45.48,8080,152.0.45.48:8080,Elite,1117,DO,Dominican Republic,Santiago de los Caballeros,Compañía Dominicana de Teléfonos S. A.,152.0.45.48
-http,124.105.3.173,5051,124.105.3.173:5051,Elite,1163,PH,Philippines,Salvacion,Philippine Long Distance Telephone Co.,124.105.3.173
-http,117.18.127.238,1088,117.18.127.238:1088,Elite,1231,TH,Thailand,Pattaya,READYIDC CO,117.18.127.238
-http,178.92.72.78,8080,178.92.72.78:8080,Elite,1280,IN,India,Mumbai,IPXO,178.92.72.78
-http,111.119.162.248,10980,111.119.162.248:10980,Elite,1440,PK,Pakistan,Tando Adam,Connect Communication,108.181.70.23
-http,159.65.233.169,54321,159.65.233.169:54321,Elite,1452,US,United States,North Bergen,"DigitalOcean, LLC",159.65.233.169
-http,178.92.72.194,8080,178.92.72.194:8080,Elite,1577,IN,India,Mumbai,IPXO,178.92.72.194
-http,103.68.215.115,8181,103.68.215.115:8181,Elite,1628,ID,Indonesia,Sepatan,PT Media Grasi Internet,103.68.215.115
-http,116.204.166.36,8080,116.204.166.36:8080,Elite,1847,TR,Turkey,Istanbul,High Speed For Internet Services L.L.C,116.204.166.36
-http,5.160.103.45,80,5.160.103.45:80,Elite,2217,IR,Iran,Tehran,Respina Networks & Beyond PJSC,5.160.103.42
-http,45.174.243.96,999,45.174.243.96:999,Elite,2318,MX,Mexico,Candelaria,Sistemas Y Soluciones De Campeche SAS De CV,45.174.243.96
-http,125.163.149.160,8080,125.163.149.160:8080,Elite,2389,ID,Indonesia,Yogyakarta,PT. TELKOM INDONESIA,125.163.149.160
-http,160.19.146.89,2022,160.19.146.89:2022,Elite,2390,ID,Indonesia,Tasikmalaya,PT Taska Sarana Nusantara,160.19.146.89
-http,14.225.2.98,808,14.225.2.98:808,Elite,2462,VN,Vietnam,Hanoi,Vietnam Posts and Telecommunications Group,14.225.2.98
+http,107.167.18.122,443,107.167.18.122:443,Elite,114,US,United States,Los Angeles,Sharktech,107.167.18.99
+http,165.154.162.73,8888,165.154.162.73:8888,Elite,116,US,United States,Los Angeles,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,165.154.162.73
+http,23.94.112.168,8080,23.94.112.168:8080,Elite,129,US,United States,Los Angeles,HostPapa,23.94.112.168
+http,38.194.246.34,999,38.194.246.34:999,Elite,603,MX,Mexico,Huauchinango,Cogent Communications,38.194.246.34
+http,190.12.150.244,999,190.12.150.244:999,Elite,621,EC,Ecuador,Quito,Servitelconet Cia. Ltda.,190.12.150.244
+http,103.237.102.191,11111,103.237.102.191:11111,Elite,740,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
+http,45.71.186.212,999,45.71.186.212:999,Elite,783,EC,Ecuador,Naranjito,Ufinet Panama S.A.,181.78.194.249
+http,193.233.211.220,8443,193.233.211.220:8443,Elite,799,NL,The Netherlands,Amsterdam,Aeza International LTD,193.233.211.220
+http,181.119.224.25,8080,181.119.224.25:8080,Elite,813,EC,Ecuador,Quito,Ufinet Panama S.A.,181.119.224.25
+http,101.32.65.42,8888,101.32.65.42:8888,Elite,834,HK,Hong Kong,Hong Kong,Aceville Pte.ltd,101.32.72.181
+http,45.135.36.59,18080,45.135.36.59:18080,Elite,866,GB,United Kingdom,London,Lumadock LTD,104.28.192.58
+http,2.27.63.250,8118,2.27.63.250:8118,Elite,871,DE,Germany,Frankfurt am Main,Kyonix Networks Limited,2.27.63.250
+http,37.59.125.131,8888,37.59.125.131:8888,Elite,983,FR,France,Roubaix,OVH SAS,82.66.253.58
+http,157.66.3.20,1111,157.66.3.20:1111,Elite,1006,ID,Indonesia,Bekasi Regency,PT Ashyla Karya Abadi,157.66.3.20
+http,5.166.12.63,4444,5.166.12.63:4444,Elite,1024,RU,Russia,Yaroslavl,"CJSC ""ER-Telecom Holding"" Yaroslavl' branch",51.159.176.89
+http,47.81.56.193,8888,47.81.56.193:8888,Elite,1162,TH,Thailand,Bangkok,Alibaba.com LLC,47.81.56.193
+http,14.225.68.207,1337,14.225.68.207:1337,Elite,1250,VN,Vietnam,Hanoi,Vietnam Posts and Telecommunications Group,14.225.68.207
+http,178.92.72.165,8080,178.92.72.165:8080,Elite,1257,IN,India,Mumbai,IPXO,178.92.72.165
+http,43.156.166.134,8080,43.156.166.134:8080,Elite,1322,??,Unknown,-,-,43.156.166.134
+http,8.219.97.248,80,8.219.97.248:80,Elite,1325,SG,Singapore,Singapore,Alibaba Cloud (Singapore) Private Limited,8.219.64.236
+http,43.128.86.102,8080,43.128.86.102:8080,Elite,1332,SG,Singapore,Singapore,Shenzhen Tencent Computer Systems Company Limited,43.128.86.102
+http,43.128.109.40,8081,43.128.109.40:8081,Elite,1489,SG,Singapore,Singapore,Shenzhen Tencent Computer Systems Company Limited,43.128.109.40
+http,154.201.127.182,8080,154.201.127.182:8080,Elite,1555,IN,India,Noida,Real Time Data Services Private Limited,154.201.127.182
+http,154.201.127.61,8080,154.201.127.61:8080,Elite,1556,IN,India,Noida,Real Time Data Services Private Limited,154.201.127.61
+http,154.201.126.21,8080,154.201.126.21:8080,Elite,1559,IN,India,Noida,CtrlS,154.201.126.21
+http,150.241.245.211,8080,150.241.245.211:8080,Elite,1579,IN,India,Bengaluru,Micro Hosting Private Limited,150.241.245.211
+http,178.92.72.134,8080,178.92.72.134:8080,Elite,1608,IN,India,Mumbai,IPXO,178.92.72.134
+http,111.119.162.248,10952,111.119.162.248:10952,Elite,1681,PK,Pakistan,Tando Adam,Connect Communication,156.146.38.167
+http,111.119.162.248,10936,111.119.162.248:10936,Elite,1703,??,Unknown,-,-,8.215.16.244
+http,130.162.192.208,8080,130.162.192.208:8080,Elite,2016,AU,Australia,Melbourne,Oracle Corporation,130.162.192.208
+http,43.156.153.104,8081,43.156.153.104:8081,Elite,2089,SG,Singapore,Singapore,Shenzhen Tencent Computer Systems Company Limited,43.156.153.104
+http,43.156.166.134,8081,43.156.166.134:8081,Elite,2128,SG,Singapore,Singapore,Shenzhen Tencent Computer Systems Company Limited,43.156.166.134
+http,124.217.0.75,8082,124.217.0.75:8082,Elite,2238,PH,Philippines,Cebu City,Philippine Long Distance Telephone Co.,124.217.0.75
+http,123.0.19.42,10000,123.0.19.42:10000,Elite,2272,BD,Bangladesh,Naogaon,Icon Infotech,123.0.17.122
