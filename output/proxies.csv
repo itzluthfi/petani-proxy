@@ -1,34 +1,10 @@
 protocol,ip,port,proxy,anonymity,latency_ms,country_code,country,city,isp,egress_ip
-http,107.167.18.122,443,107.167.18.122:443,Elite,222,US,United States,Los Angeles,Sharktech,107.167.18.99
-http,35.94.215.253,80,35.94.215.253:80,Elite,268,US,United States,Boardman,"Amazon.com, Inc.",35.94.215.253
-http,34.43.46.91,443,34.43.46.91:443,Elite,279,??,Unknown,-,-,8.231.16.63
-http,34.43.46.91,80,34.43.46.91:80,Elite,324,US,United States,Mountain View,Google LLC,34.143.42.117
-http,190.97.241.106,999,190.97.241.106:999,Elite,605,VE,Venezuela,Táriba,Viginet C.A,190.97.241.106
-http,103.237.102.191,11111,103.237.102.191:11111,Elite,659,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
-http,91.196.163.113,8888,91.196.163.113:8888,Elite,664,NL,The Netherlands,Amsterdam,NetCrafters OU,91.196.163.113
-http,193.233.211.220,8443,193.233.211.220:8443,Elite,714,NL,The Netherlands,Amsterdam,Aeza International LTD,193.233.211.220
-http,178.104.234.144,8118,178.104.234.144:8118,Elite,910,DE,Germany,Nuremberg,Hetzner Online GmbH,104.28.193.116
-http,217.182.195.221,30002,217.182.195.221:30002,Elite,915,FR,France,Roubaix,OVH SAS,89.58.41.156
-http,112.169.99.71,8015,112.169.99.71:8015,Elite,1148,KR,South Korea,Gangnam-gu,Korea Telecom,14.46.25.144
-http,43.161.221.15,8181,43.161.221.15:8181,Elite,1203,HK,Hong Kong,Hong Kong,Aceville Pte.ltd,104.28.215.68
-http,178.92.72.162,8080,178.92.72.162:8080,Elite,1218,IN,India,Mumbai,IPXO,178.92.72.162
-http,198.15.30.202,8080,198.15.30.202:8080,Elite,1241,ID,Indonesia,Pamekasan,PT Trimafa Computindo Networking,198.15.30.202
-http,45.194.3.116,8080,45.194.3.116:8080,Elite,1309,IN,India,Noida,CtrlS,45.194.3.116
-http,178.92.72.129,8080,178.92.72.129:8080,Elite,1431,IN,India,Mumbai,IPXO,178.92.72.129
-http,163.181.207.226,9999,163.181.207.226:9999,Elite,1475,VN,Vietnam,Hanoi,"Zhejiang Taobao Network Co., Ltd",163.181.207.226
-http,111.119.162.248,10932,111.119.162.248:10932,Elite,1498,??,Unknown,-,-,8.209.74.72
-http,154.201.127.85,8080,154.201.127.85:8080,Elite,1618,IN,India,Noida,Real Time Data Services Private Limited,154.201.127.85
-http,154.201.126.130,8080,154.201.126.130:8080,Elite,1624,IN,India,Noida,CtrlS,154.201.126.130
-http,111.119.162.248,10945,111.119.162.248:10945,Elite,1662,??,Unknown,-,-,37.19.198.243
-http,150.241.245.249,8080,150.241.245.249:8080,Elite,1679,IN,India,Bengaluru,Micro Hosting Private Limited,150.241.245.249
-http,111.119.162.248,10938,111.119.162.248:10938,Elite,1715,??,Unknown,-,-,8.216.119.64
-http,111.119.162.248,10944,111.119.162.248:10944,Elite,1809,??,Unknown,-,-,149.22.87.204
-http,103.189.223.38,8080,103.189.223.38:8080,Elite,1811,ID,Indonesia,Kresek,PT. WIKAPLUS GLOBAL NUSANTARA,103.189.223.38
-http,38.7.195.52,999,38.7.195.52:999,Elite,1850,CL,Chile,Santiago,Grupo ZGH SpA,151.241.85.26
-http,38.75.82.221,999,38.75.82.221:999,Elite,1909,DO,Dominican Republic,Santo Domingo Este,Cogent Communications,38.75.82.210
-http,111.119.162.248,10935,111.119.162.248:10935,Elite,1914,PK,Pakistan,Tando Adam,Connect Communication,47.250.100.4
-http,111.119.162.248,10943,111.119.162.248:10943,Elite,2113,??,Unknown,-,-,37.19.198.243
-http,103.155.196.46,8080,103.155.196.46:8080,Elite,2114,ID,Indonesia,Bandung,JEMBATANDATA,103.155.196.46
-http,43.128.86.102,8080,43.128.86.102:8080,Elite,2142,SG,Singapore,Singapore,Shenzhen Tencent Computer Systems Company Limited,43.128.86.102
-http,14.161.87.244,2001,14.161.87.244:2001,Elite,2234,VN,Vietnam,Ho Chi Minh City,VNPT,123.25.148.236
-http,157.10.97.185,8080,157.10.97.185:8080,Elite,2247,ID,Indonesia,Palembang,PT Lintas Jaringan Nusantara,157.10.97.185
+http,107.167.18.122,443,107.167.18.122:443,Elite,127,US,United States,Los Angeles,Sharktech,107.167.18.99
+http,184.75.221.82,3118,184.75.221.82:3118,Elite,318,CA,Canada,Toronto,Amanah Tech Inc.,184.75.221.82
+http,103.237.102.191,11111,103.237.102.191:11111,Elite,700,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
+http,43.128.109.40,8081,43.128.109.40:8081,Elite,1209,SG,Singapore,Singapore,Shenzhen Tencent Computer Systems Company Limited,43.128.109.40
+http,45.194.3.116,8080,45.194.3.116:8080,Elite,1581,IN,India,Noida,CtrlS,45.194.3.116
+http,8.219.97.248,80,8.219.97.248:80,Elite,1762,SG,Singapore,Singapore,Alibaba Cloud (Singapore) Private Limited,8.219.64.236
+http,210.211.113.33,80,210.211.113.33:80,Elite,1864,VN,Vietnam,Ho Chi Minh City,VTDC,210.211.113.33
+http,202.58.77.239,8080,202.58.77.239:8080,Elite,2094,ID,Indonesia,Blitar,PT Data Buana Nusantara,202.58.79.101
+http,111.119.162.248,10971,111.119.162.248:10971,Elite,2220,PK,Pakistan,Tando Adam,Connect Communication,47.252.0.200
