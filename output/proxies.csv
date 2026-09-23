@@ -1,10 +1,22 @@
 protocol,ip,port,proxy,anonymity,latency_ms,country_code,country,city,isp,egress_ip
-http,107.167.18.122,443,107.167.18.122:443,Elite,127,US,United States,Los Angeles,Sharktech,107.167.18.99
-http,184.75.221.82,3118,184.75.221.82:3118,Elite,318,CA,Canada,Toronto,Amanah Tech Inc.,184.75.221.82
-http,103.237.102.191,11111,103.237.102.191:11111,Elite,700,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
-http,43.128.109.40,8081,43.128.109.40:8081,Elite,1209,SG,Singapore,Singapore,Shenzhen Tencent Computer Systems Company Limited,43.128.109.40
-http,45.194.3.116,8080,45.194.3.116:8080,Elite,1581,IN,India,Noida,CtrlS,45.194.3.116
-http,8.219.97.248,80,8.219.97.248:80,Elite,1762,SG,Singapore,Singapore,Alibaba Cloud (Singapore) Private Limited,8.219.64.236
-http,210.211.113.33,80,210.211.113.33:80,Elite,1864,VN,Vietnam,Ho Chi Minh City,VTDC,210.211.113.33
-http,202.58.77.239,8080,202.58.77.239:8080,Elite,2094,ID,Indonesia,Blitar,PT Data Buana Nusantara,202.58.79.101
-http,111.119.162.248,10971,111.119.162.248:10971,Elite,2220,PK,Pakistan,Tando Adam,Connect Communication,47.252.0.200
+http,23.94.112.168,8080,23.94.112.168:8080,Elite,320,US,United States,Los Angeles,HostPapa,23.94.112.168
+http,107.167.18.122,443,107.167.18.122:443,Elite,331,US,United States,Los Angeles,Sharktech,107.167.18.99
+http,34.241.241.59,80,34.241.241.59:80,Elite,467,IE,Ireland,Dublin,Amazon Technologies Inc.,34.241.241.59
+http,145.220.227.1,1081,145.220.227.1:1081,Elite,533,NL,The Netherlands,Utrecht,SURFnet III d,145.220.227.1
+http,103.237.102.191,11111,103.237.102.191:11111,Elite,538,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
+http,41.142.103.250,20202,41.142.103.250:20202,Elite,724,MA,Morocco,Tangier,ADSL Maroc telecom,196.65.244.81
+http,2.27.63.250,8118,2.27.63.250:8118,Elite,784,DE,Germany,Frankfurt am Main,Kyonix Networks Limited,2.27.63.250
+http,37.59.125.131,8888,37.59.125.131:8888,Elite,809,FR,France,Roubaix,OVH SAS,82.66.253.58
+http,101.32.241.115,8080,101.32.241.115:8080,Elite,1299,SG,Singapore,Singapore,Aceville Pte.ltd,101.32.241.115
+http,43.128.86.102,8080,43.128.86.102:8080,Elite,1302,SG,Singapore,Singapore,Shenzhen Tencent Computer Systems Company Limited,43.128.86.102
+http,154.201.127.46,8080,154.201.127.46:8080,Elite,1344,IN,India,Noida,Real Time Data Services Private Limited,154.201.127.46
+http,178.92.72.129,8080,178.92.72.129:8080,Elite,1379,IN,India,Mumbai,IPXO,178.92.72.129
+http,171.237.97.104,10009,171.237.97.104:10009,Elite,1653,VN,Vietnam,Ninh Binh,Viettel Corporation,171.237.93.247
+http,85.133.250.27,80,85.133.250.27:80,Elite,1704,IR,Iran,Tehran,Pars Abr Toseeh Ertebatat LTD,130.185.120.91
+http,43.128.109.40,8081,43.128.109.40:8081,Elite,1865,SG,Singapore,Singapore,Shenzhen Tencent Computer Systems Company Limited,43.128.109.40
+http,43.128.109.40,8080,43.128.109.40:8080,Elite,1905,??,Unknown,-,-,43.128.109.40
+http,43.156.166.134,8080,43.156.166.134:8080,Elite,1947,SG,Singapore,Singapore,Shenzhen Tencent Computer Systems Company Limited,43.156.166.134
+http,202.58.77.214,8080,202.58.77.214:8080,Elite,2212,ID,Indonesia,Blitar,PT Data Buana Nusantara,202.58.78.31
+http,101.32.246.32,8080,101.32.246.32:8080,Elite,2221,SG,Singapore,Singapore,Aceville Pte.ltd,101.32.246.32
+http,103.189.223.38,8080,103.189.223.38:8080,Elite,2246,ID,Indonesia,Kresek,PT. WIKAPLUS GLOBAL NUSANTARA,103.189.223.38
+http,210.211.113.33,80,210.211.113.33:80,Elite,2453,VN,Vietnam,Ho Chi Minh City,VTDC,210.211.113.33
