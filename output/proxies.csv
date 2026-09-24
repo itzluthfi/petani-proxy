@@ -1,21 +1,19 @@
 protocol,ip,port,proxy,anonymity,latency_ms,country_code,country,city,isp,egress_ip
-http,107.167.18.122,443,107.167.18.122:443,Elite,118,US,United States,Los Angeles,Sharktech,107.167.18.99
-http,47.254.122.220,5443,47.254.122.220:5443,Elite,176,US,United States,Minkler,Alibaba Cloud LLC,47.254.122.220
-http,54.219.169.64,1001,54.219.169.64:1001,Elite,223,US,United States,San Jose,"Amazon.com, Inc.",54.219.169.64
-http,38.18.230.153,8888,38.18.230.153:8888,Elite,253,US,United States,Ashburn,Tier.Net Technologies LLC,38.18.230.153
-http,38.210.179.30,999,38.210.179.30:999,Elite,394,MX,Mexico,Zimapán,Jair Lozano / Intercom Internet,38.210.179.199
-http,104.36.237.230,8080,104.36.237.230:8080,Elite,489,US,United States,Kennewick,Desert Winds Wireless,64.146.129.143
-http,103.237.102.191,11111,103.237.102.191:11111,Elite,668,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
-http,95.3.69.222,8080,95.3.69.222:8080,Elite,1012,TR,Türkiye,Istanbul,Turk Telekomunikasyon Anonim Sirketi,95.3.69.222
-http,8.215.25.3,2081,8.215.25.3:2081,Elite,1038,ID,Indonesia,Jakarta,"Alibaba (US) Technology Co., Ltd.",8.215.25.3
-http,43.173.120.13,8899,43.173.120.13:8899,Elite,1052,US,United States,Santa Clara,Shenzhen Tencent Computer Systems Company Limited,43.173.120.13
-http,210.211.113.37,80,210.211.113.37:80,Elite,1087,VN,Vietnam,Ho Chi Minh City,VTDC,210.211.113.37
-http,198.46.170.48,7890,198.46.170.48:7890,Elite,1141,US,United States,Buffalo,HostPapa,198.46.170.48
-http,178.92.72.149,8080,178.92.72.149:8080,Elite,1259,IN,India,Mumbai,IPXO,178.92.72.149
-http,103.171.255.110,8080,103.171.255.110:8080,Elite,1318,ID,Indonesia,Sleman,PT Zona Kolektif Indonesia,103.171.255.110
-http,152.53.183.107,8082,152.53.183.107:8082,Elite,1726,DE,Germany,Nuremberg,netcup GmbH,152.53.183.107
-http,145.220.227.4,8080,145.220.227.4:8080,Elite,1981,NL,The Netherlands,Utrecht,SURFnet III d,145.220.227.4
-http,38.7.195.53,999,38.7.195.53:999,Elite,2013,CL,Chile,Santiago,Grupo ZGH SpA,151.241.85.26
-http,119.93.87.65,8080,119.93.87.65:8080,Elite,2179,PH,Philippines,Makati City,Philippine Long Distance Telephone Co.,119.93.87.65
-http,154.201.127.46,8080,154.201.127.46:8080,Elite,2358,IN,India,Noida,Real Time Data Services Private Limited,154.201.127.46
-http,190.12.150.244,999,190.12.150.244:999,Elite,2388,EC,Ecuador,Quito,Servitelconet Cia. Ltda.,190.12.150.244
+http,47.254.36.25,11080,47.254.36.25:11080,Elite,95,US,United States,Minkler,Alibaba Cloud LLC,47.254.36.25
+http,43.173.120.13,8899,43.173.120.13:8899,Elite,102,US,United States,Santa Clara,Shenzhen Tencent Computer Systems Company Limited,43.173.120.13
+http,107.167.18.122,443,107.167.18.122:443,Elite,145,US,United States,Los Angeles,Sharktech,107.167.18.99
+http,184.75.221.82,3118,184.75.221.82:3118,Elite,279,CA,Canada,Toronto,Amanah Tech Inc.,184.75.221.82
+http,165.154.162.73,8888,165.154.162.73:8888,Elite,452,US,United States,Los Angeles,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,165.154.162.73
+http,200.24.147.66,999,200.24.147.66:999,Elite,608,EC,Ecuador,Quito,Ufinet Panama S.A.,200.24.147.66
+http,103.237.102.191,11111,103.237.102.191:11111,Elite,736,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
+http,145.220.227.4,1081,145.220.227.4:1081,Elite,801,NL,The Netherlands,Utrecht,SURFnet III d,145.220.227.4
+http,193.29.225.77,8080,193.29.225.77:8080,Elite,892,FI,Finland,Helsinki,Aeza International LTD,193.29.225.77
+http,192.133.66.91,8081,192.133.66.91:8081,Elite,1100,PH,Philippines,Capas,1race ICT Inc.,192.133.66.91
+http,174.138.165.211,34306,174.138.165.211:34306,Elite,1129,US,United States,Phoenix,Secured Servers LLC,136.39.2.183
+http,47.81.56.193,8888,47.81.56.193:8888,Elite,1133,TH,Thailand,Bangkok,Alibaba.com LLC,47.81.56.193
+http,112.169.99.71,8004,112.169.99.71:8004,Elite,1194,KR,South Korea,Gangnam-gu,Korea Telecom,119.201.5.20
+http,117.18.127.238,1816,117.18.127.238:1816,Elite,1205,TH,Thailand,Pattaya,READYIDC CO,117.18.127.238
+http,210.211.113.33,80,210.211.113.33:80,Elite,1332,VN,Vietnam,Ho Chi Minh City,VTDC,210.211.113.33
+http,90.156.160.235,8080,90.156.160.235:8080,Elite,1435,UZ,Uzbekistan,Tashkent,Uzbektelecom JSC,90.156.160.235
+http,116.0.53.37,8080,116.0.53.37:8080,Elite,1483,PK,Pakistan,Model Town,Supernet,116.0.53.37
+http,103.18.79.108,8080,103.18.79.108:8080,Elite,2111,ID,Indonesia,Bogor,PT Usaha Adi Sanggoro,103.18.79.108
