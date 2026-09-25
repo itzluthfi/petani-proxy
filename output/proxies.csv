@@ -1,17 +1,28 @@
 protocol,ip,port,proxy,anonymity,latency_ms,country_code,country,city,isp,egress_ip
-http,107.167.18.122,443,107.167.18.122:443,Elite,112,US,United States,Los Angeles,Sharktech,107.167.18.99
-http,165.154.162.73,8888,165.154.162.73:8888,Elite,142,US,United States,Los Angeles,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,165.154.162.73
-http,190.97.241.106,999,190.97.241.106:999,Elite,664,VE,Venezuela,Táriba,Viginet C.A,190.97.241.106
-http,95.211.174.135,3128,95.211.174.135:3128,Elite,675,NL,The Netherlands,Haarlem,LeaseWeb Netherlands B.V.,95.211.174.135
-http,103.237.102.191,11111,103.237.102.191:11111,Elite,720,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
-http,138.197.68.35,4857,138.197.68.35:4857,Elite,817,US,United States,Clifton,"DigitalOcean, LLC",138.197.68.35
-http,8.215.25.3,2080,8.215.25.3:2080,Elite,1008,??,Unknown,-,-,8.215.25.3
-http,8.215.25.3,2081,8.215.25.3:2081,Elite,1016,ID,Indonesia,Jakarta,"Alibaba (US) Technology Co., Ltd.",8.215.25.3
-http,167.86.104.220,80,167.86.104.220:80,Elite,1157,FR,France,Lauterbourg,Contabo GmbH,167.86.104.220
-http,208.68.37.38,10000,208.68.37.38:10000,Elite,1348,US,United States,North Bergen,"DigitalOcean, LLC",208.68.37.38
-http,193.29.225.77,8080,193.29.225.77:8080,Elite,1502,FI,Finland,Helsinki,Aeza International LTD,193.29.225.77
-http,154.201.127.198,8080,154.201.127.198:8080,Elite,1613,IN,India,Noida,Real Time Data Services Private Limited,154.201.127.198
-http,45.194.3.119,8080,45.194.3.119:8080,Elite,1617,IN,India,Noida,CtrlS,45.194.3.119
-http,210.211.113.37,80,210.211.113.37:80,Elite,1941,VN,Vietnam,Ho Chi Minh City,VTDC,210.211.113.37
-http,43.134.39.221,10000,43.134.39.221:10000,Elite,1950,SG,Singapore,Singapore,Shenzhen Tencent Computer Systems Company Limited,43.134.39.221
-http,45.71.186.213,999,45.71.186.213:999,Elite,2106,EC,Ecuador,Naranjito,Ufinet Panama S.A.,181.78.194.249
+http,107.167.18.122,443,107.167.18.122:443,Elite,324,US,United States,Los Angeles,Sharktech,107.167.18.99
+http,38.210.179.30,999,38.210.179.30:999,Elite,401,MX,Mexico,Alfajayucan,Jair Lozano / Intercom Internet,38.210.179.199
+http,103.237.102.191,11111,103.237.102.191:11111,Elite,649,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
+http,43.173.120.13,8899,43.173.120.13:8899,Elite,763,US,United States,Santa Clara,Shenzhen Tencent Computer Systems Company Limited,43.173.120.13
+http,165.154.7.156,8888,165.154.7.156:8888,Elite,994,HK,Hong Kong,Hong Kong,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,165.154.7.156
+http,37.59.125.131,8888,37.59.125.131:8888,Elite,1082,FR,France,Roubaix,OVH SAS,82.66.253.58
+http,8.219.97.248,80,8.219.97.248:80,Elite,1134,SG,Singapore,Singapore,Alibaba Cloud (Singapore) Private Limited,8.219.64.236
+http,178.217.168.164,55443,178.217.168.164:55443,Elite,1143,KG,Kyrgyzstan,Bishkek,KRENA - Kyrgyz research and education network association,178.217.168.164
+http,145.220.227.1,8080,145.220.227.1:8080,Elite,1153,NL,The Netherlands,Utrecht,SURFnet III d,145.220.227.1
+http,103.18.79.108,8080,103.18.79.108:8080,Elite,1185,ID,Indonesia,Bogor,PT Usaha Adi Sanggoro,103.18.79.108
+http,210.211.113.33,80,210.211.113.33:80,Elite,1194,VN,Vietnam,Ho Chi Minh City,VTDC,210.211.113.33
+http,178.92.72.194,8080,178.92.72.194:8080,Elite,1286,IN,India,Mumbai,Micro Hosting Private Limited,178.92.72.194
+http,217.182.195.221,30006,217.182.195.221:30006,Elite,1290,FR,France,Roubaix,OVH SAS,107.189.4.12
+http,43.134.39.221,10000,43.134.39.221:10000,Elite,1526,SG,Singapore,Singapore,Shenzhen Tencent Computer Systems Company Limited,43.134.39.221
+http,178.92.72.229,8080,178.92.72.229:8080,Elite,1556,IN,India,Mumbai,Micro Hosting Private Limited,178.92.72.229
+http,198.15.30.162,8080,198.15.30.162:8080,Elite,1582,ID,Indonesia,Pamekasan,PT Trimafa Computindo Networking,198.15.30.162
+http,45.194.3.119,8080,45.194.3.119:8080,Elite,1645,IN,India,Noida,CtrlS,45.194.3.119
+http,45.194.90.194,8080,45.194.90.194:8080,Elite,1676,IN,India,Noida,Shanxi Liyun Breeding Co,45.194.90.194
+http,174.138.161.146,34914,174.138.161.146:34914,Elite,1919,US,United States,Phoenix,Secured Servers LLC,174.65.101.100
+http,145.220.227.4,1081,145.220.227.4:1081,Elite,2013,NL,The Netherlands,Utrecht,SURFnet III d,145.220.227.4
+http,111.119.162.248,10928,111.119.162.248:10928,Elite,2120,PK,Pakistan,Tando Adam,Connect Communication,47.90.176.29
+http,174.138.161.146,35634,174.138.161.146:35634,Elite,2241,??,Unknown,-,-,72.47.133.137
+http,111.119.162.248,10906,111.119.162.248:10906,Elite,2316,??,Unknown,-,-,47.90.218.52
+http,165.154.162.73,8888,165.154.162.73:8888,Elite,2330,US,United States,Los Angeles,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,165.154.162.73
+http,111.119.162.248,10935,111.119.162.248:10935,Elite,2332,??,Unknown,-,-,47.250.100.4
+http,157.66.50.55,8080,157.66.50.55:8080,Elite,2358,ID,Indonesia,Cikampek,PT BARAYA TELEKOMUNIKASI INDONESIA,157.66.50.55
+http,174.138.162.234,63616,174.138.162.234:63616,Elite,2487,US,United States,Phoenix,Secured Servers LLC,201.172.20.109
