@@ -1,28 +1,51 @@
 protocol,ip,port,proxy,anonymity,latency_ms,country_code,country,city,isp,egress_ip
-http,107.167.18.122,443,107.167.18.122:443,Elite,324,US,United States,Los Angeles,Sharktech,107.167.18.99
-http,38.210.179.30,999,38.210.179.30:999,Elite,401,MX,Mexico,Alfajayucan,Jair Lozano / Intercom Internet,38.210.179.199
-http,103.237.102.191,11111,103.237.102.191:11111,Elite,649,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
-http,43.173.120.13,8899,43.173.120.13:8899,Elite,763,US,United States,Santa Clara,Shenzhen Tencent Computer Systems Company Limited,43.173.120.13
-http,165.154.7.156,8888,165.154.7.156:8888,Elite,994,HK,Hong Kong,Hong Kong,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,165.154.7.156
-http,37.59.125.131,8888,37.59.125.131:8888,Elite,1082,FR,France,Roubaix,OVH SAS,82.66.253.58
-http,8.219.97.248,80,8.219.97.248:80,Elite,1134,SG,Singapore,Singapore,Alibaba Cloud (Singapore) Private Limited,8.219.64.236
-http,178.217.168.164,55443,178.217.168.164:55443,Elite,1143,KG,Kyrgyzstan,Bishkek,KRENA - Kyrgyz research and education network association,178.217.168.164
-http,145.220.227.1,8080,145.220.227.1:8080,Elite,1153,NL,The Netherlands,Utrecht,SURFnet III d,145.220.227.1
-http,103.18.79.108,8080,103.18.79.108:8080,Elite,1185,ID,Indonesia,Bogor,PT Usaha Adi Sanggoro,103.18.79.108
-http,210.211.113.33,80,210.211.113.33:80,Elite,1194,VN,Vietnam,Ho Chi Minh City,VTDC,210.211.113.33
-http,178.92.72.194,8080,178.92.72.194:8080,Elite,1286,IN,India,Mumbai,Micro Hosting Private Limited,178.92.72.194
-http,217.182.195.221,30006,217.182.195.221:30006,Elite,1290,FR,France,Roubaix,OVH SAS,107.189.4.12
-http,43.134.39.221,10000,43.134.39.221:10000,Elite,1526,SG,Singapore,Singapore,Shenzhen Tencent Computer Systems Company Limited,43.134.39.221
-http,178.92.72.229,8080,178.92.72.229:8080,Elite,1556,IN,India,Mumbai,Micro Hosting Private Limited,178.92.72.229
-http,198.15.30.162,8080,198.15.30.162:8080,Elite,1582,ID,Indonesia,Pamekasan,PT Trimafa Computindo Networking,198.15.30.162
-http,45.194.3.119,8080,45.194.3.119:8080,Elite,1645,IN,India,Noida,CtrlS,45.194.3.119
-http,45.194.90.194,8080,45.194.90.194:8080,Elite,1676,IN,India,Noida,Shanxi Liyun Breeding Co,45.194.90.194
-http,174.138.161.146,34914,174.138.161.146:34914,Elite,1919,US,United States,Phoenix,Secured Servers LLC,174.65.101.100
-http,145.220.227.4,1081,145.220.227.4:1081,Elite,2013,NL,The Netherlands,Utrecht,SURFnet III d,145.220.227.4
-http,111.119.162.248,10928,111.119.162.248:10928,Elite,2120,PK,Pakistan,Tando Adam,Connect Communication,47.90.176.29
-http,174.138.161.146,35634,174.138.161.146:35634,Elite,2241,??,Unknown,-,-,72.47.133.137
-http,111.119.162.248,10906,111.119.162.248:10906,Elite,2316,??,Unknown,-,-,47.90.218.52
-http,165.154.162.73,8888,165.154.162.73:8888,Elite,2330,US,United States,Los Angeles,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,165.154.162.73
-http,111.119.162.248,10935,111.119.162.248:10935,Elite,2332,??,Unknown,-,-,47.250.100.4
-http,157.66.50.55,8080,157.66.50.55:8080,Elite,2358,ID,Indonesia,Cikampek,PT BARAYA TELEKOMUNIKASI INDONESIA,157.66.50.55
-http,174.138.162.234,63616,174.138.162.234:63616,Elite,2487,US,United States,Phoenix,Secured Servers LLC,201.172.20.109
+http,174.138.161.146,36014,174.138.161.146:36014,Elite,258,??,Unknown,-,-,73.71.87.100
+http,24.52.147.103,5999,24.52.147.103:5999,Elite,287,US,United States,Havana,"Cass Cable TV, Inc.",24.52.147.103
+http,146.190.60.147,8005,146.190.60.147:8005,Elite,294,US,United States,Santa Clara,"DigitalOcean, LLC",146.190.60.147
+http,174.138.162.35,36895,174.138.162.35:36895,Elite,305,US,United States,Phoenix,Secured Servers LLC,108.32.52.124
+http,174.138.161.146,55594,174.138.161.146:55594,Elite,359,??,Unknown,-,-,47.197.54.58
+http,131.153.1.46,20005,131.153.1.46:20005,Elite,502,US,United States,Ashburn,Secured Servers LLC,96.241.18.178
+http,43.173.120.13,8899,43.173.120.13:8899,Elite,579,US,United States,Santa Clara,Shenzhen Tencent Computer Systems Company Limited,43.173.120.13
+http,103.237.102.191,11111,103.237.102.191:11111,Elite,662,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
+http,174.138.161.187,52220,174.138.161.187:52220,Elite,695,??,Unknown,-,-,68.2.71.24
+http,144.124.251.24,10453,144.124.251.24:10453,Elite,724,??,Unknown,-,-,144.124.251.24
+http,144.124.251.24,10099,144.124.251.24:10099,Elite,727,??,Unknown,-,-,144.124.251.24
+http,144.124.251.24,10123,144.124.251.24:10123,Elite,760,??,Unknown,-,-,144.124.251.24
+http,181.119.224.25,8080,181.119.224.25:8080,Elite,771,EC,Ecuador,Quito,Ufinet Panama S.A.,181.119.224.25
+http,144.124.251.24,10551,144.124.251.24:10551,Elite,773,??,Unknown,-,-,144.124.251.24
+http,174.138.161.190,56180,174.138.161.190:56180,Elite,841,US,United States,Phoenix,Secured Servers LLC,47.159.218.96
+http,101.32.65.42,8888,101.32.65.42:8888,Elite,854,HK,Hong Kong,Hong Kong,Aceville Pte.ltd,101.32.76.202
+http,144.124.251.24,10261,144.124.251.24:10261,Elite,856,??,Unknown,-,-,144.124.251.24
+http,43.134.39.221,10000,43.134.39.221:10000,Elite,970,SG,Singapore,Singapore,Shenzhen Tencent Computer Systems Company Limited,43.134.39.221
+http,174.138.161.146,36213,174.138.161.146:36213,Elite,1012,US,United States,Phoenix,Secured Servers LLC,73.92.214.65
+http,165.154.7.156,8888,165.154.7.156:8888,Elite,1061,HK,Hong Kong,Hong Kong,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,165.154.7.156
+http,103.133.26.50,8080,103.133.26.50:8080,Elite,1109,ID,Indonesia,Bekasi,PT PHATRIA INTI PERSADA,103.133.24.37
+http,181.119.67.73,999,181.119.67.73:999,Elite,1152,CO,Colombia,Barrancabermeja,IFX Networks Argentina S.R.L,181.119.67.73
+http,185.68.185.4,8888,185.68.185.4:8888,Elite,1223,FR,France,Paris,Baykov Ilya Sergeevich,185.68.185.4
+http,47.254.36.25,11080,47.254.36.25:11080,Elite,1231,US,United States,Minkler,Alibaba Cloud LLC,47.254.36.25
+http,117.18.127.238,1872,117.18.127.238:1872,Elite,1241,??,Unknown,-,-,117.18.127.238
+http,174.138.165.211,36099,174.138.165.211:36099,Elite,1246,US,United States,Phoenix,Secured Servers LLC,68.105.77.15
+http,117.18.127.238,1734,117.18.127.238:1734,Elite,1252,TH,Thailand,Pattaya,READYIDC CO,117.18.127.238
+http,201.7.31.55,8080,201.7.31.55:8080,Elite,1254,TR,Turkey,Himmetdede,High Speed For Internet Services L.L.C,201.7.31.55
+http,144.124.251.24,10007,144.124.251.24:10007,Elite,1256,NL,The Netherlands,Amsterdam,Servers Tech Fzco,144.124.251.24
+http,74.50.211.190,8080,74.50.211.190:8080,Elite,1276,MM,Myanmar,Yangon,Nine Communications Company Limited,74.50.211.190
+http,178.92.72.54,8080,178.92.72.54:8080,Elite,1295,IN,India,Mumbai,Micro Hosting Private Limited,178.92.72.54
+http,203.205.49.2,10031,203.205.49.2:10031,Elite,1306,VN,Vietnam,Mai Dich,CMC Telecom Infrastructure Company,203.205.49.34
+http,102.39.156.82,8080,102.39.156.82:8080,Elite,1347,ZA,South Africa,Cape Town,Vox Telecommunications (Pty) Limited,102.39.156.82
+http,85.133.190.40,8097,85.133.190.40:8097,Elite,1838,IR,Iran,Tehran,Sepanta Internet and MPLS Service Provider,85.133.190.40
+http,145.220.227.1,8080,145.220.227.1:8080,Elite,1863,NL,The Netherlands,Utrecht,SURFnet III d,145.220.227.1
+http,174.138.161.187,8182,174.138.161.187:8182,Elite,1881,US,United States,Phoenix,Secured Servers LLC,93.41.116.13
+http,202.59.75.3,8080,202.59.75.3:8080,Elite,1893,PK,Pakistan,Lahore,NEXLINX,202.59.75.3
+http,111.119.162.248,10952,111.119.162.248:10952,Elite,1975,??,Unknown,-,-,156.146.38.167
+http,158.101.89.163,3123,158.101.89.163:3123,Elite,1988,JP,Japan,Tokyo,Oracle Corporation,158.101.89.163
+http,111.119.162.248,10916,111.119.162.248:10916,Elite,1994,??,Unknown,-,-,47.254.157.156
+http,103.24.215.249,8082,103.24.215.249:8082,Elite,1994,ID,Indonesia,Weleri,PT. ADAU PUTRA NETWORK,103.24.214.69
+http,148.113.167.24,8080,148.113.167.24:8080,Elite,2102,CA,Canada,Montreal,OVH SAS,148.113.167.24
+http,37.59.125.131,8888,37.59.125.131:8888,Elite,2169,FR,France,Roubaix,OVH SAS,82.66.253.58
+http,111.119.162.248,10942,111.119.162.248:10942,Elite,2229,??,Unknown,-,-,149.22.87.204
+http,38.7.195.50,999,38.7.195.50:999,Elite,2248,CL,Chile,Santiago,Grupo ZGH SpA,151.241.85.26
+http,38.123.220.105,999,38.123.220.105:999,Elite,2253,MX,Mexico,Ejido de Santa María Nativitas,Cogent Communications,38.58.38.45
+http,38.194.246.34,999,38.194.246.34:999,Elite,2310,MX,Mexico,Huauchinango,IENTC S de RL de CV,38.194.246.34
+http,152.53.183.107,8081,152.53.183.107:8081,Elite,2318,DE,Germany,Nuremberg,netcup GmbH,152.53.183.107
+http,103.165.229.174,8080,103.165.229.174:8080,Elite,2381,ID,Indonesia,Central Jakarta,PT iForte Global Internet,103.165.229.174
+http,111.119.162.248,10921,111.119.162.248:10921,Elite,2391,PK,Pakistan,Tando Adam,Connect Communication,47.87.16.1
