@@ -1,28 +1,26 @@
 protocol,ip,port,proxy,anonymity,latency_ms,country_code,country,city,isp,egress_ip
-http,43.173.120.13,8899,43.173.120.13:8899,Elite,317,US,United States,Santa Clara,Shenzhen Tencent Computer Systems Company Limited,43.173.120.13
-http,184.75.221.82,3118,184.75.221.82:3118,Elite,334,CA,Canada,Toronto,Amanah Tech Inc.,184.75.221.82
-http,45.178.74.54,999,45.178.74.54:999,Elite,410,MX,Mexico,Solidaridad,Abix Telecomunicaciones S.a. De C.V.,45.178.74.54
-http,8.221.106.175,7000,8.221.106.175:7000,Elite,467,US,United States,Charlottesville,"Alibaba (US) Technology Co., Ltd.",8.221.106.175
-http,103.237.102.191,11111,103.237.102.191:11111,Elite,768,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
-http,112.216.54.226,12121,112.216.54.226:12121,Elite,824,KR,South Korea,Yongin-si,LG DACOM Corporation,112.216.54.226
-http,65.109.215.187,8090,65.109.215.187:8090,Elite,857,FI,Finland,Helsinki,Hetzner Online GmbH,65.109.215.187
-http,18.163.100.225,8080,18.163.100.225:8080,Elite,886,HK,Hong Kong,Hong Kong,Amazon Technologies Inc.,146.56.142.151
-http,51.250.119.75,2080,51.250.119.75:2080,Elite,908,RU,Russia,Moscow,Yandex.Cloud LLC,51.250.119.75
-http,108.61.29.163,10001,108.61.29.163:10001,Elite,910,US,United States,Piscataway,The Constant Company,108.61.29.163
-http,79.137.78.133,8013,79.137.78.133:8013,Elite,943,FR,France,Roubaix,OVH SAS,149.88.110.37
-http,128.199.202.122,8080,128.199.202.122:8080,Elite,948,SG,Singapore,Singapore,"DigitalOcean, LLC",128.199.202.122
-http,4.144.146.21,80,4.144.146.21:80,Elite,1083,SG,Singapore,Singapore,Microsoft Corporation,20.44.210.140
-http,51.158.63.121,8080,51.158.63.121:8080,Elite,1110,FR,France,Paris,SCALEWAY,51.158.63.121
-http,102.244.78.61,8090,102.244.78.61:8090,Elite,1305,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8086,102.244.78.61:8086,Elite,1310,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8088,102.244.78.61:8088,Elite,1312,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8081,102.244.78.61:8081,Elite,1315,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8089,102.244.78.61:8089,Elite,1316,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8082,102.244.78.61:8082,Elite,1318,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8087,102.244.78.61:8087,Elite,1319,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8085,102.244.78.61:8085,Elite,1320,CM,Cameroon,Douala,Orange CAM INTERNET,102.244.78.57
-http,102.244.78.61,8080,102.244.78.61:8080,Elite,1354,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8084,102.244.78.61:8084,Elite,1356,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8083,102.244.78.61:8083,Elite,1401,??,Unknown,-,-,102.244.78.57
-http,76.13.193.225,8080,76.13.193.225:8080,Elite,1417,ID,Indonesia,Jakarta,Hostinger ID,76.13.193.225
-http,87.199.202.58,443,87.199.202.58:443,Elite,1707,NL,The Netherlands,Amsterdam,Servers Tech Fzco,87.199.202.58
+http,107.167.18.122,443,107.167.18.122:443,Elite,306,US,United States,Los Angeles,Sharktech,107.167.18.124
+http,34.43.46.91,80,34.43.46.91:80,Elite,316,US,United States,Mountain View,Google LLC,34.143.51.195
+http,192.119.102.215,1314,192.119.102.215:1314,Elite,365,US,United States,Los Angeles,HostPapa,192.119.102.215
+http,165.154.162.73,8888,165.154.162.73:8888,Elite,365,US,United States,Los Angeles,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,165.154.162.73
+http,187.201.225.188,999,187.201.225.188:999,Elite,405,MX,Mexico,Guadalajara,Uninet S.A. de C.V.,187.201.225.188
+http,103.237.102.191,11111,103.237.102.191:11111,Elite,469,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
+http,181.78.195.137,999,181.78.195.137:999,Elite,500,EC,Ecuador,Guayaquil,Ufinet Panama S.A.,205.235.1.115
+http,65.109.219.108,2000,65.109.219.108:2000,Elite,736,FI,Finland,Helsinki,Hetzner Online GmbH,65.109.219.108
+http,102.244.78.61,8089,102.244.78.61:8089,Elite,1129,CM,Cameroon,Douala,Orange CAM INTERNET,102.244.78.57
+http,165.22.99.36,8011,165.22.99.36:8011,Elite,1179,SG,Singapore,Singapore,"DigitalOcean, LLC",165.22.99.36
+http,189.51.171.226,999,189.51.171.226:999,Elite,1283,MX,Mexico,Mérida,Comunicación por Fibra SA de CV,189.51.171.226
+http,112.201.179.242,5050,112.201.179.242:5050,Elite,1288,PH,Philippines,Taytay,Philippine Long Distance Telephone Co.,112.201.179.242
+http,43.173.120.13,8899,43.173.120.13:8899,Elite,1410,US,United States,Santa Clara,Shenzhen Tencent Computer Systems Company Limited,43.173.120.13
+http,111.119.162.248,10976,111.119.162.248:10976,Elite,1424,PK,Pakistan,Tando Adam,Connect Communication,209.46.102.22
+http,38.253.240.183,9191,38.253.240.183:9191,Elite,1452,ID,Indonesia,Banjarnegara,Cogent Communications,38.253.240.183
+http,113.161.93.6,8080,113.161.93.6:8080,Elite,1463,VN,Vietnam,Ho Chi Minh City,VietNam Post and Telecom Corporation,113.161.93.6
+http,210.211.113.35,80,210.211.113.35:80,Elite,1477,VN,Vietnam,Ho Chi Minh City,VTDC,210.211.113.35
+http,111.119.162.248,10982,111.119.162.248:10982,Elite,1490,??,Unknown,-,-,193.29.139.234
+http,111.119.162.248,10974,111.119.162.248:10974,Elite,1566,??,Unknown,-,-,4.222.217.240
+http,111.119.162.248,10915,111.119.162.248:10915,Elite,1689,??,Unknown,-,-,47.237.48.66
+http,179.184.163.133,44443,179.184.163.133:44443,Elite,1817,BR,Brazil,Belo Horizonte,TELEFÔNICA BRASIL S.A,186.232.94.66
+http,111.119.162.248,10932,111.119.162.248:10932,Elite,1818,??,Unknown,-,-,8.209.74.72
+http,27.69.77.5,2111,27.69.77.5:2111,Elite,2041,VN,Vietnam,Hanoi,Viettel Group,27.73.208.144
+http,41.216.191.85,8080,41.216.191.85:8080,Elite,2432,ID,Indonesia,South Jakarta,Perwira,103.86.116.38
+http,156.230.189.126,8080,156.230.189.126:8080,Elite,2461,ID,Indonesia,Jakarta,My Republic Indonesia,156.230.189.126
