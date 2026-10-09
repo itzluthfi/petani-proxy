@@ -1,26 +1,25 @@
 protocol,ip,port,proxy,anonymity,latency_ms,country_code,country,city,isp,egress_ip
-http,107.167.18.122,443,107.167.18.122:443,Elite,306,US,United States,Los Angeles,Sharktech,107.167.18.124
-http,34.43.46.91,80,34.43.46.91:80,Elite,316,US,United States,Mountain View,Google LLC,34.143.51.195
-http,192.119.102.215,1314,192.119.102.215:1314,Elite,365,US,United States,Los Angeles,HostPapa,192.119.102.215
-http,165.154.162.73,8888,165.154.162.73:8888,Elite,365,US,United States,Los Angeles,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,165.154.162.73
-http,187.201.225.188,999,187.201.225.188:999,Elite,405,MX,Mexico,Guadalajara,Uninet S.A. de C.V.,187.201.225.188
-http,103.237.102.191,11111,103.237.102.191:11111,Elite,469,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
-http,181.78.195.137,999,181.78.195.137:999,Elite,500,EC,Ecuador,Guayaquil,Ufinet Panama S.A.,205.235.1.115
-http,65.109.219.108,2000,65.109.219.108:2000,Elite,736,FI,Finland,Helsinki,Hetzner Online GmbH,65.109.219.108
-http,102.244.78.61,8089,102.244.78.61:8089,Elite,1129,CM,Cameroon,Douala,Orange CAM INTERNET,102.244.78.57
-http,165.22.99.36,8011,165.22.99.36:8011,Elite,1179,SG,Singapore,Singapore,"DigitalOcean, LLC",165.22.99.36
-http,189.51.171.226,999,189.51.171.226:999,Elite,1283,MX,Mexico,Mérida,Comunicación por Fibra SA de CV,189.51.171.226
-http,112.201.179.242,5050,112.201.179.242:5050,Elite,1288,PH,Philippines,Taytay,Philippine Long Distance Telephone Co.,112.201.179.242
-http,43.173.120.13,8899,43.173.120.13:8899,Elite,1410,US,United States,Santa Clara,Shenzhen Tencent Computer Systems Company Limited,43.173.120.13
-http,111.119.162.248,10976,111.119.162.248:10976,Elite,1424,PK,Pakistan,Tando Adam,Connect Communication,209.46.102.22
-http,38.253.240.183,9191,38.253.240.183:9191,Elite,1452,ID,Indonesia,Banjarnegara,Cogent Communications,38.253.240.183
-http,113.161.93.6,8080,113.161.93.6:8080,Elite,1463,VN,Vietnam,Ho Chi Minh City,VietNam Post and Telecom Corporation,113.161.93.6
-http,210.211.113.35,80,210.211.113.35:80,Elite,1477,VN,Vietnam,Ho Chi Minh City,VTDC,210.211.113.35
-http,111.119.162.248,10982,111.119.162.248:10982,Elite,1490,??,Unknown,-,-,193.29.139.234
-http,111.119.162.248,10974,111.119.162.248:10974,Elite,1566,??,Unknown,-,-,4.222.217.240
-http,111.119.162.248,10915,111.119.162.248:10915,Elite,1689,??,Unknown,-,-,47.237.48.66
-http,179.184.163.133,44443,179.184.163.133:44443,Elite,1817,BR,Brazil,Belo Horizonte,TELEFÔNICA BRASIL S.A,186.232.94.66
-http,111.119.162.248,10932,111.119.162.248:10932,Elite,1818,??,Unknown,-,-,8.209.74.72
-http,27.69.77.5,2111,27.69.77.5:2111,Elite,2041,VN,Vietnam,Hanoi,Viettel Group,27.73.208.144
-http,41.216.191.85,8080,41.216.191.85:8080,Elite,2432,ID,Indonesia,South Jakarta,Perwira,103.86.116.38
-http,156.230.189.126,8080,156.230.189.126:8080,Elite,2461,ID,Indonesia,Jakarta,My Republic Indonesia,156.230.189.126
+http,184.75.221.82,3118,184.75.221.82:3118,Elite,84,CA,Canada,Toronto,Amanah Tech Inc.,184.75.221.82
+http,34.43.46.91,80,34.43.46.91:80,Elite,133,US,United States,Mountain View,Google LLC,34.143.18.241
+http,34.43.46.91,443,34.43.46.91:443,Elite,165,??,Unknown,-,-,34.143.51.195
+http,43.173.120.13,8899,43.173.120.13:8899,Elite,283,US,United States,Santa Clara,Shenzhen Tencent Computer Systems Company Limited,43.173.120.13
+http,107.167.18.122,443,107.167.18.122:443,Elite,294,US,United States,Los Angeles,Sharktech,107.167.18.124
+http,187.201.225.188,999,187.201.225.188:999,Elite,382,MX,Mexico,Guadalajara,Uninet S.A. de C.V.,187.201.225.188
+http,144.124.251.24,10136,144.124.251.24:10136,Elite,551,??,Unknown,-,-,144.124.251.24
+http,144.124.251.24,10810,144.124.251.24:10810,Elite,563,??,Unknown,-,-,144.124.251.24
+http,144.124.251.24,10469,144.124.251.24:10469,Elite,594,??,Unknown,-,-,144.124.251.24
+http,144.124.251.24,10082,144.124.251.24:10082,Elite,608,??,Unknown,-,-,144.124.251.24
+http,144.124.251.24,10829,144.124.251.24:10829,Elite,667,??,Unknown,-,-,144.124.251.24
+http,192.119.102.215,1314,192.119.102.215:1314,Elite,686,US,United States,Los Angeles,HostPapa,192.119.102.215
+http,65.109.215.187,8090,65.109.215.187:8090,Elite,706,FI,Finland,Helsinki,Hetzner Online GmbH,65.109.215.187
+http,144.124.251.24,10628,144.124.251.24:10628,Elite,893,NL,The Netherlands,Amsterdam,Servers Tech Fzco,144.124.251.24
+http,144.124.251.24,10366,144.124.251.24:10366,Elite,996,??,Unknown,-,-,144.124.251.24
+http,4.144.146.21,80,4.144.146.21:80,Elite,1085,SG,Singapore,Singapore,Microsoft Corporation,20.44.210.140
+http,102.244.78.61,8082,102.244.78.61:8082,Elite,1167,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8084,102.244.78.61:8084,Elite,1168,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8085,102.244.78.61:8085,Elite,1168,CM,Cameroon,Douala,Orange CAM INTERNET,102.244.78.57
+http,113.203.237.210,8080,113.203.237.210:8080,Elite,1219,PK,Pakistan,Karachi,SHARP TELECOM (PRIVATE) LIMITED,58.65.211.24
+http,154.201.127.46,8080,154.201.127.46:8080,Elite,1568,IN,India,Noida,Real Time Data Services Private Limited,154.201.127.46
+http,27.69.77.5,2111,27.69.77.5:2111,Elite,1994,VN,Vietnam,Hanoi,Viettel Group,27.73.208.144
+http,45.71.186.210,999,45.71.186.210:999,Elite,2222,EC,Ecuador,Naranjito,Ufinet Panama S.A.,181.78.194.249
+http,8.219.97.248,80,8.219.97.248:80,Elite,2496,SG,Singapore,Singapore,Alibaba Cloud (Singapore) Private Limited,8.219.64.236
