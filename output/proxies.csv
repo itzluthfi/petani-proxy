@@ -1,20 +1,18 @@
 protocol,ip,port,proxy,anonymity,latency_ms,country_code,country,city,isp,egress_ip
-http,43.173.120.13,8899,43.173.120.13:8899,Elite,235,US,United States,Santa Clara,Shenzhen Tencent Computer Systems Company Limited,43.173.120.13
-http,103.237.102.191,11111,103.237.102.191:11111,Elite,632,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
-http,34.43.46.91,443,34.43.46.91:443,Elite,648,??,Unknown,-,-,34.143.51.195
-http,101.32.65.42,8888,101.32.65.42:8888,Elite,940,HK,Hong Kong,Lau Fau Shan,Aceville Pte.ltd,101.32.72.181
-http,178.92.72.134,8080,178.92.72.134:8080,Elite,1105,IN,India,Mumbai,Micro Hosting Private Limited,178.92.72.134
-http,102.244.78.61,8080,102.244.78.61:8080,Elite,1382,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8086,102.244.78.61:8086,Elite,1383,CM,Cameroon,Douala,Orange CAM INTERNET,102.244.78.57
-http,102.244.78.61,8090,102.244.78.61:8090,Elite,1396,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8083,102.244.78.61:8083,Elite,1397,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8085,102.244.78.61:8085,Elite,1398,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8084,102.244.78.61:8084,Elite,1407,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8087,102.244.78.61:8087,Elite,1411,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8082,102.244.78.61:8082,Elite,1412,??,Unknown,-,-,102.244.78.57
-http,154.201.127.230,8080,154.201.127.230:8080,Elite,1513,IN,India,Noida,Real Time Data Services Private Limited,154.201.127.230
-http,102.244.78.61,8088,102.244.78.61:8088,Elite,1638,??,Unknown,-,-,102.244.78.57
-http,82.47.161.152,8443,82.47.161.152:8443,Elite,1646,TR,Turkey,Istanbul,,82.47.161.152
-http,167.99.3.26,5860,167.99.3.26:5860,Elite,2039,US,United States,North Bergen,"DigitalOcean, LLC",41.251.117.56
-http,34.43.46.91,80,34.43.46.91:80,Elite,2111,US,United States,Mountain View,Google LLC,34.143.51.195
-http,194.87.197.21,8080,194.87.197.21:8080,Elite,2251,RU,Russia,St Petersburg,LLC Baxet,89.105.219.180
+http,43.173.120.13,8899,43.173.120.13:8899,Elite,151,US,United States,Santa Clara,Shenzhen Tencent Computer Systems Company Limited,43.173.120.13
+http,184.75.221.82,3118,184.75.221.82:3118,Elite,423,CA,Canada,Toronto,Amanah Tech Inc.,184.75.221.82
+http,165.154.162.73,8888,165.154.162.73:8888,Elite,520,US,United States,Los Angeles,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,165.154.162.73
+http,143.110.161.67,10000,143.110.161.67:10000,Elite,637,GB,United Kingdom,Slough,"DigitalOcean, LLC",143.110.161.67
+http,103.237.102.191,11111,103.237.102.191:11111,Elite,643,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
+http,101.32.94.127,8089,101.32.94.127:8089,Elite,958,JP,Japan,Yokohama,Shenzhen Tencent Computer Systems Company Limited,101.32.94.127
+http,134.185.85.16,3128,134.185.85.16:3128,Elite,994,SG,Singapore,Singapore,Oracle Corporation,134.185.85.16
+http,8.215.25.3,2080,8.215.25.3:2080,Elite,1036,??,Unknown,-,-,8.215.25.3
+http,8.215.25.3,2081,8.215.25.3:2081,Elite,1112,ID,Indonesia,Jakarta,"Alibaba (US) Technology Co., Ltd.",8.215.25.3
+http,178.92.72.194,8080,178.92.72.194:8080,Elite,1147,IN,India,Mumbai,Micro Hosting Private Limited,178.92.72.194
+http,178.92.72.229,8080,178.92.72.229:8080,Elite,1153,IN,India,Mumbai,Micro Hosting Private Limited,178.92.72.229
+http,34.43.46.91,80,34.43.46.91:80,Elite,1186,US,United States,Mountain View,Google LLC,34.143.51.195
+http,45.195.105.20,8080,45.195.105.20:8080,Elite,1203,IN,India,Mumbai,Real Time Data Services Private Limited,45.195.105.20
+http,111.119.162.248,10942,111.119.162.248:10942,Elite,1590,??,Unknown,-,-,37.19.198.243
+http,111.119.162.248,10923,111.119.162.248:10923,Elite,1818,??,Unknown,-,-,47.253.202.181
+http,111.119.162.248,10928,111.119.162.248:10928,Elite,1860,PK,Pakistan,Tando Adam,Connect Communication,47.90.176.29
+http,8.219.97.248,80,8.219.97.248:80,Elite,2009,SG,Singapore,Singapore,Alibaba Cloud (Singapore) Private Limited,8.219.64.236
