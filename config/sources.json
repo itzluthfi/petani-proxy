@@ -34,5 +34,8 @@
     "https://raw.githubusercontent.com/B4RC0DE-TM/proxy-list/main/SOCKS5.txt",
     "https://raw.githubusercontent.com/zevtyardt/proxy-list/main/socks5.txt",
     "https://raw.githubusercontent.com/manuGMG/proxy-365/main/SOCKS5.txt"
+  ],
+  "all": [
+    "https://rcloak.com/api/proxies/raw?protocol=all"
   ]
 }
