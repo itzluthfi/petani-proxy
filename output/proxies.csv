@@ -1,22 +1,19 @@
 protocol,ip,port,proxy,anonymity,latency_ms,country_code,country,city,isp,egress_ip
-http,184.75.221.82,3118,184.75.221.82:3118,Elite,129,CA,Canada,Toronto,Amanah Tech Inc.,184.75.221.82
-http,104.225.162.20,8082,104.225.162.20:8082,Elite,139,US,United States,Charlotte,"iboss, inc",104.225.162.20
-http,146.190.60.147,8013,146.190.60.147:8013,Elite,267,US,United States,Santa Clara,"DigitalOcean, LLC",146.190.60.147
-http,146.190.60.147,8006,146.190.60.147:8006,Elite,375,??,Unknown,-,-,146.190.60.147
-http,187.201.225.188,999,187.201.225.188:999,Elite,419,MX,Mexico,Guadalajara,Uninet S.A. de C.V.,187.201.225.188
-http,103.237.102.191,11111,103.237.102.191:11111,Elite,548,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
-http,181.119.224.25,8080,181.119.224.25:8080,Elite,832,EC,Ecuador,Quito,Ufinet Panama S.A.,181.119.224.25
-http,144.31.146.195,8080,144.31.146.195:8080,Elite,1052,IN,India,Mumbai,Micro Hosting Private Limited,144.31.146.195
-http,178.92.72.162,8080,178.92.72.162:8080,Elite,1056,IN,India,Mumbai,Micro Hosting Private Limited,178.92.72.162
-http,165.22.99.36,8007,165.22.99.36:8007,Elite,1086,SG,Singapore,Singapore,"DigitalOcean, LLC",165.22.99.36
-http,45.195.105.20,8080,45.195.105.20:8080,Elite,1097,IN,India,Mumbai,Real Time Data Services Private Limited,45.195.105.20
-http,43.173.120.13,8899,43.173.120.13:8899,Elite,1099,US,United States,Santa Clara,Shenzhen Tencent Computer Systems Company Limited,43.173.120.13
-http,8.215.25.3,2080,8.215.25.3:2080,Elite,1153,ID,Indonesia,Jakarta,"Alibaba (US) Technology Co., Ltd.",8.215.25.3
-http,178.92.72.94,8080,178.92.72.94:8080,Elite,1273,IN,India,Mumbai,Micro Hosting Private Limited,178.92.72.94
-http,45.195.91.126,8080,45.195.91.126:8080,Elite,1476,IN,India,Noida,Real Time Data Services Private Limited,45.195.91.126
-http,154.201.127.230,8080,154.201.127.230:8080,Elite,1489,IN,India,Noida,Real Time Data Services Private Limited,154.201.127.230
-http,34.43.46.91,443,34.43.46.91:443,Elite,1741,US,United States,Mountain View,Google LLC,34.143.18.241
-http,200.188.74.3,8080,200.188.74.3:8080,Elite,1767,MX,Mexico,Arroyo Hondo Abejonal,"Alestra, S. de R.L. de C.V.",38.224.223.227
-http,190.97.241.106,999,190.97.241.106:999,Elite,1805,VE,Venezuela,Táriba,Viginet C.A,190.97.241.106
-http,34.43.46.91,80,34.43.46.91:80,Elite,1878,??,Unknown,-,-,34.143.51.195
-http,157.10.97.153,8080,157.10.97.153:8080,Elite,2331,ID,Indonesia,Palembang,PT Lintas Jaringan Nusantara,157.10.97.153
+http,138.68.60.8,3128,138.68.60.8:3128,Elite,91,US,United States,Santa Clara,"DigitalOcean, LLC",138.68.60.8
+http,187.201.225.188,999,187.201.225.188:999,Elite,341,MX,Mexico,Guadalajara,Uninet S.A. de C.V.,187.201.225.188
+http,190.97.226.232,999,190.97.226.232:999,Elite,626,VE,Venezuela,Santa Bárbara,Viginet C.A,190.97.226.226
+http,184.75.221.82,3118,184.75.221.82:3118,Elite,649,CA,Canada,Toronto,Amanah Tech Inc.,184.75.221.82
+http,103.237.102.191,11111,103.237.102.191:11111,Elite,694,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
+http,34.43.46.91,80,34.43.46.91:80,Elite,715,US,United States,Mountain View,Google LLC,34.143.18.241
+http,101.32.65.42,8888,101.32.65.42:8888,Elite,824,HK,Hong Kong,Lau Fau Shan,Aceville Pte.ltd,101.32.72.181
+http,49.149.119.38,8081,49.149.119.38:8081,Elite,1106,PH,Philippines,Malaybalay,Philippine Long Distance Telephone Co.,49.149.119.38
+http,178.92.72.194,8080,178.92.72.194:8080,Elite,1250,IN,India,Mumbai,Micro Hosting Private Limited,178.92.72.194
+http,45.194.90.194,8080,45.194.90.194:8080,Elite,1577,IN,India,Noida,Shanxi Liyun Breeding Co,45.194.90.194
+http,47.242.218.151,9002,47.242.218.151:9002,Elite,1762,HK,Hong Kong,Hong Kong,Alibaba.com LLC,8.210.149.36
+http,165.154.162.73,8888,165.154.162.73:8888,Elite,1945,US,United States,Los Angeles,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,165.154.162.73
+http,34.43.46.91,443,34.43.46.91:443,Elite,2033,??,Unknown,-,-,34.143.51.195
+http,103.180.119.182,8082,103.180.119.182:8082,Elite,2176,ID,Indonesia,Bilo,PT Persada Data Multimedia,49.0.26.18
+http,112.211.38.208,8081,112.211.38.208:8081,Elite,2180,PH,Philippines,Pasay,Philippine Long Distance Telephone Co.,180.191.0.82
+http,181.78.195.137,999,181.78.195.137:999,Elite,2216,EC,Ecuador,Guayaquil,Ufinet Panama S.A.,205.235.1.115
+http,103.188.168.173,8080,103.188.168.173:8080,Elite,2303,ID,Indonesia,Banjar Tandangbuanasari,PT Lintas Jaringan Nusantara,103.188.168.173
+http,104.225.162.20,8082,104.225.162.20:8082,Elite,2323,US,United States,Charlotte,"iboss, inc",104.225.162.20
