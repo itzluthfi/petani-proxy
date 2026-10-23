@@ -1,26 +1,18 @@
 protocol,ip,port,proxy,anonymity,latency_ms,country_code,country,city,isp,egress_ip
-http,165.154.162.73,8888,165.154.162.73:8888,Elite,375,US,United States,Los Angeles,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,165.154.162.73
-http,103.237.102.191,11111,103.237.102.191:11111,Elite,657,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
-http,181.205.204.19,999,181.205.204.19:999,Elite,816,CO,Colombia,Medellín,EPM Telecomunicaciones S.A. E.S.P.,181.205.204.18
-http,112.216.54.226,12121,112.216.54.226:12121,Elite,843,KR,South Korea,Yongin-si,LG DACOM Corporation,112.216.54.227
-http,45.125.64.215,443,45.125.64.215:443,Elite,906,HK,Hong Kong,Fanling,Tele Asia Limited,45.125.64.215
-http,112.169.99.71,8048,112.169.99.71:8048,Elite,1051,KR,South Korea,Gangnam-gu,Korea Telecom,222.117.80.15
-http,45.195.105.20,8080,45.195.105.20:8080,Elite,1179,IN,India,Mumbai,Real Time Data Services Private Limited,45.195.105.20
-http,45.190.78.131,999,45.190.78.131:999,Elite,1197,MX,Mexico,Zapopan,Meta Networks SA De CV,45.190.78.131
-http,212.175.50.85,8085,212.175.50.85:8085,Elite,1201,TR,Turkey,Ceylanpınar,Turk Telekomunikasyon Anonim Sirketi,212.175.50.85
-http,122.53.48.41,8080,122.53.48.41:8080,Elite,1220,PH,Philippines,Makati City,Philippine Long Distance Telephone Co.,122.53.48.41
-http,182.52.136.59,80,182.52.136.59:80,Elite,1245,TH,Thailand,Bangkok,TOT Public Company Limited,182.52.136.59
-http,102.244.78.61,8086,102.244.78.61:8086,Elite,1249,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8081,102.244.78.61:8081,Elite,1257,??,Unknown,-,-,102.244.78.57
-http,103.187.162.221,8282,103.187.162.221:8282,Elite,1272,ID,Indonesia,Tangerang,PT MISQOT SEJAHTERA INDONESIA,103.187.162.2
-http,102.244.78.61,8085,102.244.78.61:8085,Elite,1278,CM,Cameroon,Douala,Orange CAM INTERNET,102.244.78.57
-http,45.149.24.19,8088,45.149.24.19:8088,Elite,1297,TR,Turkey,Kilis,High Speed For Internet Services L.L.C,45.149.24.19
-http,1.20.178.200,8080,1.20.178.200:8080,Elite,1308,TH,Thailand,Pattaya,TOT Public Company Limited,1.20.178.200
-http,102.244.78.61,8084,102.244.78.61:8084,Elite,1358,??,Unknown,-,-,102.244.78.57
-http,160.22.45.58,8080,160.22.45.58:8080,Elite,1926,ID,Indonesia,Marisa,CELEBESMULTINET,160.22.45.58
-http,200.31.12.189,999,200.31.12.189:999,Elite,2047,CO,Colombia,Cali,Level 3 Colombia S.A,200.31.12.189
-http,139.135.77.166,8085,139.135.77.166:8085,Elite,2173,PH,Philippines,Danao,Dito Telecommunity Corp.,139.135.77.154
-http,103.167.68.84,8080,103.167.68.84:8080,Elite,2225,ID,Indonesia,Kabupaten Bandung,PT Kataji Nukami Indonesia,103.167.68.84
-http,157.66.236.199,1111,157.66.236.199:1111,Elite,2259,ID,Indonesia,Kediri,PT DHAHA PRIMA NET,157.66.236.199
-http,190.102.146.98,10101,190.102.146.98:10101,Elite,2279,PE,Peru,Lima,ON EMPRESAS S.A.C,181.64.221.176
-http,69.171.214.128,999,69.171.214.128:999,Elite,2486,MX,Mexico,La Mocha,Ipxo LLC,69.171.214.138
+http,146.190.60.147,8008,146.190.60.147:8008,Elite,243,US,United States,Santa Clara,"DigitalOcean, LLC",146.190.60.147
+http,103.237.102.191,11111,103.237.102.191:11111,Elite,561,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
+http,34.43.46.91,80,34.43.46.91:80,Elite,653,US,United States,Mountain View,Google LLC,34.143.56.137
+http,112.121.173.84,808,112.121.173.84:808,Elite,1060,HK,Hong Kong,Hong Kong,Netsec Limited,112.121.173.84
+http,102.244.78.61,8081,102.244.78.61:8081,Elite,1230,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8082,102.244.78.61:8082,Elite,1230,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8085,102.244.78.61:8085,Elite,1236,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8086,102.244.78.61:8086,Elite,1242,CM,Cameroon,Douala,Orange CAM INTERNET,102.244.78.57
+http,102.244.78.61,8089,102.244.78.61:8089,Elite,1259,??,Unknown,-,-,102.244.78.57
+http,4.144.146.21,80,4.144.146.21:80,Elite,1260,SG,Singapore,Singapore,Microsoft Corporation,20.44.210.140
+http,102.244.78.61,8087,102.244.78.61:8087,Elite,1280,??,Unknown,-,-,102.244.78.57
+http,78.187.157.235,8080,78.187.157.235:8080,Elite,1303,TR,Turkey,Adana,Turk Telekomunikasyon A.S,78.187.157.235
+http,34.43.46.91,443,34.43.46.91:443,Elite,1585,??,Unknown,-,-,34.143.51.195
+http,154.201.126.44,8080,154.201.126.44:8080,Elite,1723,IN,India,Noida,CtrlS,154.201.126.44
+http,103.182.22.48,8000,103.182.22.48:8000,Elite,2141,VN,Vietnam,Quận Mười Một,CUONGKHANG,103.182.22.48
+http,201.79.50.139,10000,201.79.50.139:10000,Elite,2202,BR,Brazil,Salvador,DigitalOcean,201.79.50.139
+http,185.214.39.2,9944,185.214.39.2:9944,Elite,2258,IR,Iran,Shiraz,Khalij Fars Ettela Resan LTD,185.214.39.2
