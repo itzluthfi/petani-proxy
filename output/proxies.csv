@@ -1,35 +1,25 @@
 protocol,ip,port,proxy,anonymity,latency_ms,country_code,country,city,isp,egress_ip
-http,184.75.221.82,3118,184.75.221.82:3118,Elite,122,CA,Canada,Toronto,Amanah Tech Inc.,184.75.221.82
-http,34.43.46.91,80,34.43.46.91:80,Elite,233,??,Unknown,-,-,34.143.56.137
-http,34.43.46.91,443,34.43.46.91:443,Elite,258,US,United States,Mountain View,Google LLC,34.143.51.195
-http,146.190.60.147,8018,146.190.60.147:8018,Elite,324,US,United States,Santa Clara,"DigitalOcean, LLC",146.190.60.147
-http,167.99.3.26,8181,167.99.3.26:8181,Elite,573,US,United States,North Bergen,"DigitalOcean, LLC",104.221.153.27
-http,187.108.238.122,8080,187.108.238.122:8080,Elite,591,BR,Brazil,São Paulo,Ufinet Brasil S.A.,187.108.238.122
-http,131.196.13.233,999,131.196.13.233:999,Elite,629,EC,Ecuador,Quevedo,Ufinet Panama S.A.,131.196.13.233
-http,201.43.84.149,8080,201.43.84.149:8080,Elite,671,BR,Brazil,Florianópolis,TELEFÔNICA BRASIL S.A,201.43.84.149
-http,102.244.78.61,8083,102.244.78.61:8083,Elite,1132,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8084,102.244.78.61:8084,Elite,1134,CM,Cameroon,Douala,Orange CAM INTERNET,102.244.78.57
-http,102.244.78.61,8087,102.244.78.61:8087,Elite,1136,??,Unknown,-,-,102.244.78.57
-http,45.125.64.215,443,45.125.64.215:443,Elite,1137,HK,Hong Kong,Fanling,Tele Asia Limited,45.125.64.215
-http,102.244.78.61,8081,102.244.78.61:8081,Elite,1138,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8086,102.244.78.61:8086,Elite,1138,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8089,102.244.78.61:8089,Elite,1142,??,Unknown,-,-,102.244.78.57
-http,4.144.146.21,80,4.144.146.21:80,Elite,1157,SG,Singapore,Singapore,Microsoft Corporation,20.44.210.140
-http,45.194.46.57,8080,45.194.46.57:8080,Elite,1172,IN,India,Noida,CtrlS,45.194.46.57
-http,102.244.78.61,8082,102.244.78.61:8082,Elite,1172,??,Unknown,-,-,102.244.78.57
-http,8.215.25.3,2080,8.215.25.3:2080,Elite,1211,ID,Indonesia,Jakarta,"Alibaba (US) Technology Co., Ltd.",8.215.25.3
-http,112.215.62.81,8080,112.215.62.81:8080,Elite,1236,ID,Indonesia,Mataram,XL-AXIATA Tbk GSM,112.215.69.2
-http,124.217.5.100,5050,124.217.5.100:5050,Elite,1361,PH,Philippines,Cebu City,Philippine Long Distance Telephone Co.,124.217.5.100
-http,203.205.49.2,10133,203.205.49.2:10133,Elite,1497,VN,Vietnam,Mai Dich,CMC Telecom Infrastructure Company,203.205.49.136
-http,165.154.162.73,8888,165.154.162.73:8888,Elite,1614,US,United States,Los Angeles,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,165.154.162.73
-http,191.195.51.243,8080,191.195.51.243:8080,Elite,1723,BR,Brazil,Salvador,Vivo,191.195.51.243
-http,185.196.182.29,8080,185.196.182.29:8080,Elite,1767,AL,Albania,Krume,shqiponjaisp.al LLC,185.196.182.22
-http,205.164.192.115,999,205.164.192.115:999,Elite,1845,MX,Mexico,Yurécuaro,Cogent Communications,205.164.192.115
-http,64.76.106.145,999,64.76.106.145:999,Elite,1925,PE,Peru,Lima,Loa Network,38.250.228.162
-http,202.47.189.15,1111,202.47.189.15:1111,Elite,1996,ID,Indonesia,Magetan,"Lintas Data Prima, PT",202.47.189.62
-http,49.149.119.38,8081,49.149.119.38:8081,Elite,2321,PH,Philippines,Malaybalay,Philippine Long Distance Telephone Co.,49.149.119.38
-http,77.95.2.9,8080,77.95.2.9:8080,Elite,2323,TJ,Tajikistan,Dushanbe,Tajik Academic Research Educational Networks Association,77.95.2.9
-http,202.62.57.235,8080,202.62.57.235:8080,Elite,2326,KH,Cambodia,Phnom Penh,"COGETEL Co., Ltd",202.62.57.235
-http,14.225.2.98,808,14.225.2.98:808,Elite,2407,VN,Vietnam,Hanoi,Vietnam Posts and Telecommunications Group,14.225.2.98
-http,118.179.136.153,81,118.179.136.153:81,Elite,2423,BD,Bangladesh,Dhaka,AmberIT Limited,118.179.136.152
-http,188.93.147.168,8118,188.93.147.168:8118,Elite,2496,US,United States,Gunnison,"Fly.io, Inc.",185.220.101.104
+http,184.75.221.82,3118,184.75.221.82:3118,Elite,194,CA,Canada,Toronto,Amanah Tech Inc.,184.75.221.82
+http,201.79.50.139,10000,201.79.50.139:10000,Elite,216,BR,Brazil,Salvador,DigitalOcean,201.79.50.139
+http,103.237.102.191,11111,103.237.102.191:11111,Elite,659,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
+http,4.144.146.21,80,4.144.146.21:80,Elite,989,SG,Singapore,Singapore,Microsoft Corporation,20.44.210.140
+http,179.124.219.110,8080,179.124.219.110:8080,Elite,1018,BR,Brazil,Espinosa,Computec Telecom Ltda,179.124.219.110
+http,102.244.78.61,8081,102.244.78.61:8081,Elite,1275,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8086,102.244.78.61:8086,Elite,1279,CM,Cameroon,Douala,Orange CAM INTERNET,102.244.78.57
+http,102.244.78.61,8083,102.244.78.61:8083,Elite,1281,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8085,102.244.78.61:8085,Elite,1294,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8089,102.244.78.61:8089,Elite,1307,??,Unknown,-,-,102.244.78.57
+http,45.71.189.51,8080,45.71.189.51:8080,Elite,1317,BR,Brazil,Rio Largo,Clovis DA Silva Albuquerque Internet - ME,45.71.189.51
+http,49.151.179.208,8082,49.151.179.208:8082,Elite,1317,PH,Philippines,Clark Freeport Zone,Philippine Long Distance Telephone Co.,49.151.179.208
+http,102.244.78.61,8087,102.244.78.61:8087,Elite,1318,??,Unknown,-,-,102.244.78.57
+http,2.179.95.57,8080,2.179.95.57:8080,Elite,1368,IR,Iran,Tehran,Iran Telecommunication Company PJS,2.179.95.57
+http,103.163.111.74,8000,103.163.111.74:8000,Elite,1389,ID,Indonesia,Tasikmalaya,PT Galunggung Access Solutions,103.163.111.74
+http,190.12.150.244,999,190.12.150.244:999,Elite,1811,EC,Ecuador,Quininde,Servitelconet Cia. Ltda.,190.12.150.244
+http,49.151.181.92,8082,49.151.181.92:8082,Elite,1884,PH,Philippines,Clark Freeport Zone,Philippine Long Distance Telephone Co.,49.151.181.92
+http,77.95.2.9,8080,77.95.2.9:8080,Elite,1998,TJ,Tajikistan,Dushanbe,Tajik Academic Research Educational Networks Association,77.95.2.9
+http,103.82.20.76,8080,103.82.20.76:8080,Elite,2021,VN,Vietnam,Dich Vong,INETACADEMY,171.245.84.26
+http,112.121.173.84,808,112.121.173.84:808,Elite,2068,HK,Hong Kong,Hong Kong,Netsec Limited,112.121.173.84
+http,203.201.190.16,8080,203.201.190.16:8080,Elite,2133,ID,Indonesia,Wiralaga Mulya,PT WIRA HASTA JITU,203.201.190.12
+http,45.232.210.193,999,45.232.210.193:999,Elite,2269,CL,Chile,La Pintana,Nanotik Telecomunicaciones SPA,45.232.210.198
+http,170.78.210.120,9999,170.78.210.120:9999,Elite,2325,MX,Mexico,Pedro Escobedo,Wantelco SAS de CV,170.78.210.120
+http,38.196.176.137,999,38.196.176.137:999,Elite,2372,DO,Dominican Republic,San Pedro de Macorís,"VALNET WIRELESS, S.R.L.",38.95.89.26
