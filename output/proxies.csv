@@ -1,22 +1,19 @@
 protocol,ip,port,proxy,anonymity,latency_ms,country_code,country,city,isp,egress_ip
-http,34.43.46.91,80,34.43.46.91:80,Elite,419,US,United States,Mountain View,Google LLC,34.143.56.137
-http,184.75.221.82,3118,184.75.221.82:3118,Elite,449,CA,Canada,Toronto,Amanah Tech Inc.,184.75.221.82
-http,103.237.102.191,11111,103.237.102.191:11111,Elite,464,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
-http,145.220.227.66,8080,145.220.227.66:8080,Elite,1035,NL,The Netherlands,Utrecht,SURFnet III d,145.220.183.29
-http,45.125.64.215,443,45.125.64.215:443,Elite,1107,HK,Hong Kong,Fanling,Tele Asia Limited,45.125.64.215
-http,102.244.78.61,8086,102.244.78.61:8086,Elite,1117,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8089,102.244.78.61:8089,Elite,1119,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8087,102.244.78.61:8087,Elite,1125,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8081,102.244.78.61:8081,Elite,1129,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8082,102.244.78.61:8082,Elite,1140,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8085,102.244.78.61:8085,Elite,1148,??,Unknown,-,-,102.244.78.57
-http,34.43.46.91,443,34.43.46.91:443,Elite,1149,??,Unknown,-,-,34.143.51.195
-http,102.244.78.61,8083,102.244.78.61:8083,Elite,1161,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8084,102.244.78.61:8084,Elite,1171,CM,Cameroon,Douala,Orange CAM INTERNET,102.244.78.57
-http,8.219.97.248,80,8.219.97.248:80,Elite,1393,SG,Singapore,Singapore,Alibaba Cloud (Singapore) Private Limited,8.219.64.236
-http,181.78.195.137,999,181.78.195.137:999,Elite,1585,EC,Ecuador,Guayaquil,Ufinet Panama S.A.,205.235.1.36
-http,165.154.162.73,8888,165.154.162.73:8888,Elite,1611,US,United States,Los Angeles,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,165.154.162.73
-http,4.144.146.21,80,4.144.146.21:80,Elite,1613,SG,Singapore,Singapore,Microsoft Corporation,20.44.210.140
-http,20.33.10.132,443,20.33.10.132:443,Elite,1631,ZA,South Africa,Johannesburg,Microsoft Corporation,20.33.10.79
-http,43.156.66.78,12345,43.156.66.78:12345,Elite,2281,SG,Singapore,Singapore,Shenzhen Tencent Computer Systems Company Limited,43.156.66.78
-http,187.190.58.152,8081,187.190.58.152:8081,Elite,2488,MX,Mexico,Mazatlán,"TOTAL PLAY TELECOMUNICACIONES, S.A.P.I. DE C.V.",187.190.58.152
+http,184.75.221.82,3118,184.75.221.82:3118,Elite,362,CA,Canada,Toronto,Amanah Tech Inc.,184.75.221.82
+http,103.237.102.191,11111,103.237.102.191:11111,Elite,592,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
+http,4.144.146.21,80,4.144.146.21:80,Elite,1026,SG,Singapore,Singapore,Microsoft Corporation,20.44.210.140
+http,43.156.66.78,12345,43.156.66.78:12345,Elite,1053,SG,Singapore,Singapore,Shenzhen Tencent Computer Systems Company Limited,43.156.66.78
+http,45.125.64.215,443,45.125.64.215:443,Elite,1104,HK,Hong Kong,Fanling,Tele Asia Limited,45.125.64.215
+http,144.124.251.24,10649,144.124.251.24:10649,Elite,1217,??,Unknown,-,-,144.124.251.24
+http,102.244.78.61,8081,102.244.78.61:8081,Elite,1223,CM,Cameroon,Douala,Orange CAM INTERNET,102.244.78.57
+http,102.244.78.61,8082,102.244.78.61:8082,Elite,1225,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8089,102.244.78.61:8089,Elite,1228,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8085,102.244.78.61:8085,Elite,1235,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8084,102.244.78.61:8084,Elite,1237,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8087,102.244.78.61:8087,Elite,1239,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8083,102.244.78.61:8083,Elite,1248,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8086,102.244.78.61:8086,Elite,1263,??,Unknown,-,-,102.244.78.57
+http,144.124.251.24,10814,144.124.251.24:10814,Elite,1464,NL,The Netherlands,Amsterdam,Servers Tech Fzco,144.124.251.24
+http,182.253.109.104,8080,182.253.109.104:8080,Elite,1480,ID,Indonesia,Semarang,Biznet Networks,182.253.109.104
+http,205.164.192.115,999,205.164.192.115:999,Elite,1708,MX,Mexico,Yurécuaro,Cogent Communications,205.164.192.115
+http,42.115.72.47,2052,42.115.72.47:2052,Elite,1812,VN,Vietnam,Hanoi,FPT Telecom Company,58.186.113.130
