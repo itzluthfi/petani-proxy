@@ -1,11 +1,14 @@
 protocol,ip,port,proxy,anonymity,latency_ms,country_code,country,city,isp,egress_ip
-http,138.68.60.8,3128,138.68.60.8:3128,Elite,153,US,United States,Santa Clara,"DigitalOcean, LLC",138.68.60.8
-http,18.221.175.172,8000,18.221.175.172:8000,Elite,290,US,United States,Columbus,"Amazon.com, Inc.",18.221.175.172
-http,184.75.221.82,3118,184.75.221.82:3118,Elite,699,CA,Canada,Toronto,Amanah Tech Inc.,184.75.221.82
-http,34.43.46.91,80,34.43.46.91:80,Elite,767,US,United States,Mountain View,Google LLC,34.143.56.137
-http,4.144.146.21,80,4.144.146.21:80,Elite,991,SG,Singapore,Singapore,Microsoft Corporation,20.44.210.140
-http,103.237.102.191,11111,103.237.102.191:11111,Elite,994,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
-http,152.67.191.232,6800,152.67.191.232:6800,Elite,1181,IN,India,Hyderabad,Oracle Corporation,152.67.191.232
-http,201.79.50.139,10000,201.79.50.139:10000,Elite,2049,BR,Brazil,Salvador,DigitalOcean,201.79.50.139
-http,151.243.153.157,8118,151.243.153.157:8118,Elite,2193,US,United States,Seattle,Black Apple,151.243.153.157
-http,103.82.20.76,8080,103.82.20.76:8080,Elite,2284,VN,Vietnam,Dich Vong,INETACADEMY,116.100.242.33
+http,18.221.175.172,8000,18.221.175.172:8000,Elite,143,US,United States,Columbus,"Amazon.com, Inc.",18.221.175.172
+http,184.75.221.82,3118,184.75.221.82:3118,Elite,150,CA,Canada,Toronto,Amanah Tech Inc.,184.75.221.82
+http,34.43.46.91,80,34.43.46.91:80,Elite,202,??,Unknown,-,-,34.143.51.195
+http,103.237.102.191,11111,103.237.102.191:11111,Elite,625,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
+http,77.67.8.122,443,77.67.8.122:443,Elite,1022,KZ,Kazakhstan,Almaty,Megahost Kazakhstan TOO,77.67.8.122
+http,4.144.146.21,80,4.144.146.21:80,Elite,1030,SG,Singapore,Singapore,Microsoft Corporation,20.44.210.140
+http,38.63.98.55,999,38.63.98.55:999,Elite,1054,VE,Venezuela,Cabimas,Cogent Communications,38.63.98.55
+http,8.215.25.3,2080,8.215.25.3:2080,Elite,1108,ID,Indonesia,Jakarta,"Alibaba (US) Technology Co., Ltd.",8.215.25.3
+http,8.215.25.3,2081,8.215.25.3:2081,Elite,1117,??,Unknown,-,-,8.215.25.3
+http,203.146.80.98,8080,203.146.80.98:8080,Elite,1299,TH,Thailand,Nong Saeng,Advanced Wireless Network Company Limited,203.146.80.98
+http,34.43.46.91,443,34.43.46.91:443,Elite,1313,US,United States,Mountain View,Google LLC,34.143.56.137
+http,80.65.211.149,8888,80.65.211.149:8888,Elite,1653,FR,France,Lauterbourg,Contabo GmbH,162.214.74.29
+http,85.121.149.232,18080,85.121.149.232:18080,Elite,2043,MD,Moldova,Chisinau,Alexhost SRL,45.89.219.32
