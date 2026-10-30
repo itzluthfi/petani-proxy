@@ -1,23 +1,17 @@
 protocol,ip,port,proxy,anonymity,latency_ms,country_code,country,city,isp,egress_ip
-http,201.79.50.139,10000,201.79.50.139:10000,Elite,110,BR,Brazil,Salvador,DigitalOcean,201.79.50.139
-http,184.75.221.82,3118,184.75.221.82:3118,Elite,118,CA,Canada,Toronto,Amanah Tech Inc.,184.75.221.82
-http,34.43.46.91,80,34.43.46.91:80,Elite,146,??,Unknown,-,-,34.143.51.195
-http,35.245.216.241,443,35.245.216.241:443,Elite,174,US,United States,Washington,Google LLC,35.245.216.241
-http,130.127.204.197,8080,130.127.204.197:8080,Elite,177,US,United States,Seneca,Clemson University,130.127.255.222
-http,34.43.46.91,443,34.43.46.91:443,Elite,378,US,United States,Mountain View,Google LLC,34.143.51.195
-http,103.237.102.191,11111,103.237.102.191:11111,Elite,540,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
-http,45.189.57.114,3129,45.189.57.114:3129,Elite,651,EC,Ecuador,Cañar,Cbvision S.A.,45.189.57.114
-http,41.33.60.42,8081,41.33.60.42:8081,Elite,760,EG,Egypt,Cairo,TE Data,41.33.60.42
-http,180.53.81.127,8080,180.53.81.127:8080,Elite,806,JP,Japan,Chūō,NTT Communications Corporation,180.53.81.127
-http,103.172.42.129,1111,103.172.42.129:1111,Elite,1194,ID,Indonesia,Karawang,PT Media Solusi Sukses,103.172.42.129
-http,103.82.246.23,6080,103.82.246.23:6080,Elite,1362,ID,Indonesia,Ciputat,PT Master Star Network,103.82.246.19
-http,102.244.78.61,8081,102.244.78.61:8081,Elite,1366,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8086,102.244.78.61:8086,Elite,1366,CM,Cameroon,Douala,Orange CAM INTERNET,102.244.78.57
-http,102.244.78.61,8085,102.244.78.61:8085,Elite,1393,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8084,102.244.78.61:8084,Elite,1394,??,Unknown,-,-,102.244.78.57
-http,154.201.126.245,8080,154.201.126.245:8080,Elite,1491,IN,India,Noida,CtrlS,154.201.126.245
-http,1.4.141.80,8080,1.4.141.80:8080,Elite,1533,TH,Thailand,Bangkok,TOT Public Company Limited,1.4.141.80
-http,203.177.217.221,8082,203.177.217.221:8082,Elite,1654,PH,Philippines,Aroroy,Globe Telecom,203.177.217.221
-http,182.53.202.229,80,182.53.202.229:80,Elite,1896,TH,Thailand,Chiang Mai,TOT Public Company Limited,182.53.202.229
-http,103.36.9.9,8181,103.36.9.9:8181,Elite,2140,ID,Indonesia,Kadubitung,PT Awinet Global Mandiri,103.36.9.9
-http,157.20.35.40,9090,157.20.35.40:9090,Elite,2361,ID,Indonesia,Jakarta,PT Desible Eradata Komunikasi,157.20.35.40
+http,184.75.221.82,3118,184.75.221.82:3118,Elite,125,CA,Canada,Toronto,Amanah Tech Inc.,184.75.221.82
+http,34.43.46.91,443,34.43.46.91:443,Elite,178,??,Unknown,-,-,34.143.51.195
+http,34.43.46.91,80,34.43.46.91:80,Elite,190,US,United States,Mountain View,Google LLC,34.143.51.195
+http,130.127.204.197,8080,130.127.204.197:8080,Elite,267,US,United States,Seneca,Clemson University,130.127.255.222
+http,103.237.102.191,11111,103.237.102.191:11111,Elite,571,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
+http,83.45.173.199,8080,83.45.173.199:8080,Elite,696,ES,Spain,Premià de Mar,Telefonica de Espana SAU,83.45.173.199
+http,180.53.81.127,8080,180.53.81.127:8080,Elite,765,JP,Japan,Chūō,NTT Communications Corporation,180.53.81.127
+http,205.234.123.109,8080,205.234.123.109:8080,Elite,1265,NL,The Netherlands,Amsterdam,RedSwitches Pty LTD.,205.234.123.109
+http,102.244.78.61,8089,102.244.78.61:8089,Elite,1405,CM,Cameroon,Douala,Orange CAM INTERNET,102.244.78.57
+http,102.244.78.61,8083,102.244.78.61:8083,Elite,1407,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8081,102.244.78.61:8081,Elite,1415,??,Unknown,-,-,102.244.78.57
+http,190.90.21.35,999,190.90.21.35:999,Elite,2054,CO,Colombia,Cartagena,Internexa S.a. E.S.P,190.90.21.1
+http,212.200.223.89,8080,212.200.223.89:8080,Elite,2143,RS,Serbia,Belgrade,TELEKOM SRBIJA a.d.,212.200.223.89
+http,38.58.66.167,999,38.58.66.167:999,Elite,2207,MX,Mexico,Huejutla de Reyes,Velocom SA De CV,38.58.66.164
+http,201.4.65.21,8080,201.4.65.21:8080,Elite,2445,TR,Turkey,Adana,High Speed For Internet Services L.L.C,201.4.65.21
+http,114.31.15.190,2024,114.31.15.190:2024,Elite,2457,BD,Bangladesh,Dhaka,BDCOM Online Limited,114.31.8.202
