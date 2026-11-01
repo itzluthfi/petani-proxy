@@ -1,12 +1,25 @@
 protocol,ip,port,proxy,anonymity,latency_ms,country_code,country,city,isp,egress_ip
-http,130.127.204.197,8080,130.127.204.197:8080,Elite,371,US,United States,Seneca,Clemson University,130.127.255.222
-http,165.154.162.73,8888,165.154.162.73:8888,Elite,619,US,United States,Los Angeles,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,165.154.162.73
-http,45.189.57.114,3129,45.189.57.114:3129,Elite,682,EC,Ecuador,Cañar,Cbvision S.A.,45.189.57.114
-http,103.237.102.191,11111,103.237.102.191:11111,Elite,785,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
-http,4.144.146.21,80,4.144.146.21:80,Elite,960,SG,Singapore,Singapore,Microsoft Corporation,20.44.210.140
-http,34.43.46.91,80,34.43.46.91:80,Elite,1071,US,United States,Mountain View,Google LLC,34.143.51.195
-http,175.184.236.12,1111,175.184.236.12:1111,Elite,1888,ID,Indonesia,Cikarang,Indonesia Network Information Center,175.184.236.12
-http,187.44.188.238,4040,187.44.188.238:4040,Elite,1955,BR,Brazil,Salvador,ITS TELECOMUNICACOES LTDA,187.44.188.238
-http,58.69.124.137,8080,58.69.124.137:8080,Elite,2155,PH,Philippines,Antipolo City,Philippine Long Distance Telephone Co.,58.69.124.137
-http,190.131.205.150,999,190.131.205.150:999,Elite,2220,CO,Colombia,Bogotá,Liberty Networks De Colombia S.A.S,190.131.205.150
-http,178.62.79.141,3129,178.62.79.141:3129,Elite,2349,GB,United Kingdom,Slough,"DigitalOcean, LLC",178.62.79.141
+http,146.190.60.147,8010,146.190.60.147:8010,Elite,181,US,United States,Santa Clara,"DigitalOcean, LLC",146.190.60.147
+http,34.43.46.91,80,34.43.46.91:80,Elite,235,US,United States,Mountain View,Google LLC,34.143.51.195
+http,34.43.46.91,443,34.43.46.91:443,Elite,246,??,Unknown,-,-,34.143.51.195
+http,130.127.204.197,8080,130.127.204.197:8080,Elite,349,US,United States,Seneca,Clemson University,130.127.255.222
+http,165.154.162.73,8888,165.154.162.73:8888,Elite,379,US,United States,Los Angeles,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,165.154.162.73
+http,45.189.57.114,3129,45.189.57.114:3129,Elite,615,EC,Ecuador,Santa Rosa,Cbvision S.A.,45.189.57.114
+http,180.53.81.127,8080,180.53.81.127:8080,Elite,659,JP,Japan,Fujisawa,NTT Communications Corporation,180.53.81.127
+http,4.144.146.21,80,4.144.146.21:80,Elite,984,SG,Singapore,Singapore,Microsoft Corporation,20.44.210.140
+http,45.232.0.2,8080,45.232.0.2:8080,Elite,992,AR,Argentina,San Miguel de Tucumán,Sistemas Informaticos S.A.S.,45.232.0.2
+http,102.244.78.61,8081,102.244.78.61:8081,Elite,1242,CM,Cameroon,Maroua,Orange CAM INTERNET,102.244.78.57
+http,102.244.78.61,8084,102.244.78.61:8084,Elite,1261,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8085,102.244.78.61:8085,Elite,1262,??,Unknown,-,-,102.244.78.57
+http,122.52.20.79,8081,122.52.20.79:8081,Elite,1263,PH,Philippines,Manila,Philippine Long Distance Telephone Co.,49.147.73.27
+http,102.244.78.61,8083,102.244.78.61:8083,Elite,1265,??,Unknown,-,-,102.244.78.57
+http,111.95.161.133,8080,111.95.161.133:8080,Elite,1499,ID,Indonesia,Bekasi,Linknet-Fastnet ASN,111.95.161.133
+http,139.135.77.166,8085,139.135.77.166:8085,Elite,1580,PH,Philippines,Tibigan,Dito Telecommunity Corp.,139.135.77.166
+http,145.220.227.28,8080,145.220.227.28:8080,Elite,1659,NL,The Netherlands,Utrecht,SURFnet III d,145.220.183.29
+http,177.234.211.175,999,177.234.211.175:999,Elite,1693,EC,Ecuador,Naranjito,VUELATECHNOLOGY,177.234.211.174
+http,177.234.217.235,999,177.234.217.235:999,Elite,1724,EC,Ecuador,Quito,Ufinet Panama S.A.,177.234.217.92
+http,110.74.195.34,25,110.74.195.34:25,Elite,1860,KH,Cambodia,Phnom Penh,"EZECOM CO., LTD.",110.74.195.34
+http,103.90.27.98,8080,103.90.27.98:8080,Elite,2130,ID,Indonesia,Medan,PT. Arana Teknologi Indonesia,103.90.27.98
+http,160.19.18.115,3127,160.19.18.115:3127,Elite,2402,ID,Indonesia,Bandung,PT Indo Telemedia Solusi,160.19.18.115
+http,181.78.203.3,999,181.78.203.3:999,Elite,2410,EC,Ecuador,Cuenca,Ufinet Panama S.A.,181.78.203.3
+http,177.234.217.83,999,177.234.217.83:999,Elite,2497,EC,Ecuador,Quito,Ufinet Panama S.A.,177.234.217.82
