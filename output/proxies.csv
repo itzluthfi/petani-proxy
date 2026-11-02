@@ -1,20 +1,15 @@
 protocol,ip,port,proxy,anonymity,latency_ms,country_code,country,city,isp,egress_ip
-http,130.127.204.197,8080,130.127.204.197:8080,Elite,282,US,United States,Seneca,Clemson University,130.127.255.222
-http,165.154.162.73,8888,165.154.162.73:8888,Elite,441,US,United States,Los Angeles,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,165.154.162.73
-http,134.209.88.12,8080,134.209.88.12:8080,Elite,584,NL,The Netherlands,Amsterdam,"DigitalOcean, LLC",134.209.88.12
-http,45.189.57.114,3129,45.189.57.114:3129,Elite,635,EC,Ecuador,Santa Rosa,Cbvision S.A.,45.189.57.114
-http,45.65.226.172,999,45.65.226.172:999,Elite,843,AR,Argentina,Buenos Aires,Solution LAN S.A,45.65.226.169
-http,4.144.146.21,80,4.144.146.21:80,Elite,985,SG,Singapore,Singapore,Microsoft Corporation,20.44.210.140
-http,188.136.208.242,8080,188.136.208.242:8080,Elite,1254,IR,Iran,Tehran,Tose'h Fanavari Ertebabat Pasargad Arian Co. PJS,205.252.135.60
-http,165.99.194.139,8080,165.99.194.139:8080,Elite,1337,ID,Indonesia,Guyangan,PT Network Bumi Saridin,165.99.194.139
-http,20.33.10.79,80,20.33.10.79:80,Elite,1498,ZA,South Africa,Johannesburg,Microsoft Corporation,20.33.10.79
-http,125.25.167.176,80,125.25.167.176:80,Elite,1531,TH,Thailand,Bangkok,TOT Public Company Limited,125.25.167.176
-http,200.35.34.134,999,200.35.34.134:999,Elite,1573,CO,Colombia,Medellín,UNE EPM TELECOMUNICACIONES S.A,186.159.25.178
-http,189.148.34.54,8080,189.148.34.54:8080,Elite,1831,MX,Mexico,Tapachula,Uninet S.A. de C.V,189.148.34.54
-http,45.65.224.125,999,45.65.224.125:999,Elite,1863,AR,Argentina,Buenos Aires,Solution LAN S.A,45.65.224.125
-http,200.59.191.137,999,200.59.191.137:999,Elite,1956,VE,Venezuela,Trujillo,TotalCom Venezuela C.A.,200.59.191.137
-http,43.251.205.146,8080,43.251.205.146:8080,Elite,2103,TH,Thailand,Bangkok,"United Information Highway Co., Ltd.",43.251.205.146
-http,103.247.23.242,1111,103.247.23.242:1111,Elite,2177,ID,Indonesia,Banyumas,PT wifian Solution,103.247.23.238
-http,185.8.148.81,8085,185.8.148.81:8085,Elite,2290,IT,Italy,Portiglioni,DIGITAL TELECOMMUNICATION SERVICES 3th,217.112.96.34
-http,38.75.82.212,999,38.75.82.212:999,Elite,2291,DO,Dominican Republic,Santo Domingo Este,Cogent Communications,38.75.82.210
-http,38.196.221.146,999,38.196.221.146:999,Elite,2319,DO,Dominican Republic,Boca Chica,Cogent Communications,38.196.221.147
+http,165.154.162.73,8888,165.154.162.73:8888,Elite,125,US,United States,Los Angeles,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,165.154.162.73
+http,142.93.65.222,3129,142.93.65.222:3129,Elite,297,US,United States,Clifton,"DigitalOcean, LLC",142.93.65.222
+http,34.43.46.91,443,34.43.46.91:443,Elite,342,US,United States,Mountain View,Google LLC,34.143.51.195
+http,103.237.102.191,11111,103.237.102.191:11111,Elite,723,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
+http,5.42.97.67,8080,5.42.97.67:8080,Elite,979,RU,Russia,Moscow,"JSC ""TIMEWEB""",172.233.40.239
+http,34.96.238.40,8080,34.96.238.40:8080,Elite,1039,HK,Hong Kong,Hong Kong,Google LLC,34.96.238.40
+http,102.244.78.61,8086,102.244.78.61:8086,Elite,1302,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8089,102.244.78.61:8089,Elite,1319,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8081,102.244.78.61:8081,Elite,1330,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8082,102.244.78.61:8082,Elite,1330,CM,Cameroon,Maroua,Orange CAM INTERNET,102.244.78.57
+http,102.244.78.61,8084,102.244.78.61:8084,Elite,1334,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8085,102.244.78.61:8085,Elite,1357,??,Unknown,-,-,102.244.78.57
+http,8.219.94.23,7890,8.219.94.23:7890,Elite,1441,SG,Singapore,Singapore,Alibaba Cloud (Singapore) Private Limited,8.219.94.23
+http,63.151.67.7,8080,63.151.67.7:8080,Elite,2065,US,United States,Steamboat Springs,CenturyLink Communications,63.151.67.7
