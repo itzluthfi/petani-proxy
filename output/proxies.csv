@@ -1,15 +1,25 @@
 protocol,ip,port,proxy,anonymity,latency_ms,country_code,country,city,isp,egress_ip
-http,165.154.162.73,8888,165.154.162.73:8888,Elite,125,US,United States,Los Angeles,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,165.154.162.73
-http,142.93.65.222,3129,142.93.65.222:3129,Elite,297,US,United States,Clifton,"DigitalOcean, LLC",142.93.65.222
-http,34.43.46.91,443,34.43.46.91:443,Elite,342,US,United States,Mountain View,Google LLC,34.143.51.195
-http,103.237.102.191,11111,103.237.102.191:11111,Elite,723,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
-http,5.42.97.67,8080,5.42.97.67:8080,Elite,979,RU,Russia,Moscow,"JSC ""TIMEWEB""",172.233.40.239
-http,34.96.238.40,8080,34.96.238.40:8080,Elite,1039,HK,Hong Kong,Hong Kong,Google LLC,34.96.238.40
-http,102.244.78.61,8086,102.244.78.61:8086,Elite,1302,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8089,102.244.78.61:8089,Elite,1319,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8081,102.244.78.61:8081,Elite,1330,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8082,102.244.78.61:8082,Elite,1330,CM,Cameroon,Maroua,Orange CAM INTERNET,102.244.78.57
-http,102.244.78.61,8084,102.244.78.61:8084,Elite,1334,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8085,102.244.78.61:8085,Elite,1357,??,Unknown,-,-,102.244.78.57
-http,8.219.94.23,7890,8.219.94.23:7890,Elite,1441,SG,Singapore,Singapore,Alibaba Cloud (Singapore) Private Limited,8.219.94.23
-http,63.151.67.7,8080,63.151.67.7:8080,Elite,2065,US,United States,Steamboat Springs,CenturyLink Communications,63.151.67.7
+http,167.99.8.113,8005,167.99.8.113:8005,Elite,162,US,United States,North Bergen,"DigitalOcean, LLC",167.99.8.113
+http,34.43.46.91,80,34.43.46.91:80,Elite,188,US,United States,Mountain View,Google LLC,34.143.51.195
+http,130.127.204.197,8080,130.127.204.197:8080,Elite,223,US,United States,Seneca,Clemson University,130.127.255.222
+http,103.237.102.191,11111,103.237.102.191:11111,Elite,568,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
+http,165.154.7.156,8888,165.154.7.156:8888,Elite,937,HK,Hong Kong,Hong Kong,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,165.154.7.156
+http,4.144.146.21,80,4.144.146.21:80,Elite,1030,SG,Singapore,Singapore,Microsoft Corporation,20.44.210.140
+http,45.43.60.220,8080,45.43.60.220:8080,Elite,1067,JP,Japan,Tokyo,Zenlayer Inc,45.43.60.220
+http,172.237.41.254,9999,172.237.41.254:9999,Elite,1070,IN,India,Mumbai,"Akamai Technologies, Inc.",172.237.41.254
+http,8.215.25.3,2080,8.215.25.3:2080,Elite,1107,ID,Indonesia,Jakarta,"Alibaba (US) Technology Co., Ltd.",8.215.25.3
+http,8.215.25.3,2081,8.215.25.3:2081,Elite,1119,??,Unknown,-,-,8.215.25.3
+http,122.102.52.24,1081,122.102.52.24:1081,Elite,1169,ID,Indonesia,Jakarta,PT MEGAXUS INFOTECH,122.102.52.24
+http,37.187.109.70,10111,37.187.109.70:10111,Elite,1241,FR,France,Roubaix,OVH SAS,37.187.109.70
+http,45.198.11.162,9191,45.198.11.162:9191,Elite,1329,ID,Indonesia,Colomadu,PT Jaringan Lintas Artha,45.198.10.131
+http,181.78.195.137,999,181.78.195.137:999,Elite,1419,EC,Ecuador,Naranjito,Ufinet Panama S.A.,205.235.1.36
+http,80.65.211.149,8888,80.65.211.149:8888,Elite,1648,FR,France,Lauterbourg,Contabo GmbH,176.124.206.150
+http,162.4.96.24,4567,162.4.96.24:4567,Elite,1830,ID,Indonesia,Pasuruan,PT Azvi Multi Teknologi,162.4.96.24
+http,195.226.213.254,8888,195.226.213.254:8888,Elite,2109,UA,Ukraine,Fontanka,Private Enterprise KTV AIDA,195.226.213.254
+http,189.176.85.120,8080,189.176.85.120:8080,Elite,2174,MX,Mexico,Solidaridad,Uninet S.A. de C.V,189.176.85.120
+http,142.93.65.222,3129,142.93.65.222:3129,Elite,2211,US,United States,Clifton,"DigitalOcean, LLC",142.93.65.222
+http,103.158.210.80,8082,103.158.210.80:8082,Elite,2213,ID,Indonesia,Babat,DIGITNET,103.158.210.80
+http,181.205.204.19,999,181.205.204.19:999,Elite,2222,CO,Colombia,Medellín,EPM Telecomunicaciones S.A. E.S.P.,181.205.204.18
+http,186.96.160.220,999,186.96.160.220:999,Elite,2390,MX,Mexico,Culiacán,"TOTAL PLAY TELECOMUNICACIONES, S.A.P.I. DE C.V.",186.96.160.220
+http,177.234.217.83,999,177.234.217.83:999,Elite,2410,EC,Ecuador,Quito,Ufinet Panama S.A.,177.234.217.82
+http,177.234.217.43,999,177.234.217.43:999,Elite,2426,EC,Ecuador,Quito,Ufinet Panama S.A.,177.234.217.42
