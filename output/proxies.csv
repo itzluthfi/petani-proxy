@@ -1,40 +1,39 @@
 protocol,ip,port,proxy,anonymity,latency_ms,country_code,country,city,isp,egress_ip
-http,155.138.236.211,18080,155.138.236.211:18080,Elite,97,US,United States,Atlanta,The Constant Company,155.138.236.211
-http,130.127.204.197,8080,130.127.204.197:8080,Elite,122,US,United States,Seneca,Clemson University,130.127.255.222
-http,34.43.46.91,80,34.43.46.91:80,Elite,226,US,United States,Mountain View,Google LLC,34.143.51.195
-http,145.220.227.132,4145,145.220.227.132:4145,Elite,450,NL,The Netherlands,Utrecht,SURFnet III d,145.220.183.29
-http,185.192.21.82,8080,185.192.21.82:8080,Elite,451,DE,Germany,Frankfurt am Main,Scalaxy B.V.,185.192.21.82
-http,103.237.102.191,11111,103.237.102.191:11111,Elite,471,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
-http,45.189.57.114,3129,45.189.57.114:3129,Elite,501,EC,Ecuador,Santa Rosa,Cbvision S.A.,45.189.57.114
-http,80.232.221.211,8080,80.232.221.211:8080,Elite,574,LV,Latvia,Riga,LATTELEKOM,80.232.221.211
-http,165.154.162.73,8888,165.154.162.73:8888,Elite,606,US,United States,Los Angeles,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,165.154.162.73
-http,8.242.153.163,999,8.242.153.163:999,Elite,781,CO,Colombia,Bogotá,CTL Colombia,8.242.153.162
-http,37.187.109.70,10111,37.187.109.70:10111,Elite,798,FR,France,Roubaix,OVH SAS,37.187.109.70
-http,200.10.31.42,8081,200.10.31.42:8081,Elite,943,CO,Colombia,Pereira,Super Redes S.A.S,200.10.31.42
-http,145.220.227.132,8080,145.220.227.132:8080,Elite,1018,??,Unknown,-,-,145.220.183.29
-http,102.244.78.61,8084,102.244.78.61:8084,Elite,1125,CM,Cameroon,Maroua,Orange CAM INTERNET,102.244.78.57
-http,102.244.78.61,8082,102.244.78.61:8082,Elite,1127,??,Unknown,-,-,102.244.78.57
-http,46.100.44.35,8080,46.100.44.35:8080,Elite,1180,IR,Iran,Tehran,Iran Telecommunication Company PJS,46.100.44.35
-http,181.188.203.40,999,181.188.203.40:999,Elite,1285,EC,Ecuador,Montalvo,Ufinet Panama S.A.,181.188.203.47
-http,124.105.110.52,8082,124.105.110.52:8082,Elite,1300,PH,Philippines,Makati City,Philippine Long Distance Telephone Co.,124.105.110.52
-http,154.219.101.12,1081,154.219.101.12:1081,Elite,1336,HK,Hong Kong,Hong Kong,Vapeline Technology(HK)Co,154.219.101.12
-http,116.204.166.153,8080,116.204.166.153:8080,Elite,1336,TR,Turkey,Hıdırbey,High Speed For Internet Services L.L.C,116.204.166.153
-http,102.244.78.61,8081,102.244.78.61:8081,Elite,1354,??,Unknown,-,-,102.244.78.57
-http,45.190.78.183,999,45.190.78.183:999,Elite,1397,MX,Mexico,Zapopan,Meta Networks SA De CV,45.190.79.49
-http,190.12.150.244,999,190.12.150.244:999,Elite,1465,EC,Ecuador,La Concordia,Servitelconet Cia. Ltda.,190.12.150.244
-http,177.234.217.235,999,177.234.217.235:999,Elite,1469,EC,Ecuador,Quito,Ufinet Panama S.A.,177.234.217.92
-http,187.190.58.124,8080,187.190.58.124:8080,Elite,1485,MX,Mexico,Culiacán,"TOTAL PLAY TELECOMUNICACIONES, S.A.P.I. DE C.V.",187.190.58.124
-http,179.60.189.81,999,179.60.189.81:999,Elite,1586,EC,Ecuador,Quito,Eliana Vanessa Morocho Oña,179.60.189.81
-http,103.205.223.49,8080,103.205.223.49:8080,Elite,1797,ID,Indonesia,Jakarta,PT Cipta Trimitra Perkasa,103.205.222.242
-http,190.122.91.130,999,190.122.91.130:999,Elite,1853,AR,Argentina,Puerto Vilelas,Insaurralde Claudio Oscar,190.122.91.130
-http,38.156.238.32,999,38.156.238.32:999,Elite,1863,DO,Dominican Republic,Santo Domingo Este,"BITNET DOMINICANA, S.R.L",38.156.238.43
-http,177.234.217.85,999,177.234.217.85:999,Elite,1892,EC,Ecuador,Quito,Ufinet Panama S.A.,177.234.217.82
-http,45.5.94.243,999,45.5.94.243:999,Elite,2039,MX,Mexico,Saltillo,"Señal Interactiva, S.A De C.V",45.5.94.243
-http,1.20.101.26,80,1.20.101.26:80,Elite,2045,TH,Thailand,Phibun Mangsahan,TOT Public Company Limited,1.20.101.26
-http,190.71.72.85,2525,190.71.72.85:2525,Elite,2202,CO,Colombia,Cali,UNE EPM TELECOMUNICACIONES S.A,190.71.72.85
-http,139.59.59.122,8118,139.59.59.122:8118,Elite,2223,IN,India,Bengaluru,"DigitalOcean, LLC",139.59.59.122
-http,112.211.84.86,8585,112.211.84.86:8585,Elite,2236,PH,Philippines,Angeles City,Philippine Long Distance Telephone Co.,112.211.84.86
-http,161.49.84.3,8081,161.49.84.3:8081,Elite,2238,PH,Philippines,Pasig,Converge ICT Solution Inc,161.49.84.3
-http,188.72.42.241,47193,188.72.42.241:47193,Elite,2281,IQ,Iraq,Erbil,Pirmam For Information Technology Services Ltd,193.47.189.33
-http,212.252.73.83,8080,212.252.73.83:8080,Elite,2430,TR,Türkiye,Yalova,Superonline Iletisim Hizmetleri A.S.,212.252.73.83
-http,75.102.134.110,8080,75.102.134.110:8080,Elite,2462,US,United States,Boca Raton,"Single Digits, Inc.",45.42.63.106
+http,108.181.132.59,8080,108.181.132.59:8080,Elite,319,US,United States,Ashburn,Psychz Networks,108.181.132.59
+http,34.43.46.91,443,34.43.46.91:443,Elite,385,??,Unknown,-,-,34.143.51.195
+http,130.127.204.197,8080,130.127.204.197:8080,Elite,412,US,United States,Seneca,Clemson University,130.127.255.222
+http,201.79.50.139,10000,201.79.50.139:10000,Elite,425,CA,Canada,Toronto,"DigitalOcean, LLC",201.79.50.139
+http,147.161.246.37,10078,147.161.246.37:10078,Elite,700,CH,Switzerland,Zurich,Zscaler Switzerland GmbH,147.161.247.10
+http,147.161.246.37,10004,147.161.246.37:10004,Elite,704,??,Unknown,-,-,147.161.247.10
+http,147.161.246.37,11333,147.161.246.37:11333,Elite,704,??,Unknown,-,-,147.161.247.10
+http,147.161.246.37,12696,147.161.246.37:12696,Elite,705,??,Unknown,-,-,147.161.247.10
+http,45.189.57.114,3129,45.189.57.114:3129,Elite,705,EC,Ecuador,Santa Rosa,Cbvision S.A.,45.189.57.114
+http,147.161.246.37,11033,147.161.246.37:11033,Elite,710,??,Unknown,-,-,147.161.247.10
+http,147.161.246.37,11988,147.161.246.37:11988,Elite,710,??,Unknown,-,-,147.161.247.10
+http,147.161.246.37,11855,147.161.246.37:11855,Elite,710,??,Unknown,-,-,147.161.247.10
+http,103.237.102.191,11111,103.237.102.191:11111,Elite,769,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
+http,194.55.234.58,8080,194.55.234.58:8080,Elite,859,RU,Russia,Moscow,Kviktel LLC,203.23.179.228
+http,203.205.49.2,10190,203.205.49.2:10190,Elite,1096,VN,Vietnam,Ho Chi Minh City,CMC Telecom Infrastructure Company,203.205.49.193
+http,8.215.25.3,2080,8.215.25.3:2080,Elite,1135,ID,Indonesia,Jakarta,"Alibaba (US) Technology Co., Ltd.",8.215.25.3
+http,34.43.46.91,80,34.43.46.91:80,Elite,1274,US,United States,Mountain View,Google LLC,35.230.222.184
+http,41.33.173.84,8080,41.33.173.84:8080,Elite,1275,EG,Egypt,Cairo,TE Data,41.33.173.84
+http,45.174.242.147,999,45.174.242.147:999,Elite,1341,MX,Mexico,San Pablo Pixtún,Sistemas Y Soluciones De Campeche SAS De CV,45.174.242.147
+http,102.244.78.61,8086,102.244.78.61:8086,Elite,1401,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8085,102.244.78.61:8085,Elite,1425,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8082,102.244.78.61:8082,Elite,1437,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8089,102.244.78.61:8089,Elite,1439,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8084,102.244.78.61:8084,Elite,1449,CM,Cameroon,Maroua,Orange CAM INTERNET,102.244.78.57
+http,202.58.73.246,1111,202.58.73.246:1111,Elite,1457,ID,Indonesia,Blitar,PT Data Buana Nusantara,202.58.73.246
+http,223.205.112.34,8080,223.205.112.34:8080,Elite,1504,TH,Thailand,Phra Nakhon Si Ayutthaya,TRIPLETNET,223.205.112.34
+http,45.65.226.173,999,45.65.226.173:999,Elite,1617,AR,Argentina,Buenos Aires,Solution LAN S.A,45.65.226.169
+http,103.125.19.105,8080,103.125.19.105:8080,Elite,1668,ID,Indonesia,Kresek,JAVAMEDIA,103.125.19.105
+http,49.149.195.243,8081,49.149.195.243:8081,Elite,1751,PH,Philippines,Davao City,Philippine Long Distance Telephone Co.,122.3.158.170
+http,45.112.52.26,8080,45.112.52.26:8080,Elite,1789,IN,India,Bengaluru,PRIMENET,45.112.52.26
+http,144.79.180.123,8080,144.79.180.123:8080,Elite,1801,ID,Indonesia,Lubuk Pakam,PT SAHABAT INDONESIA INTERNET,144.79.181.55
+http,79.140.119.31,8080,79.140.119.31:8080,Elite,1826,DE,Germany,Berlin,DNS:NET Internet Service GmbH,79.140.119.31
+http,190.99.192.158,999,190.99.192.158:999,Elite,1898,CO,Colombia,Cali,Empresas Municipales De Cali E.i.c.e. E.S.P.,177.73.153.66
+http,220.81.123.23,48678,220.81.123.23:48678,Elite,1909,KR,South Korea,Nam-gu,Korea Telecom,220.81.123.23
+http,112.211.84.86,8585,112.211.84.86:8585,Elite,2027,PH,Philippines,Angeles City,Philippine Long Distance Telephone Co.,112.211.84.86
+http,201.4.64.237,8080,201.4.64.237:8080,Elite,2090,TR,Turkey,Kilis,High Speed For Internet Services L.L.C,201.4.64.237
+http,177.234.217.46,999,177.234.217.46:999,Elite,2175,EC,Ecuador,Quito,Ufinet Panama S.A.,177.234.217.42
+http,200.59.191.137,999,200.59.191.137:999,Elite,2257,VE,Venezuela,Trujillo,TotalCom Venezuela C.A.,200.59.191.137
