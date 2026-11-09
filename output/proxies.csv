@@ -1,31 +1,11 @@
 protocol,ip,port,proxy,anonymity,latency_ms,country_code,country,city,isp,egress_ip
-http,34.43.46.91,80,34.43.46.91:80,Elite,190,US,United States,Mountain View,Google LLC,34.143.59.54
-http,47.87.9.77,80,47.87.9.77:80,Elite,554,MX,Mexico,Querétaro City,Alibaba.com LLC,47.87.9.77
-http,103.237.102.191,11111,103.237.102.191:11111,Elite,606,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
-http,204.199.106.226,999,204.199.106.226:999,Elite,740,CO,Colombia,Bogotá,CTL Colombia,8.242.147.166
-http,4.144.146.21,80,4.144.146.21:80,Elite,1056,SG,Singapore,Singapore,Microsoft Corporation,20.44.210.140
-http,103.68.215.115,8181,103.68.215.115:8181,Elite,1157,ID,Indonesia,Sepatan,PT Media Grasi Internet,103.68.215.115
-http,102.244.78.61,8085,102.244.78.61:8085,Elite,1224,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8089,102.244.78.61:8089,Elite,1227,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8084,102.244.78.61:8084,Elite,1230,??,Unknown,-,-,102.244.78.57
+http,45.189.57.114,3129,45.189.57.114:3129,Elite,752,EC,Ecuador,Santa Rosa,Cbvision S.A.,45.189.57.114
+http,4.144.146.21,80,4.144.146.21:80,Elite,1061,SG,Singapore,Singapore,Microsoft Corporation,20.44.210.140
+http,102.244.78.61,8081,102.244.78.61:8081,Elite,1220,CM,Cameroon,Maroua,Orange CAM INTERNET,102.244.78.57
+http,102.244.78.61,8083,102.244.78.61:8083,Elite,1222,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8086,102.244.78.61:8086,Elite,1222,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8084,102.244.78.61:8084,Elite,1222,??,Unknown,-,-,102.244.78.57
 http,102.244.78.61,8082,102.244.78.61:8082,Elite,1230,??,Unknown,-,-,102.244.78.57
-http,203.172.136.211,8080,203.172.136.211:8080,Elite,1234,TH,Thailand,Bangkok,Ministry of Education - EMISC,203.172.143.17
-http,102.244.78.61,8086,102.244.78.61:8086,Elite,1240,CM,Cameroon,Maroua,Orange CAM INTERNET,102.244.78.57
-http,79.127.223.58,8202,79.127.223.58:8202,Elite,1291,US,United States,Ashburn,Datacamp Limited,188.92.252.20
-http,27.147.156.174,12051,27.147.156.174:12051,Elite,1338,BD,Bangladesh,Dhaka,Link3 Technologies Limited,27.147.156.174
-http,27.147.155.206,12051,27.147.155.206:12051,Elite,1363,BD,Bangladesh,Dhaka,Link3 Technologies Limited,202.74.243.181
-http,161.22.33.194,999,161.22.33.194:999,Elite,1456,VE,Venezuela,Caracas,"THUNDERNET, C.A",161.22.33.195
-http,45.194.90.225,8080,45.194.90.225:8080,Elite,1554,IN,India,Noida,Shanxi Liyun Breeding Co,45.194.90.225
-http,94.68.245.147,8080,94.68.245.147:8080,Elite,1555,GR,Greece,Chalcis,OTEnet,94.68.245.147
-http,45.194.3.132,8080,45.194.3.132:8080,Elite,1569,IN,India,Noida,CtrlS,45.194.3.132
-http,27.147.153.179,12051,27.147.153.179:12051,Elite,1642,BD,Bangladesh,Dhaka,Link3 Technologies Limited,27.147.153.179
-http,181.78.195.137,999,181.78.195.137:999,Elite,1776,EC,Ecuador,Naranjito,Ufinet Panama S.A.,205.235.1.36
-http,177.234.217.85,999,177.234.217.85:999,Elite,1803,EC,Ecuador,Quito,Ufinet Panama S.A.,177.234.217.83
-http,38.156.141.96,999,38.156.141.96:999,Elite,2003,MX,Mexico,Túxpam de Rodríguez Cano,Digy Networks S.a. De C.V,204.153.206.117
-http,36.66.121.131,8080,36.66.121.131:8080,Elite,2005,ID,Indonesia,East Jakarta,Telekomunikasi Indonesia,36.66.121.131
-http,152.53.81.29,8888,152.53.81.29:8888,Elite,2088,US,United States,Manassas,netcup GmbH,152.53.81.29
-http,27.147.152.52,12051,27.147.152.52:12051,Elite,2112,BD,Bangladesh,Dhaka,Link3 Technologies Limited,27.147.152.50
-http,179.60.189.81,999,179.60.189.81:999,Elite,2223,EC,Ecuador,Quito,Eliana Vanessa Morocho Oña,179.60.189.81
-http,119.93.87.65,8080,119.93.87.65:8080,Elite,2277,PH,Philippines,General Trias,Philippine Long Distance Telephone Co.,119.93.87.65
-http,45.126.250.122,8080,45.126.250.122:8080,Elite,2428,ID,Indonesia,Ciruas,PT WIFIKCB LINTAS DATA,45.126.250.122
-http,189.153.29.34,8080,189.153.29.34:8080,Elite,2432,MX,Mexico,General Escobedo,Uninet S.A. de C.V,189.153.29.34
+http,102.244.78.61,8085,102.244.78.61:8085,Elite,1237,??,Unknown,-,-,102.244.78.57
+http,103.237.102.191,11111,103.237.102.191:11111,Elite,1245,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
+http,102.244.78.61,8089,102.244.78.61:8089,Elite,1510,??,Unknown,-,-,102.244.78.57
