@@ -1,16 +1,20 @@
 protocol,ip,port,proxy,anonymity,latency_ms,country_code,country,city,isp,egress_ip
-http,103.237.102.191,11111,103.237.102.191:11111,Elite,526,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
-http,45.189.57.114,3129,45.189.57.114:3129,Elite,533,EC,Ecuador,Santa Rosa,Cbvision S.A.,45.189.57.114
-http,167.99.3.26,8052,167.99.3.26:8052,Elite,803,US,United States,North Bergen,"DigitalOcean, LLC",207.230.114.27
-http,165.154.162.73,8888,165.154.162.73:8888,Elite,896,US,United States,Los Angeles,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,165.154.162.73
-http,4.144.146.21,80,4.144.146.21:80,Elite,1169,SG,Singapore,Singapore,Microsoft Corporation,20.44.210.140
-http,34.43.46.91,443,34.43.46.91:443,Elite,1252,??,Unknown,-,-,34.143.63.89
-http,34.43.46.91,80,34.43.46.91:80,Elite,1285,US,United States,Mountain View,Google LLC,34.143.63.89
-http,128.140.113.110,8080,128.140.113.110:8080,Elite,1290,??,Unknown,-,-,185.220.101.1
-http,181.78.44.63,999,181.78.44.63:999,Elite,1300,HN,Honduras,La Unión,Ufinet Panama S.A.,181.78.44.63
-http,102.244.78.61,8085,102.244.78.61:8085,Elite,1327,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8089,102.244.78.61:8089,Elite,1347,CM,Cameroon,Maroua,Orange CAM INTERNET,102.244.78.57
-http,27.147.155.206,12051,27.147.155.206:12051,Elite,1382,BD,Bangladesh,Dhaka,Link3 Technologies Limited,202.74.243.181
-http,102.244.78.61,8082,102.244.78.61:8082,Elite,1388,??,Unknown,-,-,102.244.78.57
-http,45.65.224.125,999,45.65.224.125:999,Elite,1752,AR,Argentina,Buenos Aires,Solution LAN S.A,45.65.224.125
-http,128.140.113.110,5678,128.140.113.110:5678,Elite,2131,DE,Germany,Falkenstein,Hetzner Online GmbH,185.220.101.1
+http,184.75.221.82,3118,184.75.221.82:3118,Elite,287,CA,Canada,Toronto,Amanah Tech Inc.,184.75.221.82
+http,43.128.144.133,18080,43.128.144.133:18080,Elite,710,KR,South Korea,Seoul,Shenzhen Tencent Computer Systems Company Limited,43.128.144.133
+http,103.237.102.191,11111,103.237.102.191:11111,Elite,713,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
+http,34.96.238.40,8080,34.96.238.40:8080,Elite,844,HK,Hong Kong,Hong Kong,Google LLC,34.96.238.40
+http,80.90.178.167,1081,80.90.178.167:1081,Elite,870,RU,Russia,St Petersburg,Mamaev,80.90.178.167
+http,4.144.146.21,80,4.144.146.21:80,Elite,920,SG,Singapore,Singapore,Microsoft Corporation,20.44.210.140
+http,45.189.57.114,3129,45.189.57.114:3129,Elite,1008,EC,Ecuador,Santa Rosa,Cbvision S.A.,45.189.57.114
+http,206.245.135.193,8888,206.245.135.193:8888,Elite,1125,FI,Finland,Helsinki,Hostkey B.V.,206.245.135.193
+http,27.147.155.206,12051,27.147.155.206:12051,Elite,1291,BD,Bangladesh,Dhaka,Link3 Technologies Limited,202.74.243.181
+http,102.244.78.61,8089,102.244.78.61:8089,Elite,1501,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8083,102.244.78.61:8083,Elite,1507,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8082,102.244.78.61:8082,Elite,1509,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8081,102.244.78.61:8081,Elite,1510,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8084,102.244.78.61:8084,Elite,1522,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8085,102.244.78.61:8085,Elite,1522,CM,Cameroon,Maroua,Orange CAM INTERNET,102.244.78.57
+http,190.12.150.244,999,190.12.150.244:999,Elite,1835,EC,Ecuador,La Concordia,Servitelconet Cia. Ltda.,190.12.150.244
+http,157.20.208.250,8080,157.20.208.250:8080,Elite,2169,ID,Indonesia,Pamekasan,PT Barokah Sistem Telematika,103.86.116.3
+http,209.61.12.217,999,209.61.12.217:999,Elite,2169,CO,Colombia,Pasto,Intercomm de Narino,209.61.12.219
+http,103.19.58.151,8080,103.19.58.151:8080,Elite,2454,ID,Indonesia,Karangampel,BITSNET,103.19.58.151
