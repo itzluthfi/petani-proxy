@@ -1,23 +1,12 @@
 protocol,ip,port,proxy,anonymity,latency_ms,country_code,country,city,isp,egress_ip
-http,103.237.102.191,11111,103.237.102.191:11111,Elite,644,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
-http,18.130.47.116,9080,18.130.47.116:9080,Elite,723,GB,United Kingdom,London,Amazon Technologies Inc.,18.130.47.116
-http,43.128.144.133,18080,43.128.144.133:18080,Elite,745,KR,South Korea,Seoul,Shenzhen Tencent Computer Systems Company Limited,43.128.144.133
-http,45.189.57.114,3129,45.189.57.114:3129,Elite,746,EC,Ecuador,Santa Rosa,Cbvision S.A.,45.189.57.114
-http,34.43.46.91,80,34.43.46.91:80,Elite,884,US,United States,Mountain View,Google LLC,35.230.222.184
-http,188.166.178.163,3129,188.166.178.163:3129,Elite,989,SG,Singapore,Singapore,"DigitalOcean, LLC",188.166.178.163
-http,188.132.249.148,8080,188.132.249.148:8080,Elite,1111,TR,Turkey,Kilis,High Speed For Internet Services L.L.C,188.132.249.148
-http,165.154.162.73,8888,165.154.162.73:8888,Elite,1169,US,United States,Los Angeles,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,165.154.162.73
-http,38.49.156.238,10101,38.49.156.238:10101,Elite,1232,MX,Mexico,Santa Cruz Ajajalpan,IENTC S de RL de CV,38.49.156.238
-http,102.244.78.61,8085,102.244.78.61:8085,Elite,1267,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8083,102.244.78.61:8083,Elite,1270,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8089,102.244.78.61:8089,Elite,1276,CM,Cameroon,Maroua,Orange CAM INTERNET,102.244.78.57
-http,38.63.98.55,999,38.63.98.55:999,Elite,1363,VE,Venezuela,Cabimas,Colnetwork C.A,38.63.98.55
-http,27.147.155.206,12051,27.147.155.206:12051,Elite,1393,BD,Bangladesh,Dhaka,Link3 Technologies Limited,202.74.243.181
-http,102.0.18.120,8080,102.0.18.120:8080,Elite,1418,KE,Kenya,Nairobi,Airtel KE Mobile & Fixed Internet,102.0.18.120
-http,216.152.152.44,80,216.152.152.44:80,Elite,1745,US,United States,Los Angeles,GTHost,216.152.152.44
-http,163.223.78.87,3127,163.223.78.87:3127,Elite,1834,ID,Indonesia,Jombang,PT Big Network Indonesia,163.223.78.87
-http,167.249.29.105,999,167.249.29.105:999,Elite,1860,CL,Chile,Santiago,Grupo Metrowan Telecom SPA,167.249.29.109
-http,181.209.125.189,999,181.209.125.189:999,Elite,2005,AR,Argentina,Benavídez,ARSAT - Empresa Argentina de Soluciones Satelitales S.A,181.209.125.186
-http,45.65.226.171,999,45.65.226.171:999,Elite,2110,AR,Argentina,Buenos Aires,Solution LAN S.A,45.65.226.169
-http,64.76.106.119,999,64.76.106.119:999,Elite,2130,PE,Peru,Lima,Loa Network,38.210.4.190
-http,68.183.60.51,3129,68.183.60.51:3129,Elite,2409,US,United States,Clifton,"DigitalOcean, LLC",68.183.60.51
+http,167.99.8.113,8006,167.99.8.113:8006,Elite,118,US,United States,North Bergen,"DigitalOcean, LLC",167.99.8.113
+http,34.43.46.91,80,34.43.46.91:80,Elite,708,US,United States,Mountain View,Google LLC,34.143.51.195
+http,34.43.46.91,443,34.43.46.91:443,Elite,758,??,Unknown,-,-,34.143.51.195
+http,102.244.78.61,8084,102.244.78.61:8084,Elite,1137,CM,Cameroon,Maroua,Orange CAM INTERNET,102.244.78.57
+http,4.144.146.21,80,4.144.146.21:80,Elite,1196,SG,Singapore,Singapore,Microsoft Corporation,20.44.210.140
+http,122.102.52.24,1082,122.102.52.24:1082,Elite,1212,ID,Indonesia,Jakarta,PT MEGAXUS INFOTECH,122.102.52.24
+http,102.244.78.61,8089,102.244.78.61:8089,Elite,1345,??,Unknown,-,-,102.244.78.57
+http,177.234.217.235,999,177.234.217.235:999,Elite,1367,EC,Ecuador,Quito,Ufinet Panama S.A.,177.234.217.92
+http,27.147.155.206,12051,27.147.155.206:12051,Elite,1596,BD,Bangladesh,Dhaka,Link3 Technologies Limited,202.74.243.181
+http,38.196.221.146,999,38.196.221.146:999,Elite,2035,DO,Dominican Republic,Boca Chica,Cogent Communications,38.196.221.149
+http,165.154.7.156,8888,165.154.7.156:8888,Elite,2229,HK,Hong Kong,Hong Kong,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,165.154.7.156
