@@ -1,22 +1,12 @@
 protocol,ip,port,proxy,anonymity,latency_ms,country_code,country,city,isp,egress_ip
-http,34.43.46.91,443,34.43.46.91:443,Elite,248,US,United States,Mountain View,Google LLC,34.143.51.195
-http,34.43.46.91,80,34.43.46.91:80,Elite,286,??,Unknown,-,-,34.143.51.195
-http,45.189.57.114,3129,45.189.57.114:3129,Elite,607,EC,Ecuador,Santa Rosa,Cbvision S.A.,45.189.57.114
-http,103.237.102.191,11111,103.237.102.191:11111,Elite,747,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
-http,188.166.178.163,3129,188.166.178.163:3129,Elite,996,SG,Singapore,Singapore,"DigitalOcean, LLC",188.166.178.163
-http,122.102.52.24,1081,122.102.52.24:1081,Elite,1047,??,Unknown,-,-,122.102.52.24
-http,122.102.52.24,1083,122.102.52.24:1083,Elite,1052,ID,Indonesia,Jakarta,PT MEGAXUS INFOTECH,122.102.52.24
-http,122.102.52.24,1082,122.102.52.24:1082,Elite,1070,??,Unknown,-,-,122.102.52.24
-http,102.244.78.61,8081,102.244.78.61:8081,Elite,1263,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8089,102.244.78.61:8089,Elite,1274,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8084,102.244.78.61:8084,Elite,1284,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8083,102.244.78.61:8083,Elite,1287,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8086,102.244.78.61:8086,Elite,1291,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8085,102.244.78.61:8085,Elite,1292,??,Unknown,-,-,102.244.78.57
-http,4.144.146.21,80,4.144.146.21:80,Elite,1466,SG,Singapore,Singapore,Microsoft Corporation,20.44.210.140
-http,102.244.78.61,8082,102.244.78.61:8082,Elite,1490,CM,Cameroon,Maroua,Orange CAM INTERNET,102.244.78.57
-http,103.172.70.203,9191,103.172.70.203:9191,Elite,1728,ID,Indonesia,Surakarta,AZNET,103.172.70.203
-http,103.136.250.154,8080,103.136.250.154:8080,Elite,1939,TW,Taiwan,Taipei,Kaopu Cloud HK Limited,103.136.250.154
-http,125.99.248.210,8080,125.99.248.210:8080,Elite,2097,IN,India,Bengaluru,Hathway IP over Cable Internet Access,125.99.248.210
-http,181.78.44.63,999,181.78.44.63:999,Elite,2347,HN,Honduras,La Unión,Ufinet Panama S.A.,181.78.44.63
-http,206.135.80.74,999,206.135.80.74:999,Elite,2392,MX,Mexico,Querétaro City,Ientc S De RL De CV,206.135.80.74
+http,103.237.102.191,11111,103.237.102.191:11111,Elite,551,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
+http,139.59.1.14,8080,139.59.1.14:8080,Elite,1115,IN,India,Bengaluru,DIGITALOCEAN,139.59.1.14
+http,102.244.78.61,8081,102.244.78.61:8081,Elite,1147,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8084,102.244.78.61:8084,Elite,1151,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8085,102.244.78.61:8085,Elite,1154,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8083,102.244.78.61:8083,Elite,1155,CM,Cameroon,Maroua,Orange CAM INTERNET,102.244.78.57
+http,184.75.221.82,3118,184.75.221.82:3118,Elite,1220,CA,Canada,Toronto,Amanah Tech Inc.,184.75.221.82
+http,188.166.178.163,3129,188.166.178.163:3129,Elite,1252,SG,Singapore,Singapore,"DigitalOcean, LLC",188.166.178.163
+http,8.219.97.248,80,8.219.97.248:80,Elite,1414,SG,Singapore,Singapore,Alibaba Cloud (Singapore) Private Limited,8.219.64.236
+http,27.147.155.206,12051,27.147.155.206:12051,Elite,1718,BD,Bangladesh,Dhaka,Link3 Technologies Limited,202.74.243.181
+http,62.201.217.194,8080,62.201.217.194:8080,Elite,2292,IQ,Iraq,Kelar,BAG,62.201.217.194
