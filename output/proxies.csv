@@ -1,12 +1,25 @@
 protocol,ip,port,proxy,anonymity,latency_ms,country_code,country,city,isp,egress_ip
-http,103.237.102.191,11111,103.237.102.191:11111,Elite,551,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
-http,139.59.1.14,8080,139.59.1.14:8080,Elite,1115,IN,India,Bengaluru,DIGITALOCEAN,139.59.1.14
-http,102.244.78.61,8081,102.244.78.61:8081,Elite,1147,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8084,102.244.78.61:8084,Elite,1151,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8085,102.244.78.61:8085,Elite,1154,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8083,102.244.78.61:8083,Elite,1155,CM,Cameroon,Maroua,Orange CAM INTERNET,102.244.78.57
-http,184.75.221.82,3118,184.75.221.82:3118,Elite,1220,CA,Canada,Toronto,Amanah Tech Inc.,184.75.221.82
-http,188.166.178.163,3129,188.166.178.163:3129,Elite,1252,SG,Singapore,Singapore,"DigitalOcean, LLC",188.166.178.163
-http,8.219.97.248,80,8.219.97.248:80,Elite,1414,SG,Singapore,Singapore,Alibaba Cloud (Singapore) Private Limited,8.219.64.236
-http,27.147.155.206,12051,27.147.155.206:12051,Elite,1718,BD,Bangladesh,Dhaka,Link3 Technologies Limited,202.74.243.181
-http,62.201.217.194,8080,62.201.217.194:8080,Elite,2292,IQ,Iraq,Kelar,BAG,62.201.217.194
+http,34.43.46.91,80,34.43.46.91:80,Elite,346,??,Unknown,-,-,35.235.130.204
+http,184.75.221.82,3118,184.75.221.82:3118,Elite,410,CA,Canada,Toronto,Amanah Tech Inc.,184.75.221.82
+http,49.13.48.65,8443,49.13.48.65:8443,Elite,659,DE,Germany,Falkenstein,Hetzner Online GmbH,49.13.48.65
+http,4.144.146.21,80,4.144.146.21:80,Elite,966,SG,Singapore,Singapore,Microsoft Corporation,20.44.210.140
+http,129.150.57.5,55555,129.150.57.5:55555,Elite,966,SG,Singapore,Singapore,Oracle Corporation,129.150.57.5
+http,103.237.102.191,11111,103.237.102.191:11111,Elite,1260,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
+http,102.244.78.61,8086,102.244.78.61:8086,Elite,1266,CM,Cameroon,Maroua,Orange CAM INTERNET,102.244.78.57
+http,102.244.78.61,8081,102.244.78.61:8081,Elite,1269,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8089,102.244.78.61:8089,Elite,1271,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8083,102.244.78.61:8083,Elite,1284,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8082,102.244.78.61:8082,Elite,1295,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8084,102.244.78.61:8084,Elite,1297,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8085,102.244.78.61:8085,Elite,1301,??,Unknown,-,-,102.244.78.57
+http,188.166.178.163,3129,188.166.178.163:3129,Elite,1341,SG,Singapore,Singapore,"DigitalOcean, LLC",188.166.178.163
+http,8.219.97.248,80,8.219.97.248:80,Elite,1389,SG,Singapore,Singapore,Alibaba Cloud (Singapore) Private Limited,8.219.64.236
+http,85.132.108.42,3128,85.132.108.42:3128,Elite,1498,AZ,Azerbaijan,Baku,AzerSat,185.222.94.247
+http,104.36.237.230,8080,104.36.237.230:8080,Elite,1580,US,United States,Kennewick,Desert Winds Wireless,64.146.129.143
+http,45.194.3.132,8080,45.194.3.132:8080,Elite,1587,IN,India,Noida,CtrlS,45.194.3.132
+http,154.201.126.44,8080,154.201.126.44:8080,Elite,1594,IN,India,Noida,CtrlS,154.201.126.44
+http,2.28.105.45,8888,2.28.105.45:8888,Elite,1943,DE,Germany,Falkenstein,Hetzner Online GmbH,45.192.34.63
+http,103.150.12.175,8080,103.150.12.175:8080,Elite,1983,ID,Indonesia,Margahayukencana,PT Primacom Interbuana -ISP,103.150.12.175
+http,34.43.46.91,443,34.43.46.91:443,Elite,2162,US,United States,Mountain View,Google LLC,35.235.130.204
+http,103.154.53.67,1111,103.154.53.67:1111,Elite,2247,ID,Indonesia,Cipari,WIFIKITA,103.154.53.67
+http,45.174.241.224,999,45.174.241.224:999,Elite,2381,MX,Mexico,Álvaro Obregón,Sistemas Y Soluciones De Campeche SAS De CV,45.174.241.225
