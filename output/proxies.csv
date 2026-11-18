@@ -1,19 +1,23 @@
 protocol,ip,port,proxy,anonymity,latency_ms,country_code,country,city,isp,egress_ip
-http,20.98.234.24,8080,20.98.234.24:8080,Elite,234,US,United States,Boydton,Microsoft Corporation,20.98.234.24
-http,34.43.46.91,443,34.43.46.91:443,Elite,304,US,United States,Mountain View,Google LLC,35.230.222.184
-http,34.43.46.91,80,34.43.46.91:80,Elite,360,??,Unknown,-,-,35.230.222.184
-http,103.237.102.191,11111,103.237.102.191:11111,Elite,631,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
-http,216.152.152.44,80,216.152.152.44:80,Elite,905,US,United States,Los Angeles,GTHost,216.152.152.44
-http,4.144.146.21,80,4.144.146.21:80,Elite,944,SG,Singapore,Singapore,Microsoft Corporation,20.44.210.140
-http,45.225.18.240,8080,45.225.18.240:8080,Elite,957,BR,Brazil,Porto Velho,Globofiber Telecom,45.225.18.240
-http,130.250.199.73,999,130.250.199.73:999,Elite,969,MX,Mexico,Hermosillo,NGX Networks,130.250.199.73
-http,188.166.178.163,3129,188.166.178.163:3129,Elite,1016,SG,Singapore,Singapore,"DigitalOcean, LLC",188.166.178.163
-http,132.243.174.245,5002,132.243.174.245:5002,Elite,1030,CH,Switzerland,Rümlang,Alexhost S.R.L.,132.243.174.245
-http,45.178.74.54,999,45.178.74.54:999,Elite,1096,MX,Mexico,Solidaridad,Abix Telecomunicaciones S.a. De C.V.,45.178.74.54
-http,45.65.226.172,999,45.65.226.172:999,Elite,1647,AR,Argentina,Buenos Aires,Solution LAN S.A,45.65.226.169
-http,179.184.163.133,44443,179.184.163.133:44443,Elite,1864,BR,Brazil,Belo Horizonte,TELEFÔNICA BRASIL S.A,186.232.94.66
-http,38.194.246.34,999,38.194.246.34:999,Elite,1877,MX,Mexico,El Pueblito,IENTC S de RL de CV,206.135.47.106
-http,103.169.139.4,8081,103.169.139.4:8081,Elite,1878,ID,Indonesia,Rembang,Dinas Kominfo Kabupaten Rembang,103.169.138.14
-http,103.43.191.71,8888,103.43.191.71:8888,Elite,2159,HK,Hong Kong,Kwai Chung,West263 International Limited,103.43.191.71
-http,80.225.250.95,8888,80.225.250.95:8888,Elite,2309,IN,India,Mumbai,Oracle Corporation,80.225.250.95
-http,185.214.39.2,9944,185.214.39.2:9944,Elite,2320,IR,Iran,Shiraz,Khalij Fars Ettela Resan LTD,185.214.39.2
+http,184.75.221.82,3118,184.75.221.82:3118,Elite,324,CA,Canada,Toronto,Amanah Tech Inc.,184.75.221.82
+http,167.99.8.113,8009,167.99.8.113:8009,Elite,343,US,United States,North Bergen,"DigitalOcean, LLC",167.99.8.113
+http,20.98.234.24,8080,20.98.234.24:8080,Elite,392,US,United States,Boydton,Microsoft Corporation,20.98.234.24
+http,138.68.183.71,10000,138.68.183.71:10000,Elite,842,GB,United Kingdom,Slough,"DigitalOcean, LLC",138.68.183.71
+http,4.144.146.21,80,4.144.146.21:80,Elite,913,SG,Singapore,Singapore,Microsoft Corporation,20.44.210.140
+http,165.154.162.73,8888,165.154.162.73:8888,Elite,1178,US,United States,Los Angeles,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,165.154.162.73
+http,27.147.155.206,12051,27.147.155.206:12051,Elite,1295,BD,Bangladesh,Dhaka,Link3 Technologies Limited,202.74.243.181
+http,216.152.152.44,80,216.152.152.44:80,Elite,1350,US,United States,Los Angeles,GTHost,216.152.152.44
+http,132.243.174.245,5002,132.243.174.245:5002,Elite,1417,CH,Switzerland,Rümlang,Alexhost S.R.L.,132.243.174.245
+http,102.244.78.61,8081,102.244.78.61:8081,Elite,1427,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8086,102.244.78.61:8086,Elite,1431,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8083,102.244.78.61:8083,Elite,1475,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8084,102.244.78.61:8084,Elite,1479,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8089,102.244.78.61:8089,Elite,1480,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8085,102.244.78.61:8085,Elite,1481,CM,Cameroon,Maroua,Orange CAM INTERNET,102.244.78.57
+http,8.219.97.248,80,8.219.97.248:80,Elite,1840,SG,Singapore,Singapore,Alibaba Cloud (Singapore) Private Limited,8.219.64.236
+http,116.101.73.161,2090,116.101.73.161:2090,Elite,1864,VN,Vietnam,Hanoi,Viettel Group,116.101.73.52
+http,188.166.178.163,3129,188.166.178.163:3129,Elite,2074,SG,Singapore,Singapore,"DigitalOcean, LLC",188.166.178.163
+http,130.250.199.73,999,130.250.199.73:999,Elite,2099,MX,Mexico,Hermosillo,NGX Networks,130.250.199.73
+http,181.188.203.40,999,181.188.203.40:999,Elite,2214,EC,Ecuador,Montalvo,Ufinet Panama S.A.,181.188.203.40
+http,103.156.75.169,8181,103.156.75.169:8181,Elite,2287,ID,Indonesia,Gianyar,PT Trika Global Media,103.156.74.36
+http,157.20.208.84,8080,157.20.208.84:8080,Elite,2468,ID,Indonesia,Pamekasan,PT Barokah Sistem Telematika,157.20.208.84
