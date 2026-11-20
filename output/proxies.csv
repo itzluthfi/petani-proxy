@@ -1,18 +1,22 @@
 protocol,ip,port,proxy,anonymity,latency_ms,country_code,country,city,isp,egress_ip
-http,20.98.234.24,8080,20.98.234.24:8080,Elite,63,US,United States,Boydton,Microsoft Corporation,20.98.234.24
-http,47.254.122.220,5443,47.254.122.220:5443,Elite,338,US,United States,Minkler,Alibaba Cloud LLC,47.254.122.220
-http,165.154.162.73,8888,165.154.162.73:8888,Elite,542,US,United States,Los Angeles,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,165.154.162.73
-http,102.244.78.61,8082,102.244.78.61:8082,Elite,1114,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8084,102.244.78.61:8084,Elite,1120,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8089,102.244.78.61:8089,Elite,1120,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8086,102.244.78.61:8086,Elite,1123,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8081,102.244.78.61:8081,Elite,1146,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8083,102.244.78.61:8083,Elite,1149,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8085,102.244.78.61:8085,Elite,1149,CM,Cameroon,Maroua,Orange CAM INTERNET,102.244.78.57
-http,4.144.146.21,80,4.144.146.21:80,Elite,1190,SG,Singapore,Singapore,Microsoft Corporation,20.44.210.140
-http,27.147.155.206,12051,27.147.155.206:12051,Elite,1394,BD,Bangladesh,Dhaka,Link3 Technologies Limited,202.74.243.181
-http,177.234.217.46,999,177.234.217.46:999,Elite,1438,EC,Ecuador,Quito,Ufinet Panama S.A.,177.234.217.42
-http,45.194.3.108,8080,45.194.3.108:8080,Elite,1633,IN,India,Noida,CtrlS,45.194.3.108
-http,58.69.124.137,8080,58.69.124.137:8080,Elite,1773,PH,Philippines,Antipolo City,Philippine Long Distance Telephone Co.,58.69.124.137
-http,103.156.17.40,8085,103.156.17.40:8085,Elite,2056,ID,Indonesia,Jatibarang,RSTNET,103.156.17.40
-http,103.237.102.191,11111,103.237.102.191:11111,Elite,2173,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
+http,20.98.234.24,8080,20.98.234.24:8080,Elite,156,US,United States,Boydton,Microsoft Corporation,20.98.234.24
+http,103.237.102.191,11111,103.237.102.191:11111,Elite,568,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
+http,34.43.46.91,80,34.43.46.91:80,Elite,626,US,United States,Mountain View,Google LLC,34.143.38.107
+http,165.154.7.156,8888,165.154.7.156:8888,Elite,922,HK,Hong Kong,Hong Kong,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,165.154.7.156
+http,4.144.146.21,80,4.144.146.21:80,Elite,1046,SG,Singapore,Singapore,Microsoft Corporation,20.44.210.140
+http,206.135.47.108,999,206.135.47.108:999,Elite,1113,MX,Mexico,Puebla City,Ientc S De RL De CV,206.135.47.106
+http,102.244.78.61,8086,102.244.78.61:8086,Elite,1172,CM,Cameroon,Maroua,Orange CAM INTERNET,102.244.78.57
+http,45.26.30.144,8888,45.26.30.144:8888,Elite,1245,US,United States,Friendswood,"AT&T Enterprises, LLC",186.247.181.141
+http,216.152.152.44,80,216.152.152.44:80,Elite,1335,US,United States,Los Angeles,GTHost,216.152.152.44
+http,165.154.162.73,8888,165.154.162.73:8888,Elite,1504,US,United States,Los Angeles,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,165.154.162.73
+http,45.194.3.108,8080,45.194.3.108:8080,Elite,1649,IN,India,Noida,CtrlS,45.194.3.108
+http,34.43.46.91,443,34.43.46.91:443,Elite,1726,??,Unknown,-,-,34.96.25.91
+http,69.171.214.128,999,69.171.214.128:999,Elite,1729,US,United States,Dallas,Ipxo LLC,69.171.214.138
+http,103.193.145.155,8080,103.193.145.155:8080,Elite,1840,ID,Indonesia,Batam,PT Lintas Jaringan Nusantara,103.193.145.155
+http,38.199.250.2,999,38.199.250.2:999,Elite,1938,MX,Mexico,Pueblo Hidalgo,MAYSNET S.A. de C.V,200.71.111.48
+http,103.125.212.130,8080,103.125.212.130:8080,Elite,2037,ID,Indonesia,West Jakarta,SOLUSINET,103.125.212.130
+http,187.190.127.212,8081,187.190.127.212:8081,Elite,2061,MX,Mexico,Banus Vallarta,"TOTAL PLAY TELECOMUNICACIONES, S.A.P.I. DE C.V.",187.190.127.212
+http,156.155.50.93,8080,156.155.50.93:8080,Elite,2069,ZA,South Africa,Durban,AxxessNetworks,156.155.50.93
+http,59.153.82.236,8080,59.153.82.236:8080,Elite,2208,ID,Indonesia,North Jakarta,ATSINDO,59.153.82.236
+http,103.134.222.170,8888,103.134.222.170:8888,Elite,2406,ID,Indonesia,Boyolali,PT GLOBAL MEDIA PRATAMA SOLUSINDO,103.134.222.182
+http,201.4.65.9,8080,201.4.65.9:8080,Elite,2460,TR,Turkey,Adana,High Speed For Internet Services L.L.C,201.4.65.9
