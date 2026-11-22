@@ -1,19 +1,20 @@
 protocol,ip,port,proxy,anonymity,latency_ms,country_code,country,city,isp,egress_ip
-http,20.98.234.24,8080,20.98.234.24:8080,Elite,158,US,United States,Boydton,Microsoft Corporation,20.98.234.24
-http,46.101.21.9,10000,46.101.21.9:10000,Elite,529,GB,United Kingdom,Slough,"DigitalOcean, LLC",46.101.21.9
-http,103.237.102.191,11111,103.237.102.191:11111,Elite,565,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
-http,34.43.46.91,443,34.43.46.91:443,Elite,617,US,United States,Mountain View,Google LLC,34.143.38.107
-http,158.247.125.5,9443,158.247.125.5:9443,Elite,781,CO,Colombia,Bogotá,Oracle Corporation,158.247.125.5
-http,13.231.154.29,80,13.231.154.29:80,Elite,811,JP,Japan,Tokyo,"Amazon.com, Inc.",13.231.154.29
-http,195.62.50.208,8080,195.62.50.208:8080,Elite,1018,TR,Turkey,Ankara,High Speed For Internet Services L.L.C,195.62.50.208
-http,4.144.146.21,80,4.144.146.21:80,Elite,1056,SG,Singapore,Singapore,Microsoft Corporation,20.44.210.140
-http,102.244.78.61,8083,102.244.78.61:8083,Elite,1157,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8084,102.244.78.61:8084,Elite,1172,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8082,102.244.78.61:8082,Elite,1181,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8081,102.244.78.61:8081,Elite,1184,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8086,102.244.78.61:8086,Elite,1184,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8085,102.244.78.61:8085,Elite,1191,CM,Cameroon,Maroua,Orange CAM INTERNET,102.244.78.57
-http,119.94.185.43,8082,119.94.185.43:8082,Elite,1238,PH,Philippines,Marilao,Philippine Long Distance Telephone Co.,119.94.185.43
-http,151.158.244.191,8080,151.158.244.191:8080,Elite,1543,PH,Philippines,Paradahan,Mitztianpc Wired Internet Services,180.191.254.2
-http,195.62.50.201,8080,195.62.50.201:8080,Elite,1745,TR,Turkey,Ankara,High Speed For Internet Services L.L.C,195.62.50.201
-http,160.19.18.216,8080,160.19.18.216:8080,Elite,2225,ID,Indonesia,Bandung,PT Indo Telemedia Solusi,160.19.18.216
+http,20.98.234.24,8080,20.98.234.24:8080,Elite,229,US,United States,Boydton,Microsoft Corporation,20.98.234.24
+http,34.43.46.91,80,34.43.46.91:80,Elite,417,??,Unknown,-,-,35.235.130.204
+http,34.43.46.91,443,34.43.46.91:443,Elite,488,US,United States,Mountain View,Google LLC,35.235.130.204
+http,159.65.27.1,10000,159.65.27.1:10000,Elite,593,GB,United Kingdom,Slough,"DigitalOcean, LLC",159.65.27.1
+http,13.231.154.29,80,13.231.154.29:80,Elite,614,JP,Japan,Tokyo,"Amazon.com, Inc.",13.231.154.29
+http,103.237.102.191,11111,103.237.102.191:11111,Elite,657,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
+http,134.199.160.93,8888,134.199.160.93:8888,Elite,898,AU,Australia,Sydney,"DigitalOcean, LLC",134.199.160.93
+http,158.247.125.5,9443,158.247.125.5:9443,Elite,995,CO,Colombia,Bogotá,Oracle Corporation,158.247.125.5
+http,4.144.146.21,80,4.144.146.21:80,Elite,998,SG,Singapore,Singapore,Microsoft Corporation,20.44.210.140
+http,85.117.61.120,8080,85.117.61.120:8080,Elite,1036,GE,Georgia,Tbilisi,Caucasus Online Ltd.,85.117.61.120
+http,161.49.84.3,8081,161.49.84.3:8081,Elite,1038,PH,Philippines,Pasig,Converge ICT Solution Inc,161.49.84.3
+http,103.154.52.5,1111,103.154.52.5:1111,Elite,1149,ID,Indonesia,Majenang,WIFIKITA,103.154.52.5
+http,124.83.118.108,8082,124.83.118.108:8082,Elite,1195,PH,Philippines,Meycauayan,Philippine Long Distance Telephone Co.,124.83.118.108
+http,27.147.155.206,12051,27.147.155.206:12051,Elite,1384,BD,Bangladesh,Dhaka,Link3 Technologies Limited,202.74.243.181
+http,38.194.251.246,999,38.194.251.246:999,Elite,1799,MX,Mexico,San Cristóbal,IENTC S de RL de CV,38.194.251.246
+http,103.133.25.247,8080,103.133.25.247:8080,Elite,2097,ID,Indonesia,Cikarang,PT PHATRIA INTI PERSADA,103.133.25.247
+http,157.15.62.44,8080,157.15.62.44:8080,Elite,2139,ID,Indonesia,Malang,AMAN ISP Customer Malang,157.15.62.44
+http,203.201.190.33,8080,203.201.190.33:8080,Elite,2149,ID,Indonesia,Tulang Bawang Regency,PT WIRA HASTA JITU,203.201.190.33
+http,192.147.114.171,8080,192.147.114.171:8080,Elite,2154,ID,Indonesia,Surabaya,PT Global Asta Systelematika,192.147.114.171
