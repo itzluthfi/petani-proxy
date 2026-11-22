@@ -1,22 +1,19 @@
 protocol,ip,port,proxy,anonymity,latency_ms,country_code,country,city,isp,egress_ip
-http,20.98.234.24,8080,20.98.234.24:8080,Elite,68,US,United States,Boydton,Microsoft Corporation,20.98.234.24
-http,34.43.46.91,443,34.43.46.91:443,Elite,227,??,Unknown,-,-,34.143.38.107
-http,34.43.46.91,80,34.43.46.91:80,Elite,278,US,United States,Mountain View,Google LLC,34.143.38.107
-http,89.46.131.79,10000,89.46.131.79:10000,Elite,437,NL,The Netherlands,Amsterdam,Clodo Cloud Service CO. L.L.C,45.88.173.244
-http,103.237.102.191,11111,103.237.102.191:11111,Elite,498,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
-http,217.154.195.87,8888,217.154.195.87:8888,Elite,813,DE,Germany,Berlin,IONOS SE,217.154.195.87
-http,47.83.142.187,6666,47.83.142.187:6666,Elite,1089,HK,Hong Kong,Hong Kong,Alibaba.com LLC,47.83.142.187
-http,102.244.78.61,8081,102.244.78.61:8081,Elite,1123,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8086,102.244.78.61:8086,Elite,1130,CM,Cameroon,Maroua,Orange CAM INTERNET,102.244.78.57
-http,102.244.78.61,8083,102.244.78.61:8083,Elite,1131,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8084,102.244.78.61:8084,Elite,1137,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8085,102.244.78.61:8085,Elite,1139,??,Unknown,-,-,102.244.78.57
-http,4.144.146.21,80,4.144.146.21:80,Elite,1155,SG,Singapore,Singapore,Microsoft Corporation,20.44.210.140
-http,102.244.78.61,8082,102.244.78.61:8082,Elite,1156,??,Unknown,-,-,102.244.78.57
-http,165.154.7.156,8888,165.154.7.156:8888,Elite,1187,HK,Hong Kong,Hong Kong,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,165.154.7.156
-http,187.190.58.152,8081,187.190.58.152:8081,Elite,1191,MX,Mexico,Mazatlán,"TOTAL PLAY TELECOMUNICACIONES, S.A.P.I. DE C.V.",187.190.58.152
-http,27.147.155.206,12051,27.147.155.206:12051,Elite,1746,BD,Bangladesh,Dhaka,Link3 Technologies Limited,202.74.243.181
-http,158.247.125.5,9443,158.247.125.5:9443,Elite,1794,CO,Colombia,Bogotá,Oracle Corporation,158.247.125.5
-http,37.187.109.70,10111,37.187.109.70:10111,Elite,2115,FR,France,Roubaix,OVH SAS,37.187.109.70
-http,103.80.215.124,8080,103.80.215.124:8080,Elite,2368,ID,Indonesia,Sidoarjo,PT Redi Revolusi Digital Solusi,103.80.215.124
-http,186.96.111.214,999,186.96.111.214:999,Elite,2377,CO,Colombia,San Martín,TV AZTECA SUCURSAL COLOMBIA,147.75.122.107
+http,20.98.234.24,8080,20.98.234.24:8080,Elite,158,US,United States,Boydton,Microsoft Corporation,20.98.234.24
+http,46.101.21.9,10000,46.101.21.9:10000,Elite,529,GB,United Kingdom,Slough,"DigitalOcean, LLC",46.101.21.9
+http,103.237.102.191,11111,103.237.102.191:11111,Elite,565,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
+http,34.43.46.91,443,34.43.46.91:443,Elite,617,US,United States,Mountain View,Google LLC,34.143.38.107
+http,158.247.125.5,9443,158.247.125.5:9443,Elite,781,CO,Colombia,Bogotá,Oracle Corporation,158.247.125.5
+http,13.231.154.29,80,13.231.154.29:80,Elite,811,JP,Japan,Tokyo,"Amazon.com, Inc.",13.231.154.29
+http,195.62.50.208,8080,195.62.50.208:8080,Elite,1018,TR,Turkey,Ankara,High Speed For Internet Services L.L.C,195.62.50.208
+http,4.144.146.21,80,4.144.146.21:80,Elite,1056,SG,Singapore,Singapore,Microsoft Corporation,20.44.210.140
+http,102.244.78.61,8083,102.244.78.61:8083,Elite,1157,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8084,102.244.78.61:8084,Elite,1172,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8082,102.244.78.61:8082,Elite,1181,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8081,102.244.78.61:8081,Elite,1184,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8086,102.244.78.61:8086,Elite,1184,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8085,102.244.78.61:8085,Elite,1191,CM,Cameroon,Maroua,Orange CAM INTERNET,102.244.78.57
+http,119.94.185.43,8082,119.94.185.43:8082,Elite,1238,PH,Philippines,Marilao,Philippine Long Distance Telephone Co.,119.94.185.43
+http,151.158.244.191,8080,151.158.244.191:8080,Elite,1543,PH,Philippines,Paradahan,Mitztianpc Wired Internet Services,180.191.254.2
+http,195.62.50.201,8080,195.62.50.201:8080,Elite,1745,TR,Turkey,Ankara,High Speed For Internet Services L.L.C,195.62.50.201
+http,160.19.18.216,8080,160.19.18.216:8080,Elite,2225,ID,Indonesia,Bandung,PT Indo Telemedia Solusi,160.19.18.216
