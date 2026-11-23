@@ -1,28 +1,14 @@
 protocol,ip,port,proxy,anonymity,latency_ms,country_code,country,city,isp,egress_ip
-http,34.43.46.91,443,34.43.46.91:443,Elite,220,US,United States,Mountain View,Google LLC,35.235.130.204
-http,107.181.112.136,8443,107.181.112.136:8443,Elite,329,US,United States,Wilmington,DedFiberCo,107.181.112.136
-http,34.43.46.91,80,34.43.46.91:80,Elite,364,??,Unknown,-,-,34.143.38.107
-http,46.101.21.9,10000,46.101.21.9:10000,Elite,588,GB,United Kingdom,Slough,"DigitalOcean, LLC",46.101.21.9
-http,103.237.102.191,11111,103.237.102.191:11111,Elite,631,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
-http,159.65.27.1,10000,159.65.27.1:10000,Elite,701,GB,United Kingdom,Slough,"DigitalOcean, LLC",159.65.27.1
-http,13.231.154.29,80,13.231.154.29:80,Elite,769,JP,Japan,Tokyo,"Amazon.com, Inc.",13.231.154.29
-http,165.154.7.156,8888,165.154.7.156:8888,Elite,851,HK,Hong Kong,Hong Kong,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,165.154.7.156
-http,158.247.125.5,9443,158.247.125.5:9443,Elite,876,CO,Colombia,Bogotá,Oracle Corporation,158.247.125.5
-http,134.199.160.93,8888,134.199.160.93:8888,Elite,934,AU,Australia,Sydney,"DigitalOcean, LLC",134.199.160.93
-http,4.144.146.21,80,4.144.146.21:80,Elite,987,SG,Singapore,Singapore,Microsoft Corporation,20.44.210.140
-http,37.187.109.70,10111,37.187.109.70:10111,Elite,1166,FR,France,Roubaix,OVH SAS,37.187.109.70
-http,31.135.214.17,8026,31.135.214.17:8026,Elite,1211,UZ,Uzbekistan,Tashkent,Inform-Service TV Ltd,31.135.214.17
-http,102.244.78.61,8089,102.244.78.61:8089,Elite,1214,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8082,102.244.78.61:8082,Elite,1216,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8085,102.244.78.61:8085,Elite,1217,CM,Cameroon,Maroua,Orange CAM INTERNET,102.244.78.57
-http,102.244.78.61,8086,102.244.78.61:8086,Elite,1218,??,Unknown,-,-,102.244.78.57
-http,77.42.95.221,8889,77.42.95.221:8889,Elite,1221,FI,Finland,Helsinki,Hetzner Online GmbH,187.13.252.112
-http,102.244.78.61,8084,102.244.78.61:8084,Elite,1227,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8081,102.244.78.61:8081,Elite,1233,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8083,102.244.78.61:8083,Elite,1253,??,Unknown,-,-,102.244.78.57
-http,103.154.76.165,8181,103.154.76.165:8181,Elite,1308,ID,Indonesia,Sukadana Selatan,T2NET,103.154.76.165
-http,27.147.155.206,12051,27.147.155.206:12051,Elite,1352,BD,Bangladesh,Dhaka,Link3 Technologies Limited,202.74.243.181
-http,46.183.21.158,4444,46.183.21.158:4444,Elite,1579,SE,Sweden,Stockholm,South Park Networks LLC,46.183.21.158
-http,58.27.207.253,8080,58.27.207.253:8080,Elite,2051,PK,Pakistan,Lahore,Wateen Telecom Limited,58.27.211.106
-http,119.94.185.43,8082,119.94.185.43:8082,Elite,2175,PH,Philippines,Marilao,Philippine Long Distance Telephone Co.,119.94.185.43
-http,160.19.16.101,8181,160.19.16.101:8181,Elite,2255,ID,Indonesia,Tanjungbalai,PT Media Balai Nusa,160.19.16.101
+http,20.98.234.24,8080,20.98.234.24:8080,Elite,402,US,United States,Boydton,Microsoft Corporation,20.98.234.24
+http,158.247.125.5,9443,158.247.125.5:9443,Elite,760,CO,Colombia,Bogotá,Oracle Corporation,158.247.125.5
+http,172.235.116.78,8118,172.235.116.78:8118,Elite,807,BR,Brazil,São Paulo,"Akamai Technologies, Inc.",172.235.116.78
+http,102.244.78.61,8086,102.244.78.61:8086,Elite,1160,??,Unknown,-,-,102.244.78.57
+http,45.195.91.59,8080,45.195.91.59:8080,Elite,1228,IN,India,Noida,Real Time Data Services Private Limited,45.195.91.59
+http,103.237.102.191,11111,103.237.102.191:11111,Elite,1347,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
+http,102.244.78.61,8082,102.244.78.61:8082,Elite,1347,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8085,102.244.78.61:8085,Elite,1456,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8089,102.244.78.61:8089,Elite,1489,CM,Cameroon,Maroua,Orange CAM INTERNET,102.244.78.57
+http,154.201.127.46,8080,154.201.127.46:8080,Elite,1893,IN,India,Noida,Real Time Data Services Private Limited,154.201.127.46
+http,103.46.11.129,8090,103.46.11.129:8090,Elite,2282,ID,Indonesia,Sukoanyar,"Lintas Data Prima, PT",103.46.11.129
+http,37.187.109.70,10111,37.187.109.70:10111,Elite,2299,FR,France,Roubaix,OVH SAS,37.187.109.70
+http,119.94.185.43,8082,119.94.185.43:8082,Elite,2437,PH,Philippines,Marilao,Philippine Long Distance Telephone Co.,119.94.185.43
