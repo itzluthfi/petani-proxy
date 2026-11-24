@@ -1,33 +1,17 @@
 protocol,ip,port,proxy,anonymity,latency_ms,country_code,country,city,isp,egress_ip
-http,146.190.60.147,8020,146.190.60.147:8020,Elite,182,US,United States,Santa Clara,"DigitalOcean, LLC",146.190.60.147
-http,47.254.122.220,5443,47.254.122.220:5443,Elite,185,US,United States,Minkler,Alibaba Cloud LLC,47.254.122.220
-http,34.43.46.91,443,34.43.46.91:443,Elite,219,US,United States,Mountain View,Google LLC,34.143.61.41
-http,20.98.234.24,8080,20.98.234.24:8080,Elite,233,US,United States,Boydton,Microsoft Corporation,20.98.234.24
-http,34.43.46.91,80,34.43.46.91:80,Elite,300,??,Unknown,-,-,34.143.61.41
-http,146.190.60.147,8011,146.190.60.147:8011,Elite,401,??,Unknown,-,-,146.190.60.147
-http,51.68.102.5,3130,51.68.102.5:3130,Elite,616,FR,France,Roubaix,OVH SAS,51.68.102.5
-http,103.237.102.191,11111,103.237.102.191:11111,Elite,645,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
-http,158.247.125.5,9443,158.247.125.5:9443,Elite,879,CO,Colombia,Bogotá,Oracle Corporation,158.247.125.5
-http,165.154.7.156,8888,165.154.7.156:8888,Elite,887,HK,Hong Kong,Hong Kong,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,165.154.7.156
-http,47.254.213.60,1081,47.254.213.60:1081,Elite,1030,MY,Malaysia,Kuala Lumpur,Alibaba Cloud LLC,47.254.213.60
-http,183.88.218.225,8080,183.88.218.225:8080,Elite,1159,TH,Thailand,Kanchanaburi,Triple T Broadband Public Company Limited,183.88.218.225
-http,102.244.78.61,8089,102.244.78.61:8089,Elite,1210,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8085,102.244.78.61:8085,Elite,1210,CM,Cameroon,Maroua,Orange CAM INTERNET,102.244.78.57
-http,102.244.78.61,8083,102.244.78.61:8083,Elite,1215,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8081,102.244.78.61:8081,Elite,1217,??,Unknown,-,-,102.244.78.57
-http,148.224.12.147,999,148.224.12.147:999,Elite,1220,MX,Mexico,Uruapan,Jorge Luis Torres Fernandez,148.224.12.147
-http,102.244.78.61,8084,102.244.78.61:8084,Elite,1249,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8082,102.244.78.61:8082,Elite,1440,??,Unknown,-,-,102.244.78.57
-http,160.202.146.48,8080,160.202.146.48:8080,Elite,1467,BD,Bangladesh,Brāhmanbāria,Antaranga Dot Com Ltd,160.202.146.48
-http,205.209.66.81,8080,205.209.66.81:8080,Elite,1614,SY,Syria,Al-Hasakah,RCell LLC,205.209.66.81
-http,45.194.3.108,8080,45.194.3.108:8080,Elite,1628,IN,India,Noida,CtrlS,45.194.3.108
-http,123.253.137.224,8082,123.253.137.224:8082,Elite,1769,PH,Philippines,Aroroy,ComClark Network & Technology Corp,203.177.128.50
-http,45.232.211.130,999,45.232.211.130:999,Elite,1817,CL,Chile,La Pintana,Nanotik Telecomunicaciones SPA,45.232.211.130
-http,45.70.52.248,8080,45.70.52.248:8080,Elite,1857,BR,Brazil,São João de Meriti,NC BRASIL TELECOM E SERVICOS LTDA- ME,45.70.52.248
-http,165.154.162.73,8888,165.154.162.73:8888,Elite,2115,US,United States,Los Angeles,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,165.154.162.73
-http,103.55.22.226,8080,103.55.22.226:8080,Elite,2193,ID,Indonesia,Kisaran,PT General Media Network,103.55.22.226
-http,120.28.82.207,8082,120.28.82.207:8082,Elite,2195,PH,Philippines,Caloocan,Globe Telecom,120.28.82.207
-http,180.149.232.127,311,180.149.232.127:311,Elite,2208,BD,Bangladesh,Gaurnadi,Digi Jadoo Broadband Ltd,103.115.242.155
-http,20.33.10.132,443,20.33.10.132:443,Elite,2253,ZA,South Africa,Johannesburg,Microsoft Corporation,20.33.10.79
-http,38.199.250.2,999,38.199.250.2:999,Elite,2451,MX,Mexico,Pueblo Hidalgo,MAYSNET S.A. de C.V,200.71.111.51
-http,2.28.105.45,8888,2.28.105.45:8888,Elite,2488,DE,Germany,Falkenstein,Hetzner Online GmbH,45.192.34.63
+http,146.190.60.147,8001,146.190.60.147:8001,Elite,148,US,United States,Santa Clara,"DigitalOcean, LLC",146.190.60.147
+http,20.98.234.24,8080,20.98.234.24:8080,Elite,237,US,United States,Boydton,Microsoft Corporation,20.98.234.24
+http,173.212.207.102,1214,173.212.207.102:1214,Elite,666,FR,France,Lauterbourg,Contabo GmbH,173.212.207.102
+http,4.144.146.21,80,4.144.146.21:80,Elite,963,SG,Singapore,Singapore,Microsoft Corporation,20.44.210.140
+http,165.154.7.156,8888,165.154.7.156:8888,Elite,1091,HK,Hong Kong,Hong Kong,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,165.154.7.156
+http,102.244.78.61,8084,102.244.78.61:8084,Elite,1226,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8083,102.244.78.61:8083,Elite,1228,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8082,102.244.78.61:8082,Elite,1250,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8081,102.244.78.61:8081,Elite,1475,CM,Cameroon,Maroua,Orange CAM INTERNET,102.244.78.57
+http,34.43.46.91,443,34.43.46.91:443,Elite,1496,??,Unknown,-,-,34.143.38.107
+http,34.43.46.91,80,34.43.46.91:80,Elite,1504,US,United States,Mountain View,Google LLC,34.143.38.107
+http,165.154.162.73,8888,165.154.162.73:8888,Elite,1727,US,United States,Los Angeles,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,165.154.162.73
+http,158.247.125.5,9443,158.247.125.5:9443,Elite,1945,CO,Colombia,Bogotá,Oracle Corporation,158.247.125.5
+http,38.7.17.83,999,38.7.17.83:999,Elite,2059,MX,Mexico,Morelia,Internet Telefonia Y TV De Michoacan SA De CV,38.7.17.83
+http,89.251.21.179,8080,89.251.21.179:8080,Elite,2113,TR,Turkey,Kilis,High Speed For Internet Services L.L.C,89.251.21.179
+http,125.25.167.188,80,125.25.167.188:80,Elite,2398,TH,Thailand,Bangkok,TOT Public Company Limited,125.25.167.188
