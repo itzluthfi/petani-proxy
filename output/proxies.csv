@@ -1,17 +1,18 @@
 protocol,ip,port,proxy,anonymity,latency_ms,country_code,country,city,isp,egress_ip
-http,146.190.60.147,8001,146.190.60.147:8001,Elite,148,US,United States,Santa Clara,"DigitalOcean, LLC",146.190.60.147
-http,20.98.234.24,8080,20.98.234.24:8080,Elite,237,US,United States,Boydton,Microsoft Corporation,20.98.234.24
-http,173.212.207.102,1214,173.212.207.102:1214,Elite,666,FR,France,Lauterbourg,Contabo GmbH,173.212.207.102
-http,4.144.146.21,80,4.144.146.21:80,Elite,963,SG,Singapore,Singapore,Microsoft Corporation,20.44.210.140
-http,165.154.7.156,8888,165.154.7.156:8888,Elite,1091,HK,Hong Kong,Hong Kong,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,165.154.7.156
-http,102.244.78.61,8084,102.244.78.61:8084,Elite,1226,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8083,102.244.78.61:8083,Elite,1228,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8082,102.244.78.61:8082,Elite,1250,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8081,102.244.78.61:8081,Elite,1475,CM,Cameroon,Maroua,Orange CAM INTERNET,102.244.78.57
-http,34.43.46.91,443,34.43.46.91:443,Elite,1496,??,Unknown,-,-,34.143.38.107
-http,34.43.46.91,80,34.43.46.91:80,Elite,1504,US,United States,Mountain View,Google LLC,34.143.38.107
-http,165.154.162.73,8888,165.154.162.73:8888,Elite,1727,US,United States,Los Angeles,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,165.154.162.73
-http,158.247.125.5,9443,158.247.125.5:9443,Elite,1945,CO,Colombia,Bogotá,Oracle Corporation,158.247.125.5
-http,38.7.17.83,999,38.7.17.83:999,Elite,2059,MX,Mexico,Morelia,Internet Telefonia Y TV De Michoacan SA De CV,38.7.17.83
-http,89.251.21.179,8080,89.251.21.179:8080,Elite,2113,TR,Turkey,Kilis,High Speed For Internet Services L.L.C,89.251.21.179
-http,125.25.167.188,80,125.25.167.188:80,Elite,2398,TH,Thailand,Bangkok,TOT Public Company Limited,125.25.167.188
+http,20.98.234.24,8080,20.98.234.24:8080,Elite,355,US,United States,Boydton,Microsoft Corporation,20.98.234.24
+http,103.237.102.191,11111,103.237.102.191:11111,Elite,784,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
+http,173.212.207.102,1214,173.212.207.102:1214,Elite,929,FR,France,Lauterbourg,Contabo GmbH,173.212.207.102
+http,4.144.146.21,80,4.144.146.21:80,Elite,1034,SG,Singapore,Singapore,Microsoft Corporation,20.44.210.140
+http,124.217.109.153,8082,124.217.109.153:8082,Elite,1153,PH,Philippines,Manila,Philippine Long Distance Telephone Co.,124.217.109.153
+http,129.153.97.250,9443,129.153.97.250:9443,Elite,1287,US,United States,Phoenix,Oracle Corporation,129.153.97.250
+http,103.82.20.76,8080,103.82.20.76:8080,Elite,1306,VN,Vietnam,Dich Vong,INETACADEMY,171.228.150.154
+http,102.244.78.61,8081,102.244.78.61:8081,Elite,1415,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8085,102.244.78.61:8085,Elite,1424,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8086,102.244.78.61:8086,Elite,1425,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8084,102.244.78.61:8084,Elite,1427,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8083,102.244.78.61:8083,Elite,1432,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8082,102.244.78.61:8082,Elite,1433,CM,Cameroon,Maroua,Orange CAM INTERNET,102.244.78.57
+http,102.244.78.61,8089,102.244.78.61:8089,Elite,1440,??,Unknown,-,-,102.244.78.57
+http,181.233.89.119,999,181.233.89.119:999,Elite,1918,VE,Venezuela,Cabimas,Colnetwork C.A.,181.233.89.119
+http,158.247.125.5,9443,158.247.125.5:9443,Elite,2041,CO,Colombia,Bogotá,Oracle Corporation,158.247.125.5
+http,103.172.71.203,8080,103.172.71.203:8080,Elite,2240,ID,Indonesia,Karangampel,AZNET,103.172.71.203
