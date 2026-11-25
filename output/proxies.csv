@@ -1,18 +1,28 @@
 protocol,ip,port,proxy,anonymity,latency_ms,country_code,country,city,isp,egress_ip
-http,20.98.234.24,8080,20.98.234.24:8080,Elite,355,US,United States,Boydton,Microsoft Corporation,20.98.234.24
-http,103.237.102.191,11111,103.237.102.191:11111,Elite,784,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
-http,173.212.207.102,1214,173.212.207.102:1214,Elite,929,FR,France,Lauterbourg,Contabo GmbH,173.212.207.102
-http,4.144.146.21,80,4.144.146.21:80,Elite,1034,SG,Singapore,Singapore,Microsoft Corporation,20.44.210.140
-http,124.217.109.153,8082,124.217.109.153:8082,Elite,1153,PH,Philippines,Manila,Philippine Long Distance Telephone Co.,124.217.109.153
-http,129.153.97.250,9443,129.153.97.250:9443,Elite,1287,US,United States,Phoenix,Oracle Corporation,129.153.97.250
-http,103.82.20.76,8080,103.82.20.76:8080,Elite,1306,VN,Vietnam,Dich Vong,INETACADEMY,171.228.150.154
-http,102.244.78.61,8081,102.244.78.61:8081,Elite,1415,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8085,102.244.78.61:8085,Elite,1424,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8086,102.244.78.61:8086,Elite,1425,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8084,102.244.78.61:8084,Elite,1427,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8083,102.244.78.61:8083,Elite,1432,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8082,102.244.78.61:8082,Elite,1433,CM,Cameroon,Maroua,Orange CAM INTERNET,102.244.78.57
-http,102.244.78.61,8089,102.244.78.61:8089,Elite,1440,??,Unknown,-,-,102.244.78.57
-http,181.233.89.119,999,181.233.89.119:999,Elite,1918,VE,Venezuela,Cabimas,Colnetwork C.A.,181.233.89.119
-http,158.247.125.5,9443,158.247.125.5:9443,Elite,2041,CO,Colombia,Bogotá,Oracle Corporation,158.247.125.5
-http,103.172.71.203,8080,103.172.71.203:8080,Elite,2240,ID,Indonesia,Karangampel,AZNET,103.172.71.203
+http,20.98.234.24,8080,20.98.234.24:8080,Elite,65,US,United States,Boydton,Microsoft Corporation,20.98.234.24
+http,146.190.60.147,8008,146.190.60.147:8008,Elite,387,US,United States,Santa Clara,"DigitalOcean, LLC",146.190.60.147
+http,158.247.125.5,9443,158.247.125.5:9443,Elite,770,CO,Colombia,Bogotá,Oracle Corporation,158.247.125.5
+http,165.154.7.156,8888,165.154.7.156:8888,Elite,1070,HK,Hong Kong,Hong Kong,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,165.154.7.156
+http,45.134.81.36,38080,45.134.81.36:38080,Elite,1079,HK,Hong Kong,Hong Kong,Zenlayer Inc,45.134.81.36
+http,20.33.10.79,80,20.33.10.79:80,Elite,1136,ZA,South Africa,Johannesburg,Microsoft Corporation,20.33.10.79
+http,102.244.78.61,8082,102.244.78.61:8082,Elite,1147,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8083,102.244.78.61:8083,Elite,1154,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8086,102.244.78.61:8086,Elite,1163,CM,Cameroon,Maroua,Orange CAM INTERNET,102.244.78.57
+http,4.144.146.21,80,4.144.146.21:80,Elite,1179,SG,Singapore,Singapore,Microsoft Corporation,20.44.210.140
+http,102.244.78.61,8089,102.244.78.61:8089,Elite,1188,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8081,102.244.78.61:8081,Elite,1208,??,Unknown,-,-,102.244.78.57
+http,120.136.23.170,8800,120.136.23.170:8800,Elite,1240,CN,China,Beijing,China Unicom Beijing Province Network,103.114.193.74
+http,154.88.136.50,999,154.88.136.50:999,Elite,1250,DO,Dominican Republic,Santiago de los Caballeros,"DOMINICAN CABLE GROUP DCG, S.R.L.",154.88.136.50
+http,160.25.242.250,8080,160.25.242.250:8080,Elite,1307,ID,Indonesia,Madiun,PT Sarana Media Cemerlang,160.25.242.250
+http,154.201.127.46,8080,154.201.127.46:8080,Elite,1447,IN,India,Noida,Real Time Data Services Private Limited,154.201.127.46
+http,160.30.204.24,10001,160.30.204.24:10001,Elite,1905,VN,Vietnam,Vinhomes Smart City,TVC,104.207.46.60
+http,43.251.205.146,8080,43.251.205.146:8080,Elite,1925,TH,Thailand,Bangkok,"United Information Highway Co., Ltd.",43.251.205.146
+http,147.161.246.34,10766,147.161.246.34:10766,Elite,2156,??,Unknown,-,-,147.161.246.254
+http,147.161.246.34,11624,147.161.246.34:11624,Elite,2185,??,Unknown,-,-,147.161.246.254
+http,147.161.246.34,10366,147.161.246.34:10366,Elite,2302,??,Unknown,-,-,147.161.246.254
+http,147.161.246.34,11143,147.161.246.34:11143,Elite,2305,??,Unknown,-,-,147.161.246.254
+http,147.161.246.34,12900,147.161.246.34:12900,Elite,2348,CH,Switzerland,Zurich,Zscaler Switzerland GmbH,147.161.246.254
+http,147.161.246.34,12604,147.161.246.34:12604,Elite,2358,??,Unknown,-,-,147.161.246.254
+http,147.161.246.34,12065,147.161.246.34:12065,Elite,2370,??,Unknown,-,-,147.161.246.254
+http,147.161.246.34,12611,147.161.246.34:12611,Elite,2398,??,Unknown,-,-,147.161.246.254
+http,147.161.246.34,12488,147.161.246.34:12488,Elite,2421,??,Unknown,-,-,147.161.246.254
