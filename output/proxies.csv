@@ -1,29 +1,21 @@
 protocol,ip,port,proxy,anonymity,latency_ms,country_code,country,city,isp,egress_ip
-http,20.98.234.24,8080,20.98.234.24:8080,Elite,120,US,United States,Boydton,Microsoft Corporation,20.98.234.24
-http,34.43.46.91,443,34.43.46.91:443,Elite,136,US,United States,Mountain View,Google LLC,35.230.220.232
-http,47.254.122.220,5443,47.254.122.220:5443,Elite,284,US,United States,Minkler,Alibaba Cloud LLC,47.254.122.220
-http,129.153.97.250,9443,129.153.97.250:9443,Elite,309,US,United States,Phoenix,Oracle Corporation,129.153.97.250
-http,173.212.207.102,1214,173.212.207.102:1214,Elite,529,FR,France,Lauterbourg,Contabo GmbH,173.212.207.102
-http,103.237.102.191,11111,103.237.102.191:11111,Elite,539,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
-http,193.233.90.71,40000,193.233.90.71:40000,Elite,689,RU,Russia,St Petersburg,Aeza Group LLC,193.233.90.71
-http,217.154.195.87,8888,217.154.195.87:8888,Elite,837,DE,Germany,Berlin,IONOS SE,217.154.195.87
-http,190.104.35.30,8081,190.104.35.30:8081,Elite,986,AR,Argentina,Buenos Aires,Jumpnet Soluciones de Internet S.R.L.,190.104.35.30
-http,89.43.132.239,8080,89.43.132.239:8080,Elite,988,SY,Syria,Ad Dānā,High Speed For Internet Services L.L.C,89.43.132.239
-http,4.144.146.21,80,4.144.146.21:80,Elite,1095,SG,Singapore,Singapore,Microsoft Corporation,20.44.210.140
-http,20.235.56.94,8080,20.235.56.94:8080,Elite,1163,IN,India,Chennai,Microsoft Corporation,20.235.56.94
-http,120.136.23.176,8800,120.136.23.176:8800,Elite,1190,CN,China,Beijing,China Unicom Beijing Province Network,103.114.193.65
-http,102.244.78.61,8089,102.244.78.61:8089,Elite,1360,CM,Cameroon,Maroua,Orange CAM INTERNET,102.244.78.57
-http,102.244.78.61,8085,102.244.78.61:8085,Elite,1361,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8086,102.244.78.61:8086,Elite,1362,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8082,102.244.78.61:8082,Elite,1374,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8084,102.244.78.61:8084,Elite,1385,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8081,102.244.78.61:8081,Elite,1385,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8083,102.244.78.61:8083,Elite,1386,??,Unknown,-,-,102.244.78.57
-http,103.82.20.76,8080,103.82.20.76:8080,Elite,1406,VN,Vietnam,Dich Vong,INETACADEMY,116.104.221.22
-http,160.30.204.24,10001,160.30.204.24:10001,Elite,1763,VN,Vietnam,Vinhomes Smart City,TVC,104.207.46.60
-http,103.169.232.124,3125,103.169.232.124:3125,Elite,1811,ID,Indonesia,Weleri,PT Sukma Sejati Media,103.169.232.124
-http,158.247.125.5,9443,158.247.125.5:9443,Elite,1848,CO,Colombia,Bogotá,Oracle Corporation,158.247.125.5
-http,210.8.69.103,808,210.8.69.103:808,Elite,2076,AU,Australia,Sydney,AAPT Limited,210.8.69.103
-http,177.234.217.84,999,177.234.217.84:999,Elite,2123,EC,Ecuador,Quito,Ufinet Panama S.A.,177.234.217.83
-http,206.135.80.94,999,206.135.80.94:999,Elite,2337,MX,Mexico,Querétaro City,Ientc S De RL De CV,206.135.80.94
-http,43.161.205.36,80,43.161.205.36:80,Elite,2441,HK,Hong Kong,Hong Kong,Shenzhen Tencent Computer Systems Company Limited,43.161.205.36
+http,20.98.234.24,8080,20.98.234.24:8080,Elite,235,US,United States,Boydton,Microsoft Corporation,20.98.234.24
+http,34.43.46.91,80,34.43.46.91:80,Elite,270,US,United States,Mountain View,Google LLC,35.230.220.232
+http,216.125.18.67,3128,216.125.18.67:3128,Elite,640,US,United States,Brookfield,Illinois Century Network,208.124.108.154
+http,173.212.207.102,1214,173.212.207.102:1214,Elite,669,FR,France,Lauterbourg,Contabo GmbH,173.212.207.102
+http,103.237.102.191,11111,103.237.102.191:11111,Elite,672,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
+http,144.124.251.24,10602,144.124.251.24:10602,Elite,779,NL,The Netherlands,Amsterdam,Servers Tech Fzco,144.124.251.24
+http,4.144.146.21,80,4.144.146.21:80,Elite,999,SG,Singapore,Singapore,Microsoft Corporation,20.44.210.140
+http,43.161.205.36,80,43.161.205.36:80,Elite,1103,HK,Hong Kong,Hong Kong,Shenzhen Tencent Computer Systems Company Limited,43.161.205.36
+http,129.153.97.250,9443,129.153.97.250:9443,Elite,1173,US,United States,Phoenix,Oracle Corporation,129.153.97.250
+http,20.235.56.94,8080,20.235.56.94:8080,Elite,1206,IN,India,Chennai,Microsoft Corporation,20.235.56.94
+http,102.244.78.61,8084,102.244.78.61:8084,Elite,1255,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8081,102.244.78.61:8081,Elite,1259,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8089,102.244.78.61:8089,Elite,1276,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8082,102.244.78.61:8082,Elite,1281,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8090,102.244.78.61:8090,Elite,1282,CM,Cameroon,Maroua,Orange CAM INTERNET,102.244.78.57
+http,102.244.78.61,8083,102.244.78.61:8083,Elite,1328,??,Unknown,-,-,102.244.78.57
+http,45.144.49.64,5443,45.144.49.64:5443,Elite,1697,PL,Poland,Warsaw,3hcloud,45.144.49.64
+http,160.30.204.24,10001,160.30.204.24:10001,Elite,1742,VN,Vietnam,Vinhomes Smart City,TVC,104.207.46.60
+http,171.253.90.204,2073,171.253.90.204:2073,Elite,1792,VN,Vietnam,Hanoi,Viettel Corporation,27.69.71.254
+http,154.201.127.198,8080,154.201.127.198:8080,Elite,2222,IN,India,Noida,Real Time Data Services Private Limited,154.201.127.198
