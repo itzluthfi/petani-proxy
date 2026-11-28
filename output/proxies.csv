@@ -1,21 +1,31 @@
 protocol,ip,port,proxy,anonymity,latency_ms,country_code,country,city,isp,egress_ip
-http,20.98.234.24,8080,20.98.234.24:8080,Elite,235,US,United States,Boydton,Microsoft Corporation,20.98.234.24
-http,34.43.46.91,80,34.43.46.91:80,Elite,270,US,United States,Mountain View,Google LLC,35.230.220.232
-http,216.125.18.67,3128,216.125.18.67:3128,Elite,640,US,United States,Brookfield,Illinois Century Network,208.124.108.154
-http,173.212.207.102,1214,173.212.207.102:1214,Elite,669,FR,France,Lauterbourg,Contabo GmbH,173.212.207.102
-http,103.237.102.191,11111,103.237.102.191:11111,Elite,672,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
-http,144.124.251.24,10602,144.124.251.24:10602,Elite,779,NL,The Netherlands,Amsterdam,Servers Tech Fzco,144.124.251.24
-http,4.144.146.21,80,4.144.146.21:80,Elite,999,SG,Singapore,Singapore,Microsoft Corporation,20.44.210.140
-http,43.161.205.36,80,43.161.205.36:80,Elite,1103,HK,Hong Kong,Hong Kong,Shenzhen Tencent Computer Systems Company Limited,43.161.205.36
-http,129.153.97.250,9443,129.153.97.250:9443,Elite,1173,US,United States,Phoenix,Oracle Corporation,129.153.97.250
-http,20.235.56.94,8080,20.235.56.94:8080,Elite,1206,IN,India,Chennai,Microsoft Corporation,20.235.56.94
-http,102.244.78.61,8084,102.244.78.61:8084,Elite,1255,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8081,102.244.78.61:8081,Elite,1259,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8089,102.244.78.61:8089,Elite,1276,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8082,102.244.78.61:8082,Elite,1281,??,Unknown,-,-,102.244.78.57
-http,102.244.78.61,8090,102.244.78.61:8090,Elite,1282,CM,Cameroon,Maroua,Orange CAM INTERNET,102.244.78.57
-http,102.244.78.61,8083,102.244.78.61:8083,Elite,1328,??,Unknown,-,-,102.244.78.57
-http,45.144.49.64,5443,45.144.49.64:5443,Elite,1697,PL,Poland,Warsaw,3hcloud,45.144.49.64
-http,160.30.204.24,10001,160.30.204.24:10001,Elite,1742,VN,Vietnam,Vinhomes Smart City,TVC,104.207.46.60
-http,171.253.90.204,2073,171.253.90.204:2073,Elite,1792,VN,Vietnam,Hanoi,Viettel Corporation,27.69.71.254
-http,154.201.127.198,8080,154.201.127.198:8080,Elite,2222,IN,India,Noida,Real Time Data Services Private Limited,154.201.127.198
+http,34.43.46.91,80,34.43.46.91:80,Elite,313,US,United States,Mountain View,Google LLC,34.143.61.41
+http,20.98.234.24,8080,20.98.234.24:8080,Elite,319,US,United States,Boydton,Microsoft Corporation,20.98.234.24
+http,34.105.252.3,3128,34.105.252.3:3128,Elite,670,GB,United Kingdom,London,Google LLC,34.105.164.240
+http,61.247.223.151,80,61.247.223.151:80,Elite,679,KR,South Korea,Seongnam-si,NAVER Cloud Corp,43.250.153.103
+http,61.247.222.38,80,61.247.222.38:80,Elite,679,KR,South Korea,Seongnam-si,NAVER Cloud Corp,43.250.152.25
+http,61.247.222.198,80,61.247.222.198:80,Elite,687,KR,South Korea,Seongnam-si,NAVER Cloud Corp,43.250.152.199
+http,61.247.222.40,80,61.247.222.40:80,Elite,688,KR,South Korea,Seongnam-si,NAVER Cloud Corp,61.247.222.55
+http,61.247.223.127,80,61.247.223.127:80,Elite,689,KR,South Korea,Seongnam-si,NAVER Cloud Corp,43.250.153.162
+http,61.247.223.58,80,61.247.223.58:80,Elite,690,KR,South Korea,Seongnam-si,NAVER Cloud Corp,43.250.153.42
+http,61.247.223.134,80,61.247.223.134:80,Elite,690,KR,South Korea,Seongnam-si,NAVER Cloud Corp,43.250.153.104
+http,61.247.222.186,80,61.247.222.186:80,Elite,691,KR,South Korea,Seongnam-si,NAVER Cloud Corp,43.250.152.223
+http,61.247.222.173,80,61.247.222.173:80,Elite,694,KR,South Korea,Seongnam-si,NAVER Cloud Corp,61.247.222.235
+http,61.247.222.149,80,61.247.222.149:80,Elite,701,KR,South Korea,Seongnam-si,NAVER Cloud Corp,61.247.222.97
+http,103.237.102.191,11111,103.237.102.191:11111,Elite,745,DE,Germany,Frankfurt am Main,Zenlayer Inc,103.237.102.191
+http,173.212.207.102,1214,173.212.207.102:1214,Elite,800,FR,France,Lauterbourg,Contabo GmbH,173.212.207.102
+http,4.144.146.21,80,4.144.146.21:80,Elite,908,SG,Singapore,Singapore,Microsoft Corporation,20.44.210.140
+http,20.235.56.94,8080,20.235.56.94:8080,Elite,1010,IN,India,Chennai,Microsoft Corporation,20.235.56.94
+http,103.103.8.222,8080,103.103.8.222:8080,Elite,1051,IN,India,Chennai,F2h Networks Pvt Ltd,103.103.8.222
+http,102.244.78.61,8083,102.244.78.61:8083,Elite,1331,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8086,102.244.78.61:8086,Elite,1336,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8085,102.244.78.61:8085,Elite,1336,CM,Cameroon,Maroua,Orange CAM INTERNET,102.244.78.57
+http,102.244.78.61,8081,102.244.78.61:8081,Elite,1338,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8084,102.244.78.61:8084,Elite,1343,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8082,102.244.78.61:8082,Elite,1376,??,Unknown,-,-,102.244.78.57
+http,102.244.78.61,8089,102.244.78.61:8089,Elite,1378,??,Unknown,-,-,102.244.78.57
+http,103.175.202.165,8090,103.175.202.165:8090,Elite,1592,ID,Indonesia,Batulicin,PT Ameera Mega Buana,103.175.202.165
+http,42.112.14.230,2030,42.112.14.230:2030,Elite,1688,VN,Vietnam,Hanoi,Vietnam Internet Network Information Center,116.104.52.59
+http,171.253.90.204,2073,171.253.90.204:2073,Elite,1919,VN,Vietnam,Hanoi,Viettel Corporation,58.187.97.254
+http,182.53.202.220,80,182.53.202.220:80,Elite,2101,TH,Thailand,Chiang Mai,TOT Public Company Limited,182.53.202.220
+http,120.136.23.170,8800,120.136.23.170:8800,Elite,2327,CN,China,Beijing,China Unicom Beijing Province Network,103.114.193.70
